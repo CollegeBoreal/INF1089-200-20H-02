@@ -8,4 +8,7 @@ https://www.hackerrank.com/
 
 ## Mots Clés Étudiés
 
-  seq
+```
+  seq 1 2 100 #  seq [OPTION]... FIRST INCREMENT LAST
+```
+
