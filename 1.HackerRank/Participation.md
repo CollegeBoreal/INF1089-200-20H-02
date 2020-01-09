@@ -5,7 +5,7 @@
 | 01   | 300104524 | [moi](https://hackerrank.com/moi)         |
 | 02   | 300105201 | [moi](https://hackerrank.com/moi)         |
 | 03   | 300106918 | [moi](https://hackerrank.com/moi)         |
-| 04   | 300107361 | [Etiennethochgally](https://hackerrank.com/Etiennethochgally)         |
+| 04   | 300107361 | [Etiennetochgaly](https://hackerrank.com/Etiennetochgaly)         |
 | 05   | 300108234 | [moi](https://hackerrank.com/moi)         |
 | 06   | 300111671 | [moi](https://hackerrank.com/moi)         |
 | 07   | 300111766 | [moi](https://hackerrank.com/moi)         |
