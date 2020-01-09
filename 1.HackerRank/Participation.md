@@ -6,7 +6,7 @@
 | 02   | 300105201 | [moi](https://hackerrank.com/moi)         |
 | 03   | 300106918 | [moi](https://hackerrank.com/moi)         |
 | 04   | 300107361 | [Etiennetochgaly](https://hackerrank.com/Etiennetochgaly)         |
-| 05   | 300108234 | [moi](https://hackerrank.com/moi)         |
+| 05   | 300108234 | [Halimafadde](https://hackerrank.com/Halimafadde)         |
 | 06   | 300111671 | [moi](https://hackerrank.com/moi)         |
 | 07   | 300111766 | [moi](https://hackerrank.com/moi)         |
 | 08   | 300112017 | [moi](https://hackerrank.com/moi)         |
