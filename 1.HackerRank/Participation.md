@@ -10,5 +10,5 @@
 | 06   | 300111671 | [moi](https://hackerrank.com/moi)         |
 | 07   | 300111766 | [thiaam2010](https://hackerrank.com/thiaam2010)         |
 | 08   | 300112017 | [moi](https://hackerrank.com/moi)         |
-| 09   | 300112917 | [moi](https://hackerrank.com/moi)         |
+| 09   | 300112917 | [djumaster](https://hackerrank.com/djumaster)         |
 | 10   | 300113775 | [Widbyarmand](https://hackerrank.com/Widbyarmand)         |
