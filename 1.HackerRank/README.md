@@ -13,7 +13,11 @@ https://www.hackerrank.com/
   echo $(())
   if [ $X -eq $Y ]; then; ...
   seq 1 2 100 #  seq [OPTION]... FIRST INCREMENT LAST
+
+```
+
+
+```
   echo "Hello World"
   Write-Host "Hello World"
 ```
-
