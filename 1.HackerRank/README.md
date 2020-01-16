@@ -8,6 +8,8 @@ https://www.hackerrank.com/
 
 ## Mots Clés Étudiés
 
+:pushpin: bash
+
 ```
   read
   echo $(())
@@ -16,6 +18,7 @@ https://www.hackerrank.com/
 
 ```
 
+:pushpin: PowerShell
 
 ```
   echo "Hello World"
