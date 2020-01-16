@@ -2,7 +2,7 @@
 
 |:hash:| :id:      | HackerRank :id: |
 |------|-----------|-------------------------|
-| 01   | 300104524 | [moi](https://hackerrank.com/moi)         |
+| 01   | 300104524 | [Echnaideur Geneus](https://hackerrank.com/moi)         |
 | 02   | 300105201 | [moi](https://hackerrank.com/moi)         |
 | 03   | 300106918 | [chaouche_amir](https://hackerrank.com/chaouche_amir)         |
 | 04   | 300107361 | [Etiennetochgaly](https://hackerrank.com/Etiennetochgaly)         |
