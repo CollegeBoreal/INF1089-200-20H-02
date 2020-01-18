@@ -1,4 +1,4 @@
-# IDE (For PowerSHell)
+# IDE (For PowerShell)
 
 https://code.visualstudio.com/
 
