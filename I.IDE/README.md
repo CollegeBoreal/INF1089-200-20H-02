@@ -1,5 +1,7 @@
 # IDE (For PowerSHell)
 
+https://code.visualstudio.com/
+
 :m: Windows
 
 ```powershell
