@@ -2,7 +2,7 @@
 
 |:hash:| :id:      | HackerRank :id: |
 |------|-----------|-------------------------|
-| 01   | 300104524 | [echnaideurg](https://hackerrank.com/@echnaideurg)         |
+| 01   | 300104524 | [echnaideurg](https://hackerrank.com/echnaideurg)         |
 | 02   | 300105201 | [moi](https://hackerrank.com/moi)         |
 | 03   | 300106918 | [chaouche_amir](https://hackerrank.com/chaouche_amir)         |
 | 04   | 300107361 | [Etiennetochgaly](https://hackerrank.com/Etiennetochgaly)         |
