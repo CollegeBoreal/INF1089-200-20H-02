@@ -9,7 +9,7 @@
 | 05   | 300107361 | [Etiennetochgaly](https://hackerrank.com/Etiennetochgaly)     |
 | 06   | 300108234 | [Halimafadde](https://hackerrank.com/Halimafadde)         |
 | 07   | 300110500 | [didier](https://hackerrank.com/didier)         |
-| 08   | 300111671 | [300111671h](https://hackerrank.com/300111671h)         |
+| 08   | 300111671 | [h300111671](https://hackerrank.com/h300111671)         |
 | 09   | 300111766 | [thiaam2010](https://hackerrank.com/thiaam2010)         |
 | 10   | 300112017 | [adoradorosae](https://hackerrank.com/moi)         |
 | 11   | 300112917 | [djumaster](https://hackerrank.com/djumaster)         |
