@@ -16,6 +16,12 @@ PS > Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
 PS > Install-Package -Name docker -ProviderName DockerMsftProvider
 ```
 
+:three: Redémarrer le serveur
+
+```
+PS > Restart-Computer -Force
+```
+
 # References
 
 https://docs.microsoft.com/fr-fr/virtualization/windowscontainers/quick-start/set-up-environment?redirectedfrom=MSDN&tabs=Windows-Server
