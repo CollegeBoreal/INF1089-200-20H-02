@@ -1,6 +1,13 @@
 # MS SQL Server
 
 
+Test
+
+```
+PS > docker run -it mcr.microsoft.com/windows/nanoserver:1903 cmd.exe
+```
+
+
 ```
 PS > docker container run --name some-mssql `
                           --env sa_password=password --env ACCEPT_EULA=Y `
