@@ -78,6 +78,8 @@ Platform ServicePack Version      VersionString
 ```
 
 
+https://hub.docker.com/_/microsoft-windows-nanoserver
+
 
 # References
 
