@@ -7,5 +7,5 @@
 
 Example b300098957.ps1
 
-[Participation.md]
+[Participation](Participation.md)
 
