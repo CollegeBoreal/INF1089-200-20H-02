@@ -69,6 +69,15 @@ PS > docker container run hello-world:nanoserver
 PS > docker container run --interactive --tty --rm mcr.microsoft.com/windows/nanoserver:1809 powershell.exe
 ```
 
+```
+PS > [environment]::OSVersion
+
+Platform ServicePack Version      VersionString
+-------- ----------- -------      -------------
+ Win32NT             10.0.17763.0 Microsoft Windows NT 10.0.17763.0
+```
+
+
 
 # References
 
