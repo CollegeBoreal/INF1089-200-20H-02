@@ -58,6 +58,18 @@ PS > Install-Package -Name Docker -ProviderName DockerMsftProvider -Update -Forc
 PS > Start-Service Docker
 ```
 
+
+# :ab: Test Docker
+
+```
+PS > docker container run hello-world:nanoserver
+```
+
+```
+PS > docker container run --interactive --tty --rm mcr.microsoft.com/windows/nanoserver:1809 powershell.exe
+```
+
+
 # References
 
 https://docs.microsoft.com/fr-fr/virtualization/windowscontainers/quick-start/set-up-environment?redirectedfrom=MSDN&tabs=Windows-Server
