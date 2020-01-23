@@ -46,7 +46,7 @@ Status   Name               DisplayName
 Running  Docker             Docker Engine
 ```
 
-* Quand vous êtes prêt, effectuez une mise à niveau avec 
+:bulb: Quand vous êtes prêt, effectuez une mise à niveau avec  (Maintenance)
 
 ```
 PS > Install-Package -Name Docker -ProviderName DockerMsftProvider -Update -Force
