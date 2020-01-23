@@ -1,7 +1,7 @@
 # :two: PowerShell
 
 
-* Créer un répertoir avec votre :id:
+* Créer un répertoire avec votre :id:
 
 * Créer votre script PowerShell en donnant le nom b:id:.ps1
 
