@@ -10,3 +10,8 @@ PS > docker container run --name some-mssql `
                           --publish 1433:1433 --detach `
                           microsoft/mssql-server-windows-express
 ```
+
+
+# References
+
+https://hub.docker.com/r/microsoft/mssql-server-windows-express
