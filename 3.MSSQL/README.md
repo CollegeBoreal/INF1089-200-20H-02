@@ -4,6 +4,10 @@
 Test Docker
 
 ```
+PS > docker container run hello-world:nanoserver
+```
+
+```
 PS > docker container run --interactive --tty --rm mcr.microsoft.com/windows/nanoserver:1809 powershell.exe
 ```
 
