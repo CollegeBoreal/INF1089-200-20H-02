@@ -36,6 +36,16 @@ PS > Get-Package -Name Docker -ProviderName DockerMsftProvider
 PS > Find-Package -Name Docker -ProviderName DockerMsftProvider
 ```
 
+* Tester que le service Docker tourne
+
+```
+PS >  Get-Service Docker
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  Docker             Docker Engine
+```
+
 * Quand vous êtes prêt, effectuez une mise à niveau avec 
 
 ```
