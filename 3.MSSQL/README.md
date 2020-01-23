@@ -1,12 +1,13 @@
 # MS SQL Server
 
 
-Test
+Test Docker
 
 ```
-PS > docker container run --interactive --tty mcr.microsoft.com/windows/nanoserver:1903 cmd.exe
+PS > docker container run --interactive --tty --rm mcr.microsoft.com/windows/nanoserver:1809 powershell.exe
 ```
 
+Installer MS SQL Server
 
 ```
 PS > docker container run --name some-mssql `
