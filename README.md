@@ -31,5 +31,5 @@ Programmation de systèmes
 
 
 | Titre | Description |
-|-------|-------------|
-
+|----------------------------------------------------------------------------------------------------------|-------------|
+| [Windows Powershell In Action](https://www.manning.com/books/windows-powershell-in-action-third-edition) | |
