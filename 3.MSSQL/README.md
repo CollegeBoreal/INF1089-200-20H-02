@@ -4,7 +4,7 @@
 Test
 
 ```
-PS > docker container run --interface --tty mcr.microsoft.com/windows/nanoserver:1903 cmd.exe
+PS > docker container run --interactive --tty mcr.microsoft.com/windows/nanoserver:1903 cmd.exe
 ```
 
 
