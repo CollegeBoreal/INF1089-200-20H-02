@@ -75,7 +75,7 @@ PS > docker container run --rm hello-world:nanoserver
 ```
 PS > docker container run `
                       --interactive --tty --rm `
-                      mcr.microsoft.com/windows/servercore:latest `
+                      mcr.microsoft.com/windows/servercore:ltsc2019 `
                       powershell
 ```
 
