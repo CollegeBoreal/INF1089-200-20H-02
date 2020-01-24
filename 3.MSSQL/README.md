@@ -1,9 +1,9 @@
 # MS SQL Server
 
 
-Creer un repertoir avec comme nom votre :id:
+:one: Creer un repertoir avec comme nom votre :id:
 
-Copier le contenu ci-dessous dans un fichier appelle Dockerfile
+:two: Copier le contenu ci-dessous dans un fichier appelle Dockerfile
 
 ```Dockerfile
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
@@ -39,8 +39,20 @@ HEALTHCHECK CMD [ "sqlcmd", "-Q", "select 1" ]
 CMD .\start -sa_password $env:sa_password -attach_dbs \"$env:attach_dbs\" -restore_dbs \"$env:restore_dbs\" -Verbose
 ```
 
+:three: Construire l'image
 
+```
+$ docker container build --tag mssql-server-windows-developer-fti .
+```
 
+:four: Demarrer le conteneur
+
+```
+$ docker container run --name some-mssql `
+                       --env "SA_PASSWORD=Password123" `
+                       --publish 1533:1433 --detach `
+                       mssql-server-windows-developer-fti
+```
 
 
 
