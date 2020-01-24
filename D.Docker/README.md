@@ -69,6 +69,19 @@ PS > docker container run --rm hello-world:nanoserver
 
 ### :two: Test avec Server Core
 
+
+:warning: Lancer la machine virtuelle avec la version `ltsc2019` si `latest` (par defaut) ne marche pas
+
+```
+PS > docker container run `
+                      --interactive --tty --rm `
+                      mcr.microsoft.com/windows/servercore:latest `
+                      powershell
+```
+
+### :three: Test avec Server Core avec la version du server hote
+
+
 :pushpin: Determiner la version de son serveur
 
 ```
@@ -90,9 +103,10 @@ PS > $releasetag = (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\Curren
 ```
 PS > docker container run `
                       --interactive --tty --rm `
-                      mcr.microsoft.com/windows/servercore:ltsc2019 `
+                      mcr.microsoft.com/windows/servercore:$releasetag `
                       powershell
 ```
+
 
 
 
