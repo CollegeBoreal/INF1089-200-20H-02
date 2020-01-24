@@ -61,7 +61,7 @@ PS > Start-Service Docker
 
 # :ab: Test Docker
 
-### :one: Test avec nano server
+### :one: Test avec [nano](https://hub.docker.com/_/microsoft-windows-nanoserver) server
 
 ```
 PS > docker container run --rm hello-world:nanoserver
