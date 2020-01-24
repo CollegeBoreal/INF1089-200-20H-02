@@ -83,7 +83,7 @@ PS > $releasetag = "$($winver.releaseid)"
 PS > docker container run `
                       --interactive --tty --rm `
                       mcr.microsoft.com/windows/servercore:$releasetag `
-                      powershell.exe
+                      powershell
 ```
 
 
