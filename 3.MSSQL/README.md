@@ -47,4 +47,9 @@ PS > docker container run --name some-mssql `
 ```
 
 
+```
+PS > New-NetFirewallRule -DisplayName 'MSSQL Inbound' -Profile @('Domain', 'Public', 'Private') -Direction Inbound -Action Allow -Protocol TCP -LocalPort 1533
+```
+
+
 ![image](images/ssms.png)
