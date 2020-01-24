@@ -22,7 +22,13 @@ $ docker container run --name some-mssql `
                        mssql-server-windows-developer-fti
 ```
 
+:b: Test
 
+* Install SQL-SERVER Management Studio (SSMS) using `choco` in Admin Level
+
+```
+PS > choco install ssms
+```
 
 https://github.com/pulla2908/docker-mssql-server-windows-developer-fti
 
