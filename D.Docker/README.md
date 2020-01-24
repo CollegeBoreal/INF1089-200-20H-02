@@ -64,7 +64,7 @@ PS > Start-Service Docker
 ### :one: Test avec nano server
 
 ```
-PS > docker container run hello-world:nanoserver
+PS > docker container run --rm hello-world:nanoserver
 ```
 
 :pushpin: Determiner la version de son serveur
