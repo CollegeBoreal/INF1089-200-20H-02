@@ -80,7 +80,10 @@ PS > $releasetag = "$($winver.releaseid)"
 
 
 ```
-PS > docker container run --interactive --tty --rm mcr.microsoft.com/windows/nanoserver:$releasetag powershell.exe
+PS > docker container run `
+                      --interactive --tty --rm `
+                      mcr.microsoft.com/windows/nanoserver:$releasetag `
+                      powershell.exe
 ```
 
 
