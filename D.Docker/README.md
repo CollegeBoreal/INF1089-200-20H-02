@@ -67,6 +67,8 @@ PS > Start-Service Docker
 PS > docker container run --rm hello-world:nanoserver
 ```
 
+### :two: Test avec Server Core
+
 :pushpin: Determiner la version de son serveur
 
 ```
@@ -83,7 +85,7 @@ Platform ServicePack Version      VersionString
 PS > $releasetag = (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\').ReleaseId
 ```
 
-### :two: Test avec Server Core
+:bulb: Lancer la machine virtuelle
 
 ```
 PS > docker container run `
