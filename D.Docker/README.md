@@ -66,16 +66,23 @@ PS > docker container run hello-world:nanoserver
 ```
 
 ```
-PS > docker container run --interactive --tty --rm mcr.microsoft.com/windows/nanoserver:1809 powershell.exe
-```
-
-```
 PS > [environment]::OSVersion
 
 Platform ServicePack Version      VersionString
 -------- ----------- -------      -------------
  Win32NT             10.0.17763.0 Microsoft Windows NT 10.0.17763.0
 ```
+
+```
+PS > $winver = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\'
+PS > $releasetag = "$($winver.releaseid)"
+```
+
+
+```
+PS > docker container run --interactive --tty --rm mcr.microsoft.com/windows/nanoserver:$releasetag powershell.exe
+```
+
 
 
 https://hub.docker.com/_/microsoft-windows-nanoserver
@@ -84,3 +91,5 @@ https://hub.docker.com/_/microsoft-windows-nanoserver
 # References
 
 https://docs.microsoft.com/fr-fr/virtualization/windowscontainers/quick-start/set-up-environment?redirectedfrom=MSDN&tabs=Windows-Server
+
+https://blogs.technet.microsoft.com/virtualization/2018/06/27/insider-preview-windows-container-image/
