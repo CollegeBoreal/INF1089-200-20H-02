@@ -7,7 +7,7 @@
 
 `$ cp -r .src/* `:id:` `
 
-:three: Construire l'image
+:three: Dans votre répertoire, construire l'image `Docker`
 
 ```
 $ docker build --tag mssql-server-windows-developer-fti .
