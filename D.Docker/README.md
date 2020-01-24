@@ -70,7 +70,7 @@ PS > docker container run --rm hello-world:nanoserver
 ### :two: Test avec Server Core
 
 
-:warning: Lancer la machine virtuelle avec la version `ltsc2019` si `latest` (par defaut) ne marche pas
+:warning: Lancer la machine virtuelle avec la version [ltsc2019](https://docs.microsoft.com/en-us/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc) si `latest` (par defaut) ne marche pas
 
 ```
 PS > docker container run `
