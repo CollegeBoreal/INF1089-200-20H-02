@@ -3,10 +3,9 @@
 
 :one: Creer un répertoire avec comme nom votre :id:
 
-:two: Copier le contenu les fichiers se trouvant dans le repretoire .src dans votre répertoire
+:two: Copier les fichiers se trouvant dans le repretoire `.src` dans votre répertoire
 
 `$ cp -r .src/* `:id:` `
-
 
 :three: Construire l'image
 
