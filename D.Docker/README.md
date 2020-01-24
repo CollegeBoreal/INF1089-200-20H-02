@@ -61,9 +61,13 @@ PS > Start-Service Docker
 
 # :ab: Test Docker
 
+### :one: Test avec nano server
+
 ```
 PS > docker container run hello-world:nanoserver
 ```
+
+:pushpin: Determiner la version de son serveur
 
 ```
 PS > [environment]::OSVersion
@@ -73,11 +77,13 @@ Platform ServicePack Version      VersionString
  Win32NT             10.0.17763.0 Microsoft Windows NT 10.0.17763.0
 ```
 
+:pushpin: Recuperer la version de mise en deploiement
+
 ```
-PS > $winver = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\'
-PS > $releasetag = "$($winver.releaseid)"
+PS > $releasetag = (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\').ReleaseId
 ```
 
+### :two: Test avec Server Core
 
 ```
 PS > docker container run `
