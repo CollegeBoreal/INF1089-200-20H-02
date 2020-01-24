@@ -90,7 +90,7 @@ PS > $releasetag = (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\Curren
 ```
 PS > docker container run `
                       --interactive --tty --rm `
-                      mcr.microsoft.com/windows/servercore:$releasetag `
+                      mcr.microsoft.com/windows/servercore:ltsc2019 `
                       powershell
 ```
 
