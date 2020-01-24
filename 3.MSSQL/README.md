@@ -5,7 +5,7 @@
 
 :two: Copier le contenu les fichiers se trouvant dans le repretoire .src dans votre répertoire
 
-`$ cp -r .src/* `:ID:
+`$ cp -r .src/* `:id:` `
 
 
 :three: Construire l'image
