@@ -42,7 +42,7 @@ CMD .\start -sa_password $env:sa_password -attach_dbs \"$env:attach_dbs\" -resto
 :three: Construire l'image
 
 ```
-$ docker container build --tag mssql-server-windows-developer-fti .
+$ docker build --tag mssql-server-windows-developer-fti .
 ```
 
 :four: Demarrer le conteneur
