@@ -5,21 +5,39 @@
 
 :two: Copier les fichiers se trouvant dans le repretoire `.src` dans votre répertoire
 
-`$ cp -r .src/* `:id:` `
+`PS > cp -r .src/* `:id:` `
 
 :three: Dans votre répertoire, construire l'image `Docker`
 
 ```
-$ docker build --tag mssql-server-windows-developer-fti .
+PS > docker build --tag mssql-server-windows-developer-fti .
 ```
 
 :four: Demarrer le conteneur
 
 ```
-$ docker container run --name some-mssql `
+PS > docker container run --name some-mssql `
                        --env "SA_PASSWORD=password" `
                        --publish 1433:1433 --detach `
                        mssql-server-windows-developer-fti
+```
+
+:five: Se connecter au conteneur
+
+```
+PS > docker container exec --interactive --tty some-mssql powershell
+```
+
+
+
+:six: Utiliser SQL CMD
+
+```
+PS > sqlcmd -U sa -P Password123 -S localhost,1433
+1> SELECT name FROM master.sys.databases
+2> GO
+>> list of DBs
+1> QUIT
 ```
 
 :b: Test
@@ -37,19 +55,7 @@ https://github.com/pulla2908/docker-mssql-server-windows-developer-fti
 
 https://hub.docker.com/r/microsoft/mssql-server-windows-express
 
-Installer MS SQL Server
 
-```
-PS > docker container run --name some-mssql `
-                          --env sa_password=password --env ACCEPT_EULA=Y `
-                          --publish 1433:1433 --detach `
-                          microsoft/mssql-server-windows-express
-```
-
-
-```
-PS > New-NetFirewallRule -DisplayName 'MSSQL Inbound' -Profile @('Domain', 'Public', 'Private') -Direction Inbound -Action Allow -Protocol TCP -LocalPort 1533
-```
 
 
 ![image](images/ssms.png)
