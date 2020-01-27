@@ -17,7 +17,7 @@ $ docker build --tag mssql-server-windows-developer-fti .
 
 ```
 $ docker container run --name some-mssql `
-                       --env SA_PASSWORD=password `
+                       --env "SA_PASSWORD=password" `
                        --publish 1433:1433 --detach `
                        mssql-server-windows-developer-fti
 ```
