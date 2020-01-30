@@ -42,7 +42,7 @@ PS > cmd /c "sc config docker depend=hns"
 PS > Start-Service docker
 ```
 
-# :c: Check Docker on Windows Server 
+# :o: Check Docker on Windows Server 
 
 * Vérifiez la version installée avec 
 
