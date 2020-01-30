@@ -22,12 +22,12 @@ PS > Install-Package -Name docker -ProviderName DockerMsftProvider
 PS > Restart-Computer -Force
 ```
 
-# :b: Install HNS service [Issues 945](https://github.com/MicrosoftDocs/Virtualization-Documentation/issues/945)
+# :b: Install [HNS](https://docs.microsoft.com/en-us/virtualization/windowscontainers/container-networking/architecture) 
 
 :four: Enable Virtualization
 
 ```
-PS > # Enable features required (HNS Service)
+PS > # Enable features required (HNS - Host Netwok Service)
 PS > Enable-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform
 PS > Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 PS > # Will reboot
@@ -41,6 +41,8 @@ PS > Set-Service -Name docker -StartupType Automatic
 PS > cmd /c "sc config docker depend=hns"
 PS > Start-Service docker
 ```
+
+:blub: [Issues 945](https://github.com/MicrosoftDocs/Virtualization-Documentation/issues/945)
 
 # :o: Check Docker on Windows Server 
 
