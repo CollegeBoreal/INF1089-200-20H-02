@@ -22,6 +22,11 @@ PS > Install-Package -Name docker -ProviderName DockerMsftProvider
 PS > Restart-Computer -Force
 ```
 
+:x: hns service
+
+https://github.com/MicrosoftDocs/Virtualization-Documentation/issues/945
+
+
 # :b: Check Docker on Windows Server 
 
 * Vérifiez la version installée avec 
