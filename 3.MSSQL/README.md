@@ -5,7 +5,7 @@
 
 :two: Copier les fichiers se trouvant dans le repretoire `.src` dans votre répertoire
 
-`PS > cp -r .src/* `:id:` `
+`PS > cp -r .\300098957\* `:id:` `
 
 :three: Dans votre répertoire, construire l'image `Docker`
 
