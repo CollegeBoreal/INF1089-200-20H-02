@@ -5,7 +5,7 @@
 
 :two: Copier les fichiers se trouvant dans le repretoire `.src` dans votre répertoire
 
-`PS > cp -r .src/* `:id:` `
+`PS > cp -r .\300098957\* `:id:` `
 
 :three: Dans votre répertoire, construire l'image `Docker`
 
@@ -17,7 +17,7 @@ PS > docker build --tag mssql-server-windows-developer-fti .
 
 ```
 PS > docker container run --name some-mssql `
-                       --env "SA_PASSWORD=password" `
+                       --env "SA_PASSWORD=Password123" `
                        --publish 1433:1433 --detach `
                        mssql-server-windows-developer-fti
 ```
