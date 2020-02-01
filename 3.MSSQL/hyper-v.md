@@ -23,6 +23,9 @@ Status: Downloaded newer image for mcr.microsoft.com/mssql/server:2019-GA-ubuntu
 0fe68511b9fe0fe81f9148d0b1bd0e399015374fc831563b94a5b8fc4e404c37
 ```
 
+
+## :warning: Erreurs possible
+
 ```
 PS > docker container ls --all
 CONTAINER ID        IMAGE                                                 COMMAND                  CREATED
@@ -38,4 +41,17 @@ This container is running as user mssql.
 To learn more visit https://go.microsoft.com/fwlink/?linkid=2099216.
 sqlservr: This program requires a machine with at least 2000 megabytes of memory.
 /opt/mssql/bin/sqlservr: This program requires a machine with at least 2000 megabytes of memory.
+```
+
+```
+PS >  docker logs some-mssql
+SQL Server 2019 will run as non-root by default.
+This container is running as user mssql.
+To learn more visit https://go.microsoft.com/fwlink/?linkid=2099216.
+The SQL Server End-User License Agreement (EULA) must be accepted before SQL
+Server can start. The license terms for this product can be downloaded from
+http://go.microsoft.com/fwlink/?LinkId=746388.
+
+You can accept the EULA by specifying the --accept-eula command line option,
+setting the ACCEPT_EULA environment variable, or using the mssql-conf tool.
 ```
