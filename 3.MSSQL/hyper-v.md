@@ -1,8 +1,6 @@
 
 
-:pushpin: mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
-
--e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -e 'MSSQL_PID=Express'
+:pushpin: Creer le conteneur MS SQL sous ubuntu 16.04
 
 ```
 PS > docker container run --name some-mssql `
