@@ -27,6 +27,12 @@ Status: Downloaded newer image for mcr.microsoft.com/mssql/server:2019-GA-ubuntu
 0fe68511b9fe0fe81f9148d0b1bd0e399015374fc831563b94a5b8fc4e404c37
 ```
 
+# References
+
+
+https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-powershell
+
+
 
 ## :warning: Erreurs possible
 
