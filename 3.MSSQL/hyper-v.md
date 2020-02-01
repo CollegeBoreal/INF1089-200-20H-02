@@ -11,6 +11,23 @@ PS > docker container run --name some-mssql `
                         mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
 ```
 
+:pushpin: Se connecter au conteneur (Note: les conteneur est sous Linux on utilise le bash)
+
+
+```
+PS >  docker container exec --interactive --tty some-mssql bash
+```
+
+:pushpin: Dans le conteneur, ouvrir le SQL CLI de MS SQL (sqlcmd) et creer la base de donnees TestDB
+
+```
+mssql@9a39660170f6:/$ /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Password123
+1> CREATE DATABASE TestDB
+2> GO
+```
+
+
+
 # References
 
 
