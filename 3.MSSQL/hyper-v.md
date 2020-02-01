@@ -2,11 +2,15 @@
 
 :pushpin: mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
 
+-e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -e 'MSSQL_PID=Express'
+
 ```
 PS > docker container run --name some-mssql `
->>                        --env "SA_PASSWORD=Password123" `
->>                        --publish 1433:1433 --detach `
->>                        mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
+                        --env "SA_PASSWORD=Password123" `
+                        --env "ACCEPT_EULA=Y" `
+                        --env "MSSQL_PID=Express" `
+                        --publish 1433:1433 --detach `
+                        mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
 Unable to find image 'mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04' locally
 2019-GA-ubuntu-16.04: Pulling from mssql/server
 59ab41dd721a: Pull complete
