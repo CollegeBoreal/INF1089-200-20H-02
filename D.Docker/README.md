@@ -22,7 +22,7 @@ PS > Install-Package -Name docker -ProviderName DockerMsftProvider
 PS > Restart-Computer -Force
 ```
 
-# :b: Install [HNS](https://docs.microsoft.com/en-us/virtualization/windowscontainers/container-networking/architecture) 
+# :b: Install [HNS](https://docs.microsoft.com/en-us/virtualization/windowscontainers/container-networking/architecture) (Uniquement si vous avez installé Hyper-V Server)
 
 :four: Enable Virtualization
 
