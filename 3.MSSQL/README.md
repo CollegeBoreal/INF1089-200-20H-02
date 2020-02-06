@@ -59,3 +59,7 @@ https://hub.docker.com/r/microsoft/mssql-server-windows-express
 
 
 ![image](images/ssms.png)
+
+## On Ubuntu
+
+https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker
