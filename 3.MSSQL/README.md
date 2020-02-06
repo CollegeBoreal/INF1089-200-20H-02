@@ -65,6 +65,8 @@ https://hub.docker.com/r/microsoft/mssql-server-windows-express
 
 https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker
 
+:seven: 
+
 ```
 $ docker run --name some-mssql \
     --env "ACCEPT_EULA=Y" \
@@ -73,3 +75,15 @@ $ docker run --name some-mssql \
     --detach \
     mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
 ```
+
+:eight: Utiliser SQL CMD
+
+```
+$ export PATH=/opt/mssql-tools/bin:$PATH
+$ sqlcmd -U sa -P Password123 -S localhost,1433
+1> SELECT name FROM master.sys.databases
+2> GO
+>> list of DBs
+1> QUIT
+```
+
