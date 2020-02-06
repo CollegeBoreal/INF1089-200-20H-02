@@ -22,3 +22,8 @@ https://docs.microsoft.com/en-us/sql/powershell/sql-server-powershell
 :two: Utiliser SQLPS
 
 https://www.sqlshack.com/connecting-powershell-to-sql-server/
+
+:two: Backup
+
+
+http://www.mikefal.net/2015/10/13/a-month-of-sql-ps-backups-and-restores/
