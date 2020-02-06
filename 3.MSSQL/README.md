@@ -17,6 +17,7 @@ PS > docker build --tag mssql-server-windows-developer-fti .
 
 ```
 PS > docker container run --name some-mssql `
+                       --env "ACCEPT_EULA=Y" `
                        --env "SA_PASSWORD=Password123" `
                        --publish 1433:1433 --detach `
                        mssql-server-windows-developer-fti
@@ -65,7 +66,10 @@ https://hub.docker.com/r/microsoft/mssql-server-windows-express
 https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker
 
 ```
-$ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Password123" \
-   -p 1433:1433 --name sql1 \
-   -d mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
+$ docker run --name some-mssql \
+    --env "ACCEPT_EULA=Y" \
+    --env "SA_PASSWORD=Password123" \
+    --publish 1433:1433 \
+    --detach \
+    mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
 ```
