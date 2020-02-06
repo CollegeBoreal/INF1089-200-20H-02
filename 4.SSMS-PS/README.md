@@ -22,8 +22,15 @@ https://docs.microsoft.com/en-us/sql/powershell/sql-server-powershell
 :two: Utiliser SQLPS
 
 
+
 ```
 PS> Invoke-Sqlcmd "SELECT DB_NAME() AS DatabaseName"
+```
+
+:pushpin: Creer une base de donnees `TestDB`
+
+```
+PS> Invoke-Sqlcmd "CREATE DATABASE TestDB;"
 ```
 
 
