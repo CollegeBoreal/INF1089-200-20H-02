@@ -18,3 +18,7 @@ PS > Get-Module SqlServer -ListAvailable
 ```
 
 https://docs.microsoft.com/en-us/sql/powershell/sql-server-powershell
+
+:two: Utiliser SQLPS
+
+https://www.sqlshack.com/connecting-powershell-to-sql-server/
