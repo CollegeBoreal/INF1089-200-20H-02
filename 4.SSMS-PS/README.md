@@ -37,3 +37,7 @@ https://www.sqlshack.com/connecting-powershell-to-sql-server/
 
 
 http://www.mikefal.net/2015/10/13/a-month-of-sql-ps-backups-and-restores/
+
+:pushpin: Avec Docker
+
+https://docs.microsoft.com/en-us/sql/linux/tutorial-restore-backup-in-sql-server-container
