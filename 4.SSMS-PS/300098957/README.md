@@ -22,9 +22,6 @@ PS> docker container run --name some-mssql `
 
 
 ```
-PS> docker container run --name some-mssql `
-                       --env "ACCEPT_EULA=Y" `
-                       --env "SA_PASSWORD=Password123" `
-                       --publish 1433:1433 --detach `
-                       mssql-server-windows-developer-fti
+PS> docker C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\world_x.mdf
+PS> docker C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\world_x_log.ldf
 ```
