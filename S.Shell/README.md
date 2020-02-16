@@ -15,7 +15,6 @@ function main {
             echo "please provide param1"
             usage
             exit 1
-        fi
     else
         myParam1="$1"
     fi
@@ -36,6 +35,9 @@ function main {
 }
 main "$@"
 EOF
+```
 
+```bash
 #Add executable permissions
 chmod +x get-outputs.sh
+```
