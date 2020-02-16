@@ -2,17 +2,25 @@
 
 ## Création du container MSSQL
 
+:one: Aller dans le repertoire de son :id: et creer un repertoire `DATA`
+
 ```
-PS> docker container run --name some-mssql `
-                       --env "ACCEPT_EULA=Y" `
-                       --env "SA_PASSWORD=Password123" `
-                       --publish 1433:1433 --detach `
-                       --volume SOURCE:DESTINATION `
-                       mssql-server-windows-developer-fti
+PS> mkdir DATA
+PS> cd DATA
 ```
+
+:two: Capturer le répertoire courant `$PWD` et le placer dans la variable `$src`
+
 
 ```
 PS> $src = $PWD.Path | Foreach-Object {$_ -replace '\\','/'}
+```
+
+:three: Lancer le conteneur avec une gestion d'état `--volume`
+
+:bulb: Le paramètre Docker `--volume` représente l'état à capturer et prend une source et une destination
+
+```
 PS> docker container run --name some-mssql `
            --env "ACCEPT_EULA=Y" `
            --env "SA_PASSWORD=Password123" `
