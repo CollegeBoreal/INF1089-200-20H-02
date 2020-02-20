@@ -42,9 +42,9 @@ PS > cmd /c "sc config docker depend=hns"
 PS > Start-Service docker
 ```
 
-:blub: [Issues 945](https://github.com/MicrosoftDocs/Virtualization-Documentation/issues/945)
+:bulb: [Issues 945](https://github.com/MicrosoftDocs/Virtualization-Documentation/issues/945)
 
-# :o: Check Docker on Windows Server 
+# :o: Check Docker Engine on Windows Server 
 
 * Vérifiez la version installée avec 
 
