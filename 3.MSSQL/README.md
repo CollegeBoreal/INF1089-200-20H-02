@@ -56,7 +56,11 @@ https://github.com/pulla2908/docker-mssql-server-windows-developer-fti
 
 https://hub.docker.com/r/microsoft/mssql-server-windows-express
 
+Installer SQLServer CmdLets 
 
+```
+PS > Install-Module -Name SqlServer
+```
 
 
 ![image](images/ssms.png)
