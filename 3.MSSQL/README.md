@@ -49,7 +49,14 @@ PS > sqlcmd -U sa -P Password123 -S localhost,1433
 PS > choco install ssms
 ```
 
+* Install Azure Data Studio
+
+```
+$ brew cask install azure-data-studio
+```
+
 https://github.com/pulla2908/docker-mssql-server-windows-developer-fti
+
 
 
 # References
