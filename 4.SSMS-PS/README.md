@@ -1,5 +1,9 @@
 # SSMS PowerShell
 
+## :o: Devoir
+
+           Le but de l'exercice est de créer un pland de maintenance permettant la sauvegarde de données MSSQL et sa récupération dans un script Powershell
+
 ## :zero: Création du container MSSQL
 
 :pushpin: Aller dans le repertoire de son :id: et creer un repertoire `backup`
