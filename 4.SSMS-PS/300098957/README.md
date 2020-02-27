@@ -1,6 +1,6 @@
 # Laboratoire : Création d’un plan de maintenance MSSQL
 
-## Création du container MSSQL
+## :a: Création du container MSSQL
 
 :one: Aller dans le repertoire de son :id: et creer un repertoire `DATA`
 
@@ -49,6 +49,29 @@ Mode                LastWriteTime         Length Name
 
 
 PS C:\DATA> Start-Service -Name 'MSSQLSERVER'
+
+
+## :b: Restore Database
+
+:one: Aller dans son répertoire de travail
+
+
+```
+PS > Set-Location -Path $HOME\Developer\INF1089-200-20H-02\4.SSMS-PS\300098957\DATA\
+```
+
+```
+PS > curl -OutFile "wwi.bak" "https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak"
+```
+
+
+
+
+
+
+
+
+
 
 
 
