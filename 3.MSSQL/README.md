@@ -65,13 +65,13 @@ $ brew cask install azure-data-studio
 
 https://docs.microsoft.com/en-us/sql/powershell/download-sql-server-ps-module
 
-:pushpin: Installer `SQLServer` CmdLets 
+:star: Installer `SQLServer` CmdLets 
 
 ```
 PS > Install-Module -Name SqlServer
 ```
 
-:pushpin: Lister les commandes
+:star: Lister les commandes
 
 ```
 PS > Get-Module SqlServer -ListAvailable
