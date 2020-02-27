@@ -51,11 +51,6 @@ Mode                LastWriteTime         Length Name
 PS C:\DATA> Start-Service -Name 'MSSQLSERVER'
 
 
-```
-PS> docker C:/DATA/world_x.mdf
-PS> docker C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\world_x_log.ldf
-```
-
 
 :x: ?craser le r/pertoire par d/faut de MS-SQL ne marche pas (mais le chemin est correct)
 
