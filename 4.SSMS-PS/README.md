@@ -2,15 +2,14 @@
 
 ## :zero: Création du container MSSQL
 
-:pushpin: Aller dans le repertoire de son :id: et creer un repertoire `DATA`
+:pushpin: Aller dans le repertoire de son :id: et creer un repertoire `backup`
 
 ```
-PS> mkdir DATA
-PS> cd DATA
+PS> mkdir backup
+PS> echo $null >> backup\.gitkeep
 ```
 
-:pushpin: Capturer le répertoire courant `$PWD` et le placer dans la variable `$src`
-
+:pushpin: Capturer le répertoire courant `$PWD` et le placer dans la variable `$SRC`
 
 ```
 PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
