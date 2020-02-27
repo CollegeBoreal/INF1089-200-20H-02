@@ -1,1 +1,2 @@
-BACKUP DATABASE [WideWorldImporters] TO DISK = 'C:\data\wwi_2.bak' WITH NOFORMAT, NOINIT, NAME = 'WideWorldImporters-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10
+docker exec --interactive --tty some-mssql `
+    sqlcmd -U sa -P "Password123" ` -i C:\DATA\scripts\backup.sql
