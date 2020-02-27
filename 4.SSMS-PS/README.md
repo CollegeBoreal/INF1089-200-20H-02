@@ -61,7 +61,7 @@ PS> Invoke-Sqlcmd "CREATE DATABASE TestDB;"
 
 https://www.sqlshack.com/connecting-powershell-to-sql-server/
 
-:three: Exemple de Backup et Restore
+:ab: Exemple de Backup et Restore
 
 :pushpin: Avec Docker
 
