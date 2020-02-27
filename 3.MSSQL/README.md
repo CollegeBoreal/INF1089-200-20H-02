@@ -1,19 +1,20 @@
 # MS SQL Server
 
+## :a: Création du conteneur MSSQL
 
-:one: Creer un répertoire avec comme nom votre :id:
+### :one: Creer un répertoire avec comme nom votre :id:
 
-:two: Copier les fichiers se trouvant dans le repretoire `.src` dans votre répertoire
+### :two: Copier les fichiers se trouvant dans le repretoire `.src` dans votre répertoire
 
 `PS > cp -r .\300098957\* `:id:` `
 
-:three: Dans votre répertoire, construire l'image `Docker`
+### :three: Dans votre répertoire, construire l'image `Docker`
 
 ```
 PS > docker build --tag mssql-server-windows-developer-fti .
 ```
 
-:four: Demarrer le conteneur
+### :four: Demarrer le conteneur
 
 ```
 PS > docker container run --name some-mssql `
@@ -23,15 +24,14 @@ PS > docker container run --name some-mssql `
                        mssql-server-windows-developer-fti
 ```
 
-:five: Se connecter au conteneur
+### :five: Se connecter au conteneur
 
 ```
 PS > docker container exec --interactive --tty some-mssql powershell
 ```
 
 
-
-:six: Utiliser SQL CMD
+### :six: Utiliser SQL CMD
 
 ```
 PS > sqlcmd -U sa -P Password123 -S localhost,1433
@@ -41,22 +41,27 @@ PS > sqlcmd -U sa -P Password123 -S localhost,1433
 1> QUIT
 ```
 
-:b: Test
+## :b: Test visuellement avec SSMS
 
-* Install SQL-SERVER Management Studio (SSMS) using `choco` in Admin Level
+:pushpin: Install SQL-SERVER Management Studio (SSMS) using `choco` in Admin Level
 
 ```
 PS > choco install ssms
 ```
 
-* Install Azure Data Studio
+:pushpin: Install Azure Data Studio
+
+```
+PS > choco install azure-data-studio
+```
+
+:apple: Uniquement
 
 ```
 $ brew cask install azure-data-studio
 ```
 
 https://github.com/pulla2908/docker-mssql-server-windows-developer-fti
-
 
 
 # References
