@@ -1,6 +1,6 @@
 # MS SQL Server
 
-## :a: Création du conteneur MSSQL
+## :a: Création du conteneur MSSQL sur le serveur windows
 
 ### :one: Creer un répertoire avec comme nom votre :id:
 
@@ -41,7 +41,7 @@ PS > sqlcmd -U sa -P Password123 -S localhost,1433
 1> QUIT
 ```
 
-## :b: Test visuellement avec SSMS
+## :b: Test visuellement avec SSMS sur votre PC
 
 :pushpin: Install SQL-SERVER Management Studio (SSMS) using `choco` in Admin Level
 
@@ -61,18 +61,7 @@ PS > choco install azure-data-studio
 $ brew cask install azure-data-studio
 ```
 
-https://github.com/pulla2908/docker-mssql-server-windows-developer-fti
-
-
-# References
-
-https://hub.docker.com/r/microsoft/mssql-server-windows-express
-
-Installer SQLServer CmdLets 
-
-```
-PS > Install-Module -Name SqlServer
-```
+:pushpin: Se connecter à SSMS
 
 
 ![image](images/ssms.png)
@@ -82,13 +71,13 @@ PS > Install-Module -Name SqlServer
 
 https://docs.microsoft.com/en-us/sql/powershell/download-sql-server-ps-module
 
-Installer le Module
+:pushpin: Installer `SQLServer` CmdLets 
 
 ```
 PS > Install-Module -Name SqlServer
 ```
 
-Lister les commandes
+:pushpin: Lister les commandes
 
 ```
 PS > Get-Module SqlServer -ListAvailable
@@ -108,6 +97,13 @@ PS> Invoke-Sqlcmd "CREATE DATABASE TestDB;"
 ```
 
 https://www.sqlshack.com/connecting-powershell-to-sql-server/
+
+
+# References
+
+https://hub.docker.com/r/microsoft/mssql-server-windows-express
+
+https://github.com/pulla2908/docker-mssql-server-windows-developer-fti
 
 
 ## On Ubuntu
