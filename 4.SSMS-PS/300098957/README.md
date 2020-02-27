@@ -57,11 +57,11 @@ PS C:\DATA> Start-Service -Name 'MSSQLSERVER'
 
 
 ```
-PS > Set-Location -Path $HOME\Developer\INF1089-200-20H-02\4.SSMS-PS\300098957\DATA\
+PS > Set-Location -Path $HOME\Developer\INF1089-200-20H-02\4.SSMS-PS\300098957
 ```
 
 ```
-PS > curl -OutFile "wwi.bak" "https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak"
+PS > curl -OutFile "data\wwi.bak" "https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak"
 ```
 
 ```
