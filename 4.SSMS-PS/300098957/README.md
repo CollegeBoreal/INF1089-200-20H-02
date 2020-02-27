@@ -36,6 +36,10 @@ PS> docker container run --name some-mssql `
 PS > .\restore.ps1
 ```
 
+:pushpin: Vérification 
+
+<img src="images/WWI_SSMS.png" width="408" heidth="955"></img>
+
 ## :ab: Backup Database
 
 :pushpin: Dans son répertoire de travail (i.e. :id: )
