@@ -38,7 +38,7 @@ PS > .\restore.ps1
 
 :pushpin: Vérification 
 
-<img src="images/WWI_SSMS.png" width="408" heidth="955"></img>
+<img src="images/WWI_SSMS.png" width="204" heidth="477"></img>
 
 ## :ab: Backup Database
 
