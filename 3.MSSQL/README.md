@@ -86,12 +86,12 @@ PS > Get-Module SqlServer -ListAvailable
 :two: Utiliser SQLPS(https://docs.microsoft.com/en-us/sql/powershell/sql-server-powershell)
 
 
-<img src="images/SSMS_Menu.PNG" width="" heigth=""></img>
+<img src="images/SSMS_Menu.png" width="" heigth=""></img>
 
 https://www.sqlshack.com/connecting-powershell-to-sql-server/
 
 
-<img src="images/SQL_PS.PNG" width="" heigth=""></img>
+<img src="images/SQL_PS.png" width="" heigth=""></img>
 
 
 ```
