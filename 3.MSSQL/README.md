@@ -77,14 +77,13 @@ PS > Install-Module -Name SqlServer
 PS > Get-Module SqlServer -ListAvailable
 ```
 
-## :ab: Se connecter à SSMS
+:bulb: Utiliser SQLPS(https://docs.microsoft.com/en-us/sql/powershell/sql-server-powershell)
 
+## :ab: Se connecter à SSMS
 
 ![image](images/ssms.png)
 
-
-:two: Utiliser SQLPS(https://docs.microsoft.com/en-us/sql/powershell/sql-server-powershell)
-
+:star: Ouvrir SSMS Powershell ou Azure Data Studio
 
 <img src="images/SSMS_Menu.png" width="" heigth=""></img>
 
