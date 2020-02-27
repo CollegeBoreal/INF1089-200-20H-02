@@ -1,0 +1,5 @@
+*.ldf
+*.mdf
+*.bak
+*.ndf
+*_InMemory_Data_1
