@@ -75,6 +75,11 @@ PS > curl -OutFile "wwi.bak" "https://github.com/Microsoft/sql-server-samples/re
 ```
 
 
+```
+1> BACKUP DATABASE [WideWorldImporters] TO DISK = 'C:\data\wwi_2.bak' WITH NOFORMAT, NOINIT, NAME = 'WideWorldImporters-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10
+
+2> GO
+```
 
 
 
