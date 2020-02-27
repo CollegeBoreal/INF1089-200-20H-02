@@ -87,6 +87,16 @@ PS > Get-Module SqlServer -ListAvailable
 
 <img src="images/SSMS_Menu.png" width="" heigth=""></img>
 
+
+:star: Utiliser Azure Data Studio
+
+https://www.sqlshack.com/connecting-powershell-to-sql-server/
+
+
+<img src="images/SQL_ADS.png" width="" heigth=""></img>
+
+:star: Utiliser SSMS Powershell
+
 https://www.sqlshack.com/connecting-powershell-to-sql-server/
 
 
