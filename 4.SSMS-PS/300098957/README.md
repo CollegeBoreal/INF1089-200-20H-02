@@ -2,7 +2,7 @@
 
 ## :a: Création du container MSSQL
 
-:pushpin: Aller dans le repertoire de son :id: et creer un repertoire `backup`
+:pushpin: Aller dans le repertoire de son :id: et creer un répertoire `backup` et y mettre le fichier `.gitkeep`
 
 ```
 PS> mkdir backup
