@@ -1,5 +1,35 @@
 # SSMS PowerShell
 
+## :zero: Création du container MSSQL
+
+:pushpin: Aller dans le repertoire de son :id: et creer un repertoire `DATA`
+
+```
+PS> mkdir DATA
+PS> cd DATA
+```
+
+:pushpin: Capturer le répertoire courant `$PWD` et le placer dans la variable `$src`
+
+
+```
+PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
+```
+
+:m: Lancer le conteneur avec une gestion d'état `--volume`
+
+:bulb: Le paramètre Docker `--volume` représente l'état à capturer et prend une source et une destination
+
+```
+PS> docker container run --name some-mssql `
+           --env "ACCEPT_EULA=Y" `
+           --env "SA_PASSWORD=Password123" `
+           --env "ATTACH_DBS=[{'dbName':'world_x','dbFiles':['c:\\DATA\\world_x.mdf','c:\\DATA\\world_x_log.ldf']}]" `
+           --volume ${SRC}:C:/DATA `
+           --publish 1433:1433 --detach `
+           mssql-server-windows-developer-fti
+```
+
 
 ## :one: Installation
 
