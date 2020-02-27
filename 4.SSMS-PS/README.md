@@ -61,14 +61,16 @@ PS> Invoke-Sqlcmd "CREATE DATABASE TestDB;"
 
 https://www.sqlshack.com/connecting-powershell-to-sql-server/
 
-:three: Backup
-
-
-http://www.mikefal.net/2015/10/13/a-month-of-sql-ps-backups-and-restores/
+:three: Exemple de Backup et Restore
 
 :pushpin: Avec Docker
 
 https://docs.microsoft.com/en-us/sql/linux/tutorial-restore-backup-in-sql-server-container
+
+:pushpin: Autre plus diffcile
+
+http://www.mikefal.net/2015/10/13/a-month-of-sql-ps-backups-and-restores/
+
 
 ## Volumes:
 
