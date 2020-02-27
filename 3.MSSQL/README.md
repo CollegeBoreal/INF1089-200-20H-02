@@ -67,7 +67,7 @@ $ brew cask install azure-data-studio
 ![image](images/ssms.png)
 
 
-## :b: Installation
+## :b: Installation le module SqlServer pour utiliser les commandes PowerShell
 
 https://docs.microsoft.com/en-us/sql/powershell/download-sql-server-ps-module
 
@@ -86,6 +86,14 @@ PS > Get-Module SqlServer -ListAvailable
 :two: Utiliser SQLPS(https://docs.microsoft.com/en-us/sql/powershell/sql-server-powershell)
 
 
+<img src="images/SSMS_Menu.PNG" width="" heigth=""></img>
+
+https://www.sqlshack.com/connecting-powershell-to-sql-server/
+
+
+<img src="images/SQL_PS.PNG" width="" heigth=""></img>
+
+
 ```
 PS> Invoke-Sqlcmd "SELECT DB_NAME() AS DatabaseName"
 ```
@@ -96,7 +104,6 @@ PS> Invoke-Sqlcmd "SELECT DB_NAME() AS DatabaseName"
 PS> Invoke-Sqlcmd "CREATE DATABASE TestDB;"
 ```
 
-https://www.sqlshack.com/connecting-powershell-to-sql-server/
 
 
 # References
