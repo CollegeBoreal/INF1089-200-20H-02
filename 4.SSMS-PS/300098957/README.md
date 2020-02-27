@@ -44,3 +44,10 @@ PS > .\restore.ps1
 PS > .\backup.ps1
 ```
 
+:pushpin: Vérification 
+
+```
+PS > gci backup
+```
+
+* le fichier `wwwi_2.bak` doit ètre présent 
