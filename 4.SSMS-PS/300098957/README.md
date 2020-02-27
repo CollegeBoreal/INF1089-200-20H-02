@@ -36,7 +36,7 @@ PS> docker container run --name some-mssql `
 PS > .\restore.ps1
 ```
 
-:pushpin: Vérification 
+:pushpin: Vérification dans `SSMS` 
 
 <img src="images/WWI_SSMS.png" width="204" heidth="477"></img>
 
@@ -48,7 +48,7 @@ PS > .\restore.ps1
 PS > .\backup.ps1
 ```
 
-:pushpin: Vérification 
+:pushpin: Vérification
 
 ```
 PS > gci backup
