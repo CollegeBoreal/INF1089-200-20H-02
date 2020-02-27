@@ -61,13 +61,7 @@ PS > choco install azure-data-studio
 $ brew cask install azure-data-studio
 ```
 
-:pushpin: Se connecter à SSMS
-
-
-![image](images/ssms.png)
-
-
-## :b: Installation le module SqlServer pour utiliser les commandes PowerShell
+:pushpin: Installation du module SqlServer pour utiliser les commandes PowerShell dans `SSMS`
 
 https://docs.microsoft.com/en-us/sql/powershell/download-sql-server-ps-module
 
@@ -82,6 +76,12 @@ PS > Install-Module -Name SqlServer
 ```
 PS > Get-Module SqlServer -ListAvailable
 ```
+
+## :ab: Se connecter à SSMS
+
+
+![image](images/ssms.png)
+
 
 :two: Utiliser SQLPS(https://docs.microsoft.com/en-us/sql/powershell/sql-server-powershell)
 
