@@ -99,12 +99,16 @@ https://www.sqlshack.com/connecting-powershell-to-sql-server/
 
 <img src="images/SQL_PS.png" width="" heigth=""></img>
 
+:pushpin: Examples 
+
+:star: Voir toutes les bases de données
 
 ```
 PS> Invoke-Sqlcmd "SELECT DB_NAME() AS DatabaseName"
 ```
 
-:pushpin: Creer une base de donnees `TestDB`
+:star: Creer une base de donnees `TestDB`
+
 
 ```
 PS> Invoke-Sqlcmd "CREATE DATABASE TestDB;"
