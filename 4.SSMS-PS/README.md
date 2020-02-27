@@ -2,7 +2,7 @@
 
 ## :o: Devoir
 
-           Le but de l'exercice est de créer un pland de maintenance permettant la sauvegarde de données MSSQL 
+           Le but de l'exercice est de créer un plan de maintenance permettant la sauvegarde de données MSSQL 
            et sa récupération dans un script Powershell
 
 ## :zero: Création du container MSSQL
