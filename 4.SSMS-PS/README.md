@@ -5,7 +5,7 @@
            Le but de l'exercice est de créer un plan de maintenance permettant la sauvegarde de données MSSQL 
            et sa récupération dans un script Powershell
 
-## :zero: Création du container MSSQL
+## :a: Création du container MSSQL
 
 :pushpin: Aller dans le repertoire de son :id: et creer un repertoire `backup`
 
@@ -34,7 +34,7 @@ PS> docker container run --name some-mssql `
 ```
 
 
-## :one: Installation
+## :b: Installation
 
 https://docs.microsoft.com/en-us/sql/powershell/download-sql-server-ps-module
 
@@ -66,7 +66,7 @@ PS> Invoke-Sqlcmd "CREATE DATABASE TestDB;"
 
 https://www.sqlshack.com/connecting-powershell-to-sql-server/
 
-:ab: Exemple de Backup et Restore
+## :ab: Exemple de Backup et Restore
 
 :pushpin: Avec Docker
 
