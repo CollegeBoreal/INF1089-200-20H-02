@@ -40,6 +40,8 @@ PS > .\restore.ps1
 
 :pushpin: Vérification dans `SSMS` 
 
+* La base de donnees `WorldWideImporters` a été importée
+
 <img src="images/WWI_SSMS.png" width="204" heidth="477"></img>
 
 ## :ab: Backup Database
