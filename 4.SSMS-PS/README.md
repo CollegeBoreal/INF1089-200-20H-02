@@ -24,7 +24,6 @@ PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
 PS> docker container run --name some-mssql `
            --env "ACCEPT_EULA=Y" `
            --env "SA_PASSWORD=Password123" `
-           --env "ATTACH_DBS=[{'dbName':'world_x','dbFiles':['c:\\DATA\\world_x.mdf','c:\\DATA\\world_x_log.ldf']}]" `
            --volume ${SRC}:C:/DATA `
            --publish 1433:1433 --detach `
            mssql-server-windows-developer-fti
