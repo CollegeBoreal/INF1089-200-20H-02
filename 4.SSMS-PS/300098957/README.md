@@ -64,9 +64,15 @@ PS > Set-Location -Path $HOME\Developer\INF1089-200-20H-02\4.SSMS-PS\300098957\D
 PS > curl -OutFile "wwi.bak" "https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak"
 ```
 
+```
+1> RESTORE FILELISTONLY FROM DISK = 'C:\data\wwi.bak'
+2> GO
+```
 
-
-
+```
+1> RESTORE DATABASE WideWorldImporters FROM DISK = 'C:\data\wwi.bak' WITH MOVE 'WWI_Primary' TO 'C:\data\WideWorldImporters.mdf', MOVE 'WWI_UserData' TO 'C:\data\WideWorldImporters_userdata.ndf', MOVE 'WWI_Log' TO 'C:\data\WideWorldImporters.ldf', MOVE 'WWI_InMemory_Data_1' TO 'C:\data\WideWorldImporters_InMemory_Data_1'
+2> GO
+```
 
 
 
