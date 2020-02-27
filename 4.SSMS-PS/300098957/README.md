@@ -32,6 +32,8 @@ PS> docker container run --name some-mssql `
 
 :pushpin: Dans son répertoire de travail (i.e. :id: )
 
+* Lancer son script de restauration
+
 ```
 PS > .\restore.ps1
 ```
@@ -43,6 +45,8 @@ PS > .\restore.ps1
 ## :ab: Backup Database
 
 :pushpin: Dans son répertoire de travail (i.e. :id: )
+
+* Lancer son script de backup
 
 ```
 PS > .\backup.ps1
