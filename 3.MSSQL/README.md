@@ -93,7 +93,7 @@ PS > Get-Module SqlServer -ListAvailable
 https://www.sqlshack.com/connecting-powershell-to-sql-server/
 
 
-<img src="images/SQL_ADS.png" width="" heigth=""></img>
+<img src="images/SSMS_ADS.png" width="" heigth=""></img>
 
 :star: Utiliser SSMS Powershell
 
