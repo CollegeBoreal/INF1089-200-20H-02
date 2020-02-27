@@ -1,7 +1,7 @@
 ## Backup
 
 ### 📌 Copy a backup file into the container
-#### :one: create a backup folder
+#### :one: Create a backup folder
 
 ```
 $ winpty docker exec -it some-mysqlds mkdir data
@@ -10,7 +10,7 @@ $ winpty docker exec -it some-mysqlds mkdir data
 ```
 PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
 ```
-#### :three: create a volume
+#### :three: Create a volume
 ```
 > docker container run --name some-mssql `
 >>            --env "ACCEPT_EULA=Y" `
@@ -18,11 +18,11 @@ PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
 >>            --env "ATTACH_DBS=[{'dbName':'world_x','dbFiles':['c:\\DATA\\world_x.mdf','c:\\DATA\\world_x_log.ldf']}]" `
 ```
 
-#### :four: downloads the backup file as wwi.bak
+#### :four: Downloads the backup file as wwi.bak
 ```
 > curl -OutFile "wwi.bak" "https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak"
 ```
-#### :five: copy the backup file into the container in the Data directory
+#### :five: Copy the backup file into the container in the Data directory
 ```
 $ docker cp wwi.bak some-mysqlds:/data
 ```
