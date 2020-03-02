@@ -83,6 +83,8 @@ PS > Start-Service Docker
 
 :pushpin: Tester que c'est bien un conteneur Windows
 
+:bulb: `OS/Arch: windows/amd64`
+
 ```
 PS > docker version
 Client: Docker Engine - Enterprise
@@ -91,7 +93,7 @@ Client: Docker Engine - Enterprise
  Go version:        go1.12.12
  Git commit:        2ee0c57608
  Built:             11/13/2019 08:00:16
- OS/Arch:           `windows/amd64`
+ OS/Arch:           windows/amd64
  Experimental:      false
 
 Server: Docker Engine - Enterprise
