@@ -9,17 +9,3 @@ docker container run --name some-mssql `
 
 
 
-### How to backup an SQL Server database using PowerShell
-Backup-SqlDatabase -ServerInstance "." -Database "testdb"
-
-##  By default, the backups are stored in a path like the following:
-C:\Program Files\Microsoft SQL Server\MSSQLXX.MSSQLSERVER\MSSQL\Backup
-
-## How to backup an SQL Server database using PowerShell to a specific path
-Backup-SqlDatabase -ServerInstance "." -Database "testdb" -BackupFile "c:\sql\testDB.bak"
-
-## How to backup an SQL Server database using a PowerShell script
-Backup-SqlDatabase -ServerInstance "." -Database "testdb" -BackupFile "c:\sql\testDB.bak"
-
-## In order to execute the script, use the following command:
-.\backup.ps1
