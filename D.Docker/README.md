@@ -91,7 +91,7 @@ Client: Docker Engine - Enterprise
  Go version:        go1.12.12
  Git commit:        2ee0c57608
  Built:             11/13/2019 08:00:16
- OS/Arch:           windows/amd64
+ OS/Arch:           \`windows/amd64\`
  Experimental:      false
 
 Server: Docker Engine - Enterprise
