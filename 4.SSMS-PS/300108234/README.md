@@ -65,7 +65,7 @@ T, NOINIT, NAME = 'WideWorldImporters-full', SKIP, NOREWIND, NOUNLOAD, STATS = 1
 
 2> go
 ```
-### :c: Verification
+### :ab: Verification
 
 <img src="data.PNG"></img>
 
