@@ -26,7 +26,7 @@ PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
 ```
 $ docker cp wwi.bak some-mysqlds:/data
 ```
-#### :SIX: Checking in `SSMS 
+#### :six: Checking in `SSMS 
 
 * The `WorldWideImporters` database has been imported.
 
