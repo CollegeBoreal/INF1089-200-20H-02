@@ -26,6 +26,12 @@ PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
 ```
 $ docker cp wwi.bak some-mysqlds:/data
 ```
+#### :SIX: Checking in `SSMS 
+
+* The `WorldWideImporters` database has been imported.
+
+<img src="WWI_SSMS.PNG"></img>
+
 ### 📌 Restore Database
 #### :one: Connect to sqlcmd
 ```
@@ -36,7 +42,7 @@ sqlcmd -U sa -p
 1> RESTORE FILELISTONLY FROM DISK = 'C:\data\wwi.bak'
 2> go
 ```
-
+## :a: Restore Database
 ```
 1> RESTORE DATABASE WideWorldImporters FROM DISK = 'C:\data\wwi.bak' WITH MOVE 'WW
 I_Primary' TO 'C:\data\WideWorldImporters.mdf', MOVE 'WWI_UserData' TO 'C:\data\Wi
@@ -45,7 +51,7 @@ deWorldImporters_userdata.ndf', MOVE 'WWI_Log' TO 'C:\data\WideWorldImporters.ld
 
 2> go
 ```
-
+### :ab: Backup Databas
 ```
 1> BACKUP DATABASE [WideWorldImporters] TO DISK = 'C:\data\wwi_2.bak' WITH NOFORMA
 T, NOINIT, NAME = 'WideWorldImporters-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10
@@ -59,4 +65,8 @@ T, NOINIT, NAME = 'WideWorldImporters-full', SKIP, NOREWIND, NOUNLOAD, STATS = 1
 
 2> go
 ```
+### :abc: Verification
+
+<img src="data.PNG"></img>
+
 ✔
