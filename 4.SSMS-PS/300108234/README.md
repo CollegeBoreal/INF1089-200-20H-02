@@ -30,7 +30,7 @@ $ docker cp wwi.bak some-mysqlds:/data
 
 * The `WorldWideImporters` database has been imported.
 
-<img src="WWI_SSMS.PNG"></img>
+<img src="WWI_SSMS.png"></img>
 
 ### 📌 Restore Database
 #### :one: Connect to sqlcmd
@@ -67,6 +67,6 @@ T, NOINIT, NAME = 'WideWorldImporters-full', SKIP, NOREWIND, NOUNLOAD, STATS = 1
 ```
 ### :ab: Verification
 
-<img src="data.PNG"></img>
+<img src="data.png"></img>
 
 ✔
