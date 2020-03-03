@@ -70,3 +70,4 @@ T, NOINIT, NAME = 'WideWorldImporters-full', SKIP, NOREWIND, NOUNLOAD, STATS = 1
 <img src="data.png"></img>
 
 ✔
+
