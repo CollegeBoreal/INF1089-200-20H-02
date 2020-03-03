@@ -51,7 +51,7 @@ deWorldImporters_userdata.ndf', MOVE 'WWI_Log' TO 'C:\data\WideWorldImporters.ld
 
 2> go
 ```
-### :ab: Backup Databas
+### :b: Backup Databas
 ```
 1> BACKUP DATABASE [WideWorldImporters] TO DISK = 'C:\data\wwi_2.bak' WITH NOFORMA
 T, NOINIT, NAME = 'WideWorldImporters-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10
@@ -65,7 +65,7 @@ T, NOINIT, NAME = 'WideWorldImporters-full', SKIP, NOREWIND, NOUNLOAD, STATS = 1
 
 2> go
 ```
-### :abc: Verification
+### :c: Verification
 
 <img src="data.PNG"></img>
 
