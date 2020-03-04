@@ -46,7 +46,7 @@ PS > .\restore.ps1
 
 * La base de donnees `WorldWideImporters` a été importée
 
-<img src="/sql.JPG" width="204" heidth="477"></img>
+<img src="sql.JPG" width="204" heidth="477"></img>
 
 🤷‍♀️ Backup Database
 
