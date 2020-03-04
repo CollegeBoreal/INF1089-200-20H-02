@@ -1,9 +1,7 @@
 
-# Laboratoire : Création d’un plan de maintenance MSSQL
 
 ## :a: Création du container MSSQL
 
-:pushpin: Aller dans le repertoire de son :id: et creer un répertoire `backup` et y mettre le fichier `.gitkeep`
 
 ```
 PS> mkdir backup
@@ -31,7 +29,6 @@ PS> docker container run --name some-mssql `
 
 ## :b: Restore Database
 
-:pushpin: Dans son répertoire de travail (i.e. :id: )
 
 * Lancer son script de restauration
 
@@ -46,8 +43,6 @@ PS > .\restore.ps1
 <img src="tns.PNG" width="204" heidth="477"></img>
 
 ## :ab: Backup Database
-
-:pushpin: Dans son répertoire de travail (i.e. :id: )
 
 * Lancer son script de backup
 
