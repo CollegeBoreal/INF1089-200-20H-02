@@ -46,19 +46,19 @@ PS > Start-Service docker
 
 # :o: Check Docker Engine on Windows Server 
 
-* Vérifiez la version installée avec 
+:pushpin: Vérifiez la version installée avec 
 
 ```
 PS > Get-Package -Name Docker -ProviderName DockerMsftProvider
 ```
 
-* Rechercher la version actuelle avec 
+:pushpin: Rechercher la version actuelle avec 
 
 ```
 PS > Find-Package -Name Docker -ProviderName DockerMsftProvider
 ```
 
-* Tester que le service Docker tourne
+:pushpin: Tester que le service Docker tourne
 
 ```
 PS >  Get-Service Docker
@@ -78,6 +78,33 @@ PS > Install-Package -Name Docker -ProviderName DockerMsftProvider -Update -Forc
 
 ```
 PS > Start-Service Docker
+```
+
+
+:pushpin: Tester que c'est bien un conteneur Windows
+
+:bulb: `OS/Arch: windows/amd64`
+
+```
+PS > docker version
+Client: Docker Engine - Enterprise
+ Version:           19.03.5
+ API version:       1.40
+ Go version:        go1.12.12
+ Git commit:        2ee0c57608
+ Built:             11/13/2019 08:00:16
+ OS/Arch:           windows/amd64
+ Experimental:      false
+
+Server: Docker Engine - Enterprise
+ Engine:
+  Version:          19.03.5
+  API version:      1.40 (minimum version 1.24)
+  Go version:       go1.12.12
+  Git commit:       2ee0c57608
+  Built:            11/13/2019 07:58:51
+  OS/Arch:          windows/amd64
+  Experimental:     false
 ```
 
 
