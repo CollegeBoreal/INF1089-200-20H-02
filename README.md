@@ -20,7 +20,7 @@ Programmation de systèmes
 |07|17-02-20| Part 3                                   | Kafka                                                              |
 |08|24-02-20| Semaine d'études                         | Pas de cours                                                       |
 |09|02-03-20| Projet Python                            |                                                                    |
-|10|09-03-20|                                          |                                                                    |
+|10|09-03-20| System monitoring                        | Chapter 11, Linux In Action                                        |
 |11|16-03-20|                                          |                                                                    |
 |12|23-03-20|                                          |                                                                    |
 |13|30-03-20| TBD                                      | TBD                                                                |
