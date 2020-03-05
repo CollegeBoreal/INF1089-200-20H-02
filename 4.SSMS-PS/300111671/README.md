@@ -25,12 +25,22 @@ PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
 PS> docker container run --name some-mssql `
            --env "ACCEPT_EULA=Y" `
            --env "SA_PASSWORD=Password123" `
-           --volume ${SRC}:C:/DATA `
+           --volume C:\Users\Administrator\INF1089-200-20H-02\4.SSMS-PS\300111671\backup:C:/DATA `
            --publish 1433:1433 --detach `
            mssql-server-windows-developer-fti
 ```
 
+<<<<<<< HEAD
 💥 Restore Database
+=======
+#### :b: Downloads the backup file as wwi.bak
+```
+> curl -OutFile "wwi.bak" "https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak"
+```
+## :c: Restore Database
+
+
+>>>>>>> 69e6def1ecf68b3ff5525f17d1e975cb51e714e3
 
 🕠 Dans son répertoire de travail (i.e. :id: )
 
