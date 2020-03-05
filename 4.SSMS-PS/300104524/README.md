@@ -2,7 +2,6 @@
 
 ## :a: Création du container MSSQL
 
-
 ```
 PS> mkdir backup
 PS> echo $null >> backup\.gitkeep
@@ -27,9 +26,6 @@ PS> docker container run --name some-mssql `
            mssql-server-windows-developer-fti
 ```
 
-## :b: Restore Database
-
-
 * Lancer son script de restauration
 
 ```
@@ -41,8 +37,6 @@ PS > .\restore.ps1
 * La base de donnees `WorldWideImporters` a été importée
 
 <img src="tns.PNG\tns.PNG" width="204" heidth="477"></img>
-
-## :ab: Backup Database
 
 * Lancer son script de backup
 
