@@ -11,7 +11,7 @@
 
 :one: Créer un programme `Python` ayant comme nom de fichier, votre :id: Boréal précédé d'un `b`
 
-Example de nom de fichier `b300098957.py`
+Example de nom de fichier `300098957/b300098957.py`
 
 :two: Écrire le programme python sur la programmation fonctionelle
 
