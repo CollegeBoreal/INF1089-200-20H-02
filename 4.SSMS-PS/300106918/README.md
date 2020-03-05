@@ -1,10 +1,8 @@
 
-# ✍Powershell SQL Backup and restore script 
-
-_*👍Cette commande crée une sauvegarde complète de la base de données nommée "AdorDB" vers l'emplacement de sauvegarde par défaut de                l'instance de serveur "Computer\Instance". Le fichier de sauvegarde est nommé "AdorDB.bak".*_
+# Powershell SQL Backup and restore script 
 
 
-## 👣 Création du container MSSQL
+##  Création du container MSSQL
 
 👁 Aller dans le repertoire de son :id: et creer un répertoire `backup` et y mettre le fichier `.gitkeep`
 
@@ -40,7 +38,8 @@ PS> docker container run --name some-mssql `
 
 ```
 PS > .\restore.ps1
-```
+``` 
+![](images/RESTO.png)
 
 👉 Vérification dans `SSMS` 
 
@@ -64,4 +63,7 @@ PS > .\backup.ps1
 PS > gci backup
 ```
 
+![](images/bak.png)
+
 * le fichier `wwwi_2.bak` doit ètre présent 
+![](images/bak2.png)
