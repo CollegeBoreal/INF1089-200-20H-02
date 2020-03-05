@@ -24,12 +24,14 @@ PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
 PS> docker container run --name some-mssql `
            --env "ACCEPT_EULA=Y" `
            --env "SA_PASSWORD=Password123" `
-           --volume ${SRC}:C:/DATA `
+           --volume C:\Users\Administrator\INF1089-200-20H-02\4.SSMS-PS\300111671\backup:C:/DATA `
            --publish 1433:1433 --detach `
            mssql-server-windows-developer-fti
 ```
 
 ## :b: Restore Database
+
+
 
 :pushpin: Dans son répertoire de travail (i.e. :id: )
 
