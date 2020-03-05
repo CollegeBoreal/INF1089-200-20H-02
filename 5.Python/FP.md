@@ -99,6 +99,15 @@ print g(7)
 45
 ```
 
+:pushpin: List comprehension in CSV
+
+```python
+import csv
+def read_csv():
+    with open('test.csv') as f:
+        reader = csv.reader(f)
+        return [col for row in reader for col in row]
+```
 
 
 https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences
