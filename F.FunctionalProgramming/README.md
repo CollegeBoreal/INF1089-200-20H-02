@@ -1,6 +1,13 @@
 # F Functional Programming 
 
+
+### :m: Prérequis
+
+:zero: Créer votre propre répertoire :id:, 
+
+
 ### :m: Sneak Peak p.59
+
 
 :one: Créer un programme `Python` ayant comme nom de fichier, votre :id: Boréal précédé d'un `b`
 
