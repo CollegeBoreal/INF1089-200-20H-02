@@ -66,4 +66,4 @@ PS > gci backup
 ![](images/bak.png)
 
 * le fichier `wwwi_2.bak` doit ètre présent 
-![](images/bak2.png)
+![](images/baki2.png)
