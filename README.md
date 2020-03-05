@@ -3,9 +3,9 @@ Programmation de systèmes
 
 ## Devoirs
 
-| Date       | Devoir              |     Commentaires                                                                         |
-|:----------:|:--------------------|:-----------------------------------------------------------------------------------------|
-| 2020-03-12 | 4.SSMS-PS           | Reproduire les scripts Powershell et SSMS SQL                                            |
+| Date       | Devoir                  |     Commentaires                                                                         |
+|:----------:|:------------------------|:-----------------------------------------------------------------------------------------|
+| 2020-03-12 | [4.SSMS-PS](4.SSMS-PS)  | Reproduire les scripts Powershell et SSMS SQL                                            |
 
 ## Déroulement de cours:
 
