@@ -15,8 +15,6 @@ PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
 
 :m: Lancer le conteneur avec une gestion d'état `--volume`
 
-:bulb: Le paramètre Docker `--volume` représente l'état à capturer et prend une source et une destination
-
 ```
 PS> docker container run --name some-mssql `
            --env "ACCEPT_EULA=Y" `
