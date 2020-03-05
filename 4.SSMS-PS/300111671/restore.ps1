@@ -6,4 +6,3 @@ curl -OutFile "backup\wwi.bak" `
 # Execution du script permettant le chargement de la bases de donnees
 docker exec --interactive --tty some-mssql `
     sqlcmd -U sa -P "Password123" ` -i C:\DATA\scripts\restore.sql
-
