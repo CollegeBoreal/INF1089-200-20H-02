@@ -25,7 +25,7 @@ Programmation de systèmes
 |12|23-03-20|                                          |                                                                    |
 |13|30-03-20| TBD                                      | TBD                                                                |
 |14|06-04-20| TBD                                      | TBD                                                                |
-|15|13-04-20| TBD                                      | TBD                                                                |
+|15|13-04-20| Fin des cours                            | 17 Avril                                                           |
 
 # Références
 
