@@ -32,7 +32,7 @@ PS> docker container run --name some-mssql `
 #### :b: Downloads the backup file as wwi.bak
 ```
 > curl -OutFile "wwi.bak" "https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak"
-
+```
 ## :c: Restore Database
 
 
