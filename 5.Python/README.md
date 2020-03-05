@@ -1,12 +1,15 @@
-# F Functional Programming 
+# 5 Python
 
+## :o: Révision 
+
+Le but de cette révision est de revoir les concepts du language de programmation Python qui s'appliquant à la programmation fonctionnelle
 
 ### :m: Prérequis
 
 :zero: Créer votre propre répertoire :id:, 
 
 
-### :m: Sneak Peak p.59
+### :m: Programmation Fonctionelle en Python
 
 
 :one: Créer un programme `Python` ayant comme nom de fichier, votre :id: Boréal précédé d'un `b`
