@@ -1,25 +1,28 @@
-📗 Laboratoire : Création d’un plan de maintenance MSSQL
-Création du container MSSQL
+        📗 Laboratoire : Création d’un plan de maintenance MSSQL
+        
+   Création du container MSSQL
+   
+   
+   
+   PS> mkdir backup
+   PS> echo $null >> backup\.gitkeep
+   
+   PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
+Ⓜ️ Lancer le 
 
-1️⃣ Création du container MSSQL
-
-
-
-
-
-
-
-PS C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300111766>  gci backup
-
-
-    Directory: C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300111766\backup
-
-
-Mode                LastWriteTime         Length Name
-----                -------------         ------ ----
--a----         3/4/2020   3:04 PM              2 .gitkeep
--a----         3/4/2020   1:34 PM              2 README.md
--a----         3/4/2020   3:12 PM      127056896 wwi.bak
--a----         3/4/2020   3:24 PM      482021376 wwi_2.bak
+  PS> docker container run --name some-mssql `
+           --env "ACCEPT_EULA=Y" `
+           --env "SA_PASSWORD=Password123" `
+           --volume ${SRC}:C:/DATA `
+           --publish 1433:1433 --detach `
+           mssql-server-windows-developer-fti
+           
+           
+  PS > .\restore.ps1
+  
+  PS > .\backup.ps1
+  
+  
+  PS > gci backup
 
 
