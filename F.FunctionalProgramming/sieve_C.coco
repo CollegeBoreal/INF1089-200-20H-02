@@ -1,0 +1,6 @@
+# https://www.youtube.com/watch?time_continue=1&v=24DWw6Ozkvo
+def primes() =
+   def sieve([x] :: xs) = [x] :: sieve(n for n in xs if n % x)
+   sieve(count(2))
+
+primes() |> takewhile$(x -> x < 60) |> list |> print
