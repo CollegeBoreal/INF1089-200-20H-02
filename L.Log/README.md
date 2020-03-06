@@ -6,6 +6,7 @@ https://www.loggly.com/ultimate-guide/centralizing-with-syslog/
 
 - [ ] Filebeat
 - [ ] Logstash
+* AWS
     - [x] Cloudwatch
     - [x] SNS
 - [ ] Grafana
