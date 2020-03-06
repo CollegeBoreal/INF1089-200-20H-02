@@ -43,7 +43,7 @@ PS > .\restore.ps1
 
 * La base de donnees `WorldWideImporters` a été importée
 
-<img src="images/dtbase.PNG" width="204" heidth="477"></img>
+<img src="images/dtbase.png" width="204" heidth="477"></img>
 
 ## :ab: Backup Database
 
@@ -62,4 +62,4 @@ PS > gci backup
 ```
 
 * le fichier `wwwi_2.bak` doit ètre présent 
-<img src="images/wwi.PNG" width="204" heidth="477"></img>
+<img src="images/wwi.png" width="204" heidth="477"></img>
