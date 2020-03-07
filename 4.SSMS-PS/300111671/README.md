@@ -6,8 +6,8 @@
 :pushpin: Aller dans le repertoire de son :id: et creer un répertoire `backup` et y mettre le fichier `.gitkeep`
 
 ```
-PS> mkdir backup
-PS> echo $null >> backup\.gitkeep
+PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300111671> mkdir backup
+PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300111671> echo $null >> backup\.gitkeep
 ```
 
 :pushpin: Capturer le répertoire courant `$PWD` et le placer dans la variable d'environnement `$SRC`
