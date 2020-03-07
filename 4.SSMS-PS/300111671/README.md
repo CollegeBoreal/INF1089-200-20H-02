@@ -84,7 +84,7 @@ RESTORE DATABASE successfully processed 58455 pages in 34.421 seconds (13.267 MB
 
 * La base de donnees `WorldWideImporters` a été importée
 
-<img src=""></img>
+<img src="PWS.PNG"></img>
 
 
 
