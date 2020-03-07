@@ -13,7 +13,9 @@ PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300111671> echo
 :pushpin: Capturer le répertoire courant `$PWD` et le placer dans la variable d'environnement `$SRC`
 
 ```
-PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
+PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300111671> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
+PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300111671> $SRC
+C:/users/Administrator/Developer/INF1089-200-20H-02/4.SSMS-PS/300111671
 ```
 
 :m: Lancer le conteneur avec une gestion d'état `--volume`
