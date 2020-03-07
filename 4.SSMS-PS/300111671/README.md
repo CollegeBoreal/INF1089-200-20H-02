@@ -93,13 +93,36 @@ RESTORE DATABASE successfully processed 58455 pages in 34.421 seconds (13.267 MB
 * Lancer son script de backup
 
 ```
-PS > .\backup.ps1
+
+PS C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300111671>  .\backup.ps1
+10 percent processed.
+20 percent processed.
+30 percent processed.
+Processed 1488 pages for database 'WideWorldImporters', file 'WWI_Primary' on file 1.
+Processed 53096 pages for database 'WideWorldImporters', file 'WWI_UserData' on file 1.
+Processed 3865 pages for database 'WideWorldImporters', file 'WWI_InMemory_Data_1' on file 1.
+Processed 65 pages for database 'WideWorldImporters', file 'WWI_Log' on file 1.
+100 percent processed.
+BACKUP DATABASE successfully processed 58514 pages in 36.885 seconds (12.393 MB/sec).
+
+
 ```
 
 :pushpin: Vérification
 
 ```
-PS > gci backup
+PS C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300111671> gci backup
+
+
+    Directory: C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300111671\backup
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         3/6/2020   5:00 PM              2 .gitkeep
+-a----         3/6/2020   5:28 PM      127056896 wwi.bak
+-a----         3/6/2020   5:41 PM      481955840 wwi_2.bak
+
 ```
 
-* le fichier `wwwi_2.bak` doit ètre présent 
+* le fichier `wwwi_2.bak` est présent 
