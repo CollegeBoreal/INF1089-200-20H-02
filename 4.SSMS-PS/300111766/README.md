@@ -31,7 +31,7 @@
      
    PS > .\restore.ps1
    
-   <img src="capture.PNG" width="204" heidth="477"></img>
+   <img src="Capture.PNG" width="204" heidth="477"></img>
    
   Vérification dans SSMS
 
