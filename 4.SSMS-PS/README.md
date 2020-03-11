@@ -7,6 +7,22 @@
 
 ## Laboratoire : Création d’un plan de maintenance MSSQL
 
+## :o: Sur votre PC, créer votre répertoire de travail dans `git bash`
+
+- [ ] Dans le répertoire `4.SSMS-PS` Créer un répertoire avec comme nom, votre :id:
+
+`$ mkdir ` :id:
+
+- [ ] Copier les fichiers se trouvant dans le repretoire `.src` dans votre répertoire
+
+      * incluant les fichier `backup.ps1`  et `restore.ps1`
+
+      * incluant le repertoire `scripts`  comportant les scripts SQL
+
+`$ cp -r .src/* `:id:` `
+
+- [ ] Soumettre votre répertoire de travail vers github `(git add, commit, push)` 
+
 ## :a: Création du container MSSQL
 
 :pushpin: Aller dans le repertoire de son :id: et creer un répertoire `backup` et y mettre le fichier `.gitkeep`
