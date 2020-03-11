@@ -5,16 +5,18 @@
            Le but de l'exercice est de créer un plan de maintenance permettant la sauvegarde 
            et la récupération de base de données MSSQL  dans un script Powershell
 
+## Laboratoire : Création d’un plan de maintenance MSSQL
+
 ## :a: Création du container MSSQL
 
-:pushpin: Aller dans le repertoire de son :id: et creer un repertoire `backup`
+:pushpin: Aller dans le repertoire de son :id: et creer un répertoire `backup` et y mettre le fichier `.gitkeep`
 
 ```
 PS> mkdir backup
 PS> echo $null >> backup\.gitkeep
 ```
 
-:pushpin: Capturer le répertoire courant `$PWD` et le placer dans la variable `$SRC`
+:pushpin: Capturer le répertoire courant `$PWD` et le placer dans la variable d'environnement `$SRC`
 
 ```
 PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
@@ -33,6 +35,39 @@ PS> docker container run --name some-mssql `
            mssql-server-windows-developer-fti
 ```
 
+## :b: Restore Database
+
+:pushpin: Dans son répertoire de travail (i.e. :id: )
+
+* Lancer son script de restauration
+
+```
+PS > .\restore.ps1
+```
+
+:pushpin: Vérification dans `SSMS` 
+
+* La base de donnees `WorldWideImporters` a été importée
+
+<img src="images/WWI_SSMS.png" width="204" heidth="477"></img>
+
+## :ab: Backup Database
+
+:pushpin: Dans son répertoire de travail (i.e. :id: )
+
+* Lancer son script de backup
+
+```
+PS > .\backup.ps1
+```
+
+:pushpin: Vérification
+
+```
+PS > gci backup
+```
+
+* le fichier `wwwi_2.bak` doit ètre présent 
 
 
 ## :ab: Exemple de Backup et Restore
