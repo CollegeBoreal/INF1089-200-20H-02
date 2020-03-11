@@ -23,6 +23,22 @@
 
 - [ ] Soumettre votre répertoire de travail vers github `(git add, commit, push)` 
 
+## :a: Dans votre Serveur Windows du laboratoire
+
+:pushpin: Pointer le `container engine` de votre machine
+
+:warning: Aucune machine virtuelle doit etre active
+
+```
+PS > docker-machine env --unset | Invoke-Expression
+```
+
+- [ ] Cloner le cours et aller dans son répertoire de travail :id:
+
+```
+PS > git clone https://github.com/CollegeBoreal/INF1089-200-20H-02.git 
+```
+
 ## :a: Création du container MSSQL
 
 :pushpin: Aller dans le repertoire de son :id: et creer un répertoire `backup` et y mettre le fichier `.gitkeep`
