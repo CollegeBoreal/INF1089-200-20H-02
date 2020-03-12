@@ -81,8 +81,21 @@ PS C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300110500>
 
 ```
 PS > .\backup.ps1
+
 ```
 
+* Resultat du backup
+```
+10 percent processed.
+20 percent processed.
+30 percent processed.
+Processed 1496 pages for database 'WideWorldImporters', file 'WWI_Primary' on file 1.
+Processed 53096 pages for database 'WideWorldImporters', file 'WWI_UserData' on file 1.
+Processed 3865 pages for database 'WideWorldImporters', file 'WWI_InMemory_Data_1' on file 1.
+Processed 74 pages for database 'WideWorldImporters', file 'WWI_Log' on file 1.
+100 percent processed.
+BACKUP DATABASE successfully processed 58531 pages in 44.100 seconds (10.369 MB/sec).
+```
 :pushpin: Vérification
 
 ```
@@ -90,4 +103,24 @@ PS > gci backup
 ```
 
 * le fichier `wwwi_2.bak` doit ètre présent 
+``
+ Directory: C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300110500
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        3/12/2020  11:49 AM                backup
+d-----        3/12/2020  11:49 AM                scripts
+d-----        3/12/2020  12:04 PM                WideWorldImporters_InMemory_Data_1
+-a----         3/9/2020   2:53 PM            159 backup.ps1
+-a----         3/9/2020   2:53 PM           1637 Dockerfile
+-a----        3/12/2020  11:49 AM           1487 README.md
+-a----         3/6/2020  10:12 AM              2 README.MD.md
+-a----         3/9/2020   2:53 PM            390 restore.ps1
+-a----         3/9/2020   2:53 PM           1695 restore.sql
+-a----         3/9/2020   2:53 PM           2279 start.ps1
+-a----        3/12/2020  12:04 PM      104857600 WideWorldImporters.ldf
+-a----        3/12/2020  12:04 PM     1073741824 WideWorldImporters.mdf
+-a----        3/12/2020  12:04 PM     2147483648 WideWorldImporters_userdata.ndf
+```
 
