@@ -70,7 +70,7 @@ PS C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300110500>
 
 * La base de donnees `WorldWideImporters` a été importée
 
-<img src="mages/WWI_SSMS.png" width="204" heidth="477"></img>
+<img src="Images/ssms.png" width="204" heidth="477"></img>
 
 ## :ab: Backup Database
 
