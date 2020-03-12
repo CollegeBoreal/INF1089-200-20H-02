@@ -38,7 +38,7 @@ PS> docker container run --name some-mssql `
 PS > .\restore.ps1
 ```
 * Resultat du restore
-~~~
+```
 (4 rows affected)
 Processed 1464 pages for database 'WideWorldImporters', file 'WWI_Primary' on file 1.
 Processed 53096 pages for database 'WideWorldImporters', file 'WWI_UserData' on file 1.
