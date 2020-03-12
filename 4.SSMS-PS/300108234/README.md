@@ -1,73 +1,68 @@
-## Backup
+# Laboratoire : Création d’un plan de maintenance MSSQL
 
-### 📌 Copy a backup file into the container
-#### :one: Create a backup folder
+## :a: Création du container MSSQL
+
+:pushpin: Aller dans le repertoire de son :id: et creer un répertoire `backup` et y mettre le fichier `.gitkeep`
 
 ```
-$ winpty docker exec -it some-mysqlds mkdir data
+PS> mkdir backup
+PS> echo $null >> backup\.gitkeep
 ```
-#### :two: Capture the current $PWD directory and place it in the $SRC variable.
+
+:pushpin: Capturer le répertoire courant `$PWD` et le placer dans la variable d'environnement `$SRC`
+
 ```
 PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
 ```
-#### :three: Create a volume
-```
-> docker container run --name some-mssql `
->>            --env "ACCEPT_EULA=Y" `
->>            --env "SA_PASSWORD=Password123" `
->>            --env "ATTACH_DBS=[{'dbName':'world_x','dbFiles':['c:\\DATA\\world_x.mdf','c:\\DATA\\world_x_log.ldf']}]" `
-```
 
-#### :four: Downloads the backup file as wwi.bak
-```
-> curl -OutFile "wwi.bak" "https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak"
-```
-#### :five: Copy the backup file into the container in the Data directory
-```
-$ docker cp wwi.bak some-mysqlds:/data
-```
-#### :six: Checking in `SSMS 
+:m: Lancer le conteneur avec une gestion d'état `--volume`
 
-* The `WorldWideImporters` database has been imported.
-
-<img src="WWI_SSMS.png"></img>
-
-### 📌 Restore Database
-#### :one: Connect to sqlcmd
-```
-sqlcmd -U sa -p
-```
-#### :two: Execute the following scripts
-```
-1> RESTORE FILELISTONLY FROM DISK = 'C:\data\wwi.bak'
-2> go
-```
-## :a: Restore Database
-```
-1> RESTORE DATABASE WideWorldImporters FROM DISK = 'C:\data\wwi.bak' WITH MOVE 'WW
-I_Primary' TO 'C:\data\WideWorldImporters.mdf', MOVE 'WWI_UserData' TO 'C:\data\Wi
-deWorldImporters_userdata.ndf', MOVE 'WWI_Log' TO 'C:\data\WideWorldImporters.ldf'
-, MOVE 'WWI_InMemory_Data_1' TO 'C:\data\WideWorldImporters_InMemory_Data_1'
-
-2> go
-```
-### :b: Backup Databas
-```
-1> BACKUP DATABASE [WideWorldImporters] TO DISK = 'C:\data\wwi_2.bak' WITH NOFORMA
-T, NOINIT, NAME = 'WideWorldImporters-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10
-
-2> go
-```
+:bulb: Le paramètre Docker `--volume` représente l'état à capturer et prend une source et une destination
 
 ```
-1> --volume C:/Users/Administrator/Developer/INF1089-200-20H-02/4.SSMS-PS/30009895
-7/DATA:C:/Program Files/Microsoft SQL Server/MSSQL14.MSSQLSERVER/MSSQL/DATA `
-
-2> go
+PS> docker container run --name some-mssql `
+           --env "ACCEPT_EULA=Y" `
+           --env "SA_PASSWORD=Password123" `
+           --volume ${SRC}:C:/DATA `
+           --publish 1433:1433 --detach `
+           mssql-server-windows-developer-fti
 ```
-### :ab: Verification
 
-<img src="data.png"></img>
+## :b: Restore Database
+
+:pushpin: 
+
+* Lancer son script de restauration
+
+```
+PS > .\restore.ps1
+```
+
+:pushpin: Vérification dans `SSMS` 
+
+* La base de donnees `WorldWideImporters` a été importée
+
+<img src="images/WWI_SSMS.png"></img>
+
+## :ab: Backup Database
+
+:pushpin:
+
+* Lancer son script de backup
+
+```
+PS > .\backup.ps1
+```
+
+:pushpin: Vérification
+
+```
+PS > gci backup
+```
+
+* le fichier `wwwi_2.bak` doit ètre présent
+
+<img src="images/data.png"></img>
 
 ✔
 
