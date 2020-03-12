@@ -2,7 +2,7 @@
 
 from itertools import count, takewhile
 
-def primers():
+def primes():
   def sieve(numbers)
       head = next(numbers)
       yield head 
