@@ -11,5 +11,5 @@ def primes():
     def sieve(numbers):
         head = next(numbers)
         yield head
-        yield from sieve(n for in numbers if n % head)
+        yield from sieve(n for n in numbers if n % head)
         return sieve(count(2))
