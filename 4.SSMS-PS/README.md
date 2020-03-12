@@ -75,7 +75,7 @@ PS >  docker container run --name some-mssql
            --env "SA_PASSWORD=Password123" `
            --volume ${SRC}:C:/DATA `
            --publish 1433:1433 --detach `
-           microsoft/mssql-server-windows-express
+           microsoft/mssql-server-windows-express:windowsservercore-1809
 ```
 
 
