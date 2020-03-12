@@ -42,7 +42,7 @@ PS > .\restore.ps1
 
 * La base de donnees `WorldWideImporters` a été importée
 
-<img src="images/WWI_SSMS.png" width="204" heidth="477"></img>
+<img src="IMAGE1.PNG" width="204" heidth="477"></img>
 
 ## :ab: Backup Database
 
