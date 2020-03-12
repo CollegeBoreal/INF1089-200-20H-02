@@ -1,6 +1,6 @@
 # SSMS PowerShell
 
-:woman_student: [Participation](.scripts/Participation.md)
+## :woman_student: [Participation](.scripts/Participation.md)
 
 ## :o: Devoir
 
