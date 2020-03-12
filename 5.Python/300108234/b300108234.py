@@ -1,9 +1,9 @@
-# Seive
+# Sieve
 
 from itertools import count, takewhile
 
 def primers():
-  def seive(numbers)
+  def sieve(numbers)
       head = next(numbers)
       yield head 
       yield from sieve(n for n numbers if n % head)
