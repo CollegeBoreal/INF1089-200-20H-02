@@ -10,7 +10,7 @@
 ## :a: Création du container MSSQL
 
 :pushpin: Aller dans le repertoire de son :id: et creer un répertoire `backup` et y mettre le fichier `.gitkeep`
- [x]
+
 ```
 PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300107361> mkdir backup
 PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300107361> echo $null >> backup\.gitkeep
@@ -24,7 +24,7 @@ PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300107361> $SRC
 C:/users/Administrator/Developer/INF1089-200-20H-02/4.SSMS-PS/300107361
 ```
 
-:m: Lancer le conteneur avec une gestion d'état `--volume`  [x]
+:m: Lancer le conteneur avec une gestion d'état `--volume`  
 
 :bulb: Le paramètre Docker `--volume` représente l'état à capturer et prend une source et une destination
 
@@ -38,7 +38,7 @@ PS> docker container run --name some-mssql `
 ```
 
 ## :b: Restore Database 
-[x]
+
 :pushpin: Dans son répertoire de travail (i.e. :id: )
 
 * Lancer son script de restauration
@@ -72,13 +72,13 @@ RESTORE DATABASE successfully processed 58455 pages in 17.313 seconds (26.377 MB
 ```
 
 :pushpin: Vérification dans `SSMS`  
-[x]
+
 * La base de donnees `WorldWideImporters` a été importée
 
 <img src="wwi.PNG"></img>
 
 ## :ab: Backup Database  
-[x]
+
 :pushpin: Dans son répertoire de travail (i.e. :id: )
 
 * Lancer son script de backup
@@ -104,7 +104,7 @@ PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300107361\backu
 ```
 
 * le fichier `wwwi_2.bak` doit ètre présent  
-[x]
+
 ```
 
 
