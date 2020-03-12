@@ -103,7 +103,7 @@ PS > gci backup
 ```
 
 * le fichier `wwwi_2.bak` doit ètre présent 
-``
+```
  Directory: C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\30011050
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
