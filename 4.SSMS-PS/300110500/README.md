@@ -104,21 +104,14 @@ PS > gci backup
 
 * le fichier `wwwi_2.bak` doit ètre présent 
 ```
- Directory: C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\30011050
+Directory: C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300110500\backup
+
+
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
-d-----        3/12/2020  11:49 AM                backup
-d-----        3/12/2020  11:49 AM                scripts
-d-----        3/12/2020  12:04 PM                WideWorldImporters_InMemory_Data_1
--a----         3/9/2020   2:53 PM            159 backup.ps1
--a----         3/9/2020   2:53 PM           1637 Dockerfile
--a----        3/12/2020  11:49 AM           1487 README.md
--a----         3/6/2020  10:12 AM              2 README.MD.md
--a----         3/9/2020   2:53 PM            390 restore.ps1
--a----         3/9/2020   2:53 PM           1695 restore.sql
--a----         3/9/2020   2:53 PM           2279 start.ps1
--a----        3/12/2020  12:04 PM      104857600 WideWorldImporters.ldf
--a----        3/12/2020  12:04 PM     1073741824 WideWorldImporters.mdf
--a----        3/12/2020  12:04 PM     2147483648 WideWorldImporters_userdata.ndf
+d-----        3/12/2020  11:49 AM                .docs
+-a----        3/12/2020  11:49 AM             79 .gitkeep
+-a----        3/12/2020  12:03 PM      127056896 wwi.bak
+-a----        3/12/2020  12:53 PM      482086912 wwi_2.bak
 ```
 
