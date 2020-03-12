@@ -41,6 +41,7 @@ PS > .\restore.ps1
 ```
 (4 rows affected)
 Processed 1464 pages for database 'WideWorldImporters', file 'WWI_Primary' on file 1.
+
 Processed 53096 pages for database 'WideWorldImporters', file 'WWI_UserData' on file 1.
 Processed 33 pages for database 'WideWorldImporters', file 'WWI_Log' on file 1.
 Processed 3862 pages for database 'WideWorldImporters', file 'WWI_InMemory_Data_1' on file 1.
