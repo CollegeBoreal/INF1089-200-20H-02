@@ -7,10 +7,10 @@
 2- [backup.ps1](backup.ps1)
 
 
-## :a: Création du container MSSQL [x]
+## :a: Création du container MSSQL
 
 :pushpin: Aller dans le repertoire de son :id: et creer un répertoire `backup` et y mettre le fichier `.gitkeep`
-
+ [x]
 ```
 PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300107361> mkdir backup
 PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300107361> echo $null >> backup\.gitkeep
@@ -37,8 +37,8 @@ PS> docker container run --name some-mssql `
            mssql-server-windows-developer-fti
 ```
 
-## :b: Restore Database [x]
-
+## :b: Restore Database 
+[x]
 :pushpin: Dans son répertoire de travail (i.e. :id: )
 
 * Lancer son script de restauration
@@ -71,14 +71,14 @@ Database 'WideWorldImporters' running the upgrade step from version 868 to versi
 RESTORE DATABASE successfully processed 58455 pages in 17.313 seconds (26.377 MB/sec).
 ```
 
-:pushpin: Vérification dans `SSMS`  [x]
-
+:pushpin: Vérification dans `SSMS`  
+[x]
 * La base de donnees `WorldWideImporters` a été importée
 
 <img src="wwi.PNG"></img>
 
-## :ab: Backup Database  [x]
-
+## :ab: Backup Database  
+[x]
 :pushpin: Dans son répertoire de travail (i.e. :id: )
 
 * Lancer son script de backup
@@ -103,8 +103,8 @@ BACKUP DATABASE successfully processed 58521 pages in 24.778 seconds (18.451 MB/
 PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300107361\backup> ls
 ```
 
-* le fichier `wwwi_2.bak` doit ètre présent  [x]
-
+* le fichier `wwwi_2.bak` doit ètre présent  
+[x]
 ```
 
 
