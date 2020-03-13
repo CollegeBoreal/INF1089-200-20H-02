@@ -39,8 +39,6 @@ PS> docker container run --name some-mssql `
 ```
 PS > .\restore.ps1
 ``` 
-![](images/RESTO.png)    
-
 ![](images/respr2.png) 
 
 👉 Vérification dans `SSMS` 
@@ -65,7 +63,7 @@ PS > .\backup.ps1
 PS > gci backup
 ```
 
-![](images/respor.png)
+![](images/packup.png)
 
 * le fichier `wwwi_2.bak` doit ètre présent 
 ![](images/baki2.png)
