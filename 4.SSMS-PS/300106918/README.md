@@ -39,7 +39,9 @@ PS> docker container run --name some-mssql `
 ```
 PS > .\restore.ps1
 ``` 
-![](images/RESTO.png)
+![](images/RESTO.png)    
+
+![](images/respr2.png) 
 
 👉 Vérification dans `SSMS` 
 
