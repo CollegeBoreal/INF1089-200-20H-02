@@ -63,7 +63,7 @@ PS > .\backup.ps1
 PS > gci backup
 ```
 
-![](images/bak.png)
+![](images/respor.png)
 
 * le fichier `wwwi_2.bak` doit ètre présent 
 ![](images/baki2.png)
