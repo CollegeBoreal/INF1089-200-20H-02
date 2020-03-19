@@ -1,6 +1,8 @@
 # :two: PowerShell
 
 
+https://www.linkedin.com/learning/l-essentiel-de-windows-powershell-6/
+
 * Créer un répertoire avec votre :id:
 
 * Créer votre script PowerShell en donnant le nom b:id:.ps1
