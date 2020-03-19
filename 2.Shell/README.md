@@ -11,7 +11,7 @@ Example b300098957.ps1
 
 [Participation](Participation.md)
 
-## :o: Installation
+## :o: Installation de Visual Studio Code
 
 :star: Windows
 
@@ -21,11 +21,13 @@ PS > choco install vscode
 
 :star: MacOS
 
+- [ ] installer Visual Studio Code
+
 ```
 $ brew cas install vscode
 ```
 
-:pushpin: installer PowerShell
+- [ ] installer PowerShell
 
 ```
 $ brew cask install powershell
