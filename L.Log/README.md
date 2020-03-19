@@ -32,5 +32,9 @@ PS > Get-EventLog -List
 ```
 
 ```
-$  Get-EventLog -LogName "Security"
+PS > Get-EventLog -LogName "Security"
+```
+
+```
+PS > Get-EventLog -LogName Security -Newest 5
 ```
