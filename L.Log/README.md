@@ -32,9 +32,13 @@ PS > Get-EventLog -List
 ```
 
 ```
-PS > Get-EventLog -LogName "Security"
-```
-
-```
 PS > Get-EventLog -LogName Security -Newest 5
+
+   Index Time          EntryType   Source                 InstanceID Message
+   ----- ----          ---------   ------                 ---------- -------
+   15396 Mar 19 15:28  SuccessA... Microsoft-Windows...         4634 An account was logged off....
+   15395 Mar 19 15:28  SuccessA... Microsoft-Windows...         4634 An account was logged off....
+   15394 Mar 19 15:28  SuccessA... Microsoft-Windows...         4672 Special privileges assigned to new logon....
+   15393 Mar 19 15:28  SuccessA... Microsoft-Windows...         4624 An account was successfully logged on....
+   15392 Mar 19 15:28  SuccessA... Microsoft-Windows...         4672 Special privileges assigned to new logon....
 ```
