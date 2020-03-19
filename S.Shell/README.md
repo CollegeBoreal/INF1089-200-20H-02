@@ -1,5 +1,7 @@
 # Shell
 
+https://www.linkedin.com/learning/cert-prep-comptia-linux-plus-xko-004/what-makes-a-shell-script-a-shell-script?u=56968449
+
 ```bash
 cat > get-outputs.sh << 'EOF'
 #!/bin/bash
