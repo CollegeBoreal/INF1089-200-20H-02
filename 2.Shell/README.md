@@ -33,3 +33,9 @@ $ brew cas install vscode
 $ brew cask install powershell
 ```
 
+## :a: PowerShell Core
+
+```
+PS > get-command -Module Microsoft.PowerShell.Core
+```
+
