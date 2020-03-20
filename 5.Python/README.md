@@ -28,4 +28,4 @@ Suivre [FP](FP.md)
 https://www.data-blogger.com/2017/11/16/python-list-comprehension/
 
 Coconut: Sieve
-https://www.youtube.com/watch?time_continue=1&v=24DWw6Ozkvo
+https://youtu.be/24DWw6Ozkvo?t=412

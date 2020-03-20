@@ -1,5 +1,7 @@
 # SSMS PowerShell
 
+## :woman_student: [Participation](.scripts/Participation.md)
+
 ## :o: Devoir
 
            Le but de l'exercice est de créer un plan de maintenance permettant la sauvegarde 
@@ -67,7 +69,7 @@ PS> docker container run --name some-mssql `
            mssql-server-windows-developer-fti
 ```
 
-:warning: Sans le build
+###### :warning: Si `docker build` ne fonctionne pas pour créer l'image. Utiliser le `docker run` suivant
 
 ```
 PS >  docker container run --name some-mssql `
