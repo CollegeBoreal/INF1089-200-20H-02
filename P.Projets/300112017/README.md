@@ -1,6 +1,6 @@
-                                   _ Le dilemme du prisonnier _
+                                   #Le dilemme du prisonnier
                                    
-                                   *_règles du jeu_*
+                                   *règles du jeu*
                                  
                                   
                                  
