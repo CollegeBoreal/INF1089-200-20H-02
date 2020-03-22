@@ -12,7 +12,7 @@ couvre, tu auras une remise de peine de 5 ans (et tu seras libéré), mais ton c
 maximum. Mais si vous vous couvrez mutuellement, vous aurez tous les deux une remise de peine
 de 3 ans. »_
 
-                         <img src="pyt.jpg" width="204" heidth="477"></img>
+<img src="pyt.jpg" width="204" heidth="477"></img>
 
 _Dans cette situation, il est clair que si les détenus s'entendent, ils s'en tireront globalement mieux
 que si l'un trahit l'autre. Mais l'un peut être tenté de s'en tirer encore mieux en trahissant son
@@ -50,8 +50,8 @@ liste = {}
 score = {}
 ```
 
-### 👍 On crée d'abord deux dictionnaires : liste donnant la liste des coups joués par les joueurs, et
-### score donnant leur score respectif.
+### 👍 On crée d'abord deux dictionnaires : 
+_liste donnant la liste des coups joués par les joueurs,et score donnant leur score respectif._
 
 ### 👁 On initialise ensuite les deux listes de coups :
 ```
@@ -70,8 +70,8 @@ nb_total_coups = 10 # à modifier
 while nb_coups < nb_total_coups :
 ```
 
-### 💲 Chaque joueur joue selon sa stratégie en tenant compte des coups précédents (le premier
-### paramètre est la liste des coups de l'adversaire, le second la liste des coups du joueur) :
+💲 Chaque joueur joue selon sa stratégie en tenant compte des coups précédents (le premier
+paramètre est la liste des coups de l'adversaire, le second la liste des coups du joueur) :
 ```
 coup_joueur1 = aleatoire(liste['Donnant donnant'],liste['Aléatoire'])
 coup_joueur2 = donnant_donnant(liste['Aléatoire'],liste['Donnant donnant'])
