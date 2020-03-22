@@ -12,7 +12,7 @@ couvre, tu auras une remise de peine de 5 ans (et tu seras libéré), mais ton c
 maximum. Mais si vous vous couvrez mutuellement, vous aurez tous les deux une remise de peine
 de 3 ans. »_
 
-<img src="images/pyt.jpg" width="206" heigth="357"></img>
+<img src="/pyt.jpg" width="206" heigth="357"></img>
 
 _Dans cette situation, il est clair que si les détenus s'entendent, ils s'en tireront globalement mieux
 que si l'un trahit l'autre. Mais l'un peut être tenté de s'en tirer encore mieux en trahissant son
