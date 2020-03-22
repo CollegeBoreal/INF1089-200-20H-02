@@ -12,7 +12,7 @@ couvre, tu auras une remise de peine de 5 ans (et tu seras libéré), mais ton c
 maximum. Mais si vous vous couvrez mutuellement, vous aurez tous les deux une remise de peine
 de 3 ans. »_
 
-<img src="pyt.jpg" width="204" heidth="477"></img>
+                         <img src="pyt.jpg" width="204" heidth="477"></img>
 
 _Dans cette situation, il est clair que si les détenus s'entendent, ils s'en tireront globalement mieux
 que si l'un trahit l'autre. Mais l'un peut être tenté de s'en tirer encore mieux en trahissant son
@@ -53,44 +53,44 @@ score = {}
 👍 On crée d'abord deux dictionnaires : liste donnant la liste des coups joués par les joueurs, et
 score donnant leur score respectif.
 
-On initialise ensuite les deux listes de coups :
+👁 On initialise ensuite les deux listes de coups :
 ```
 liste['Aléatoire'] = []
 liste['Donnant donnant'] = []
 ```
-puis on met les scores à 0 :
+💥 puis on met les scores à 0 :
 ```
 for joueur in liste.keys():
 score[joueur] = 0
 ```
-Enfin, le duel commence et durera nb_total_coups :
+😁 Enfin, le duel commence et durera nb_total_coups :
 ```
 nb_coups = 0
 nb_total_coups = 10 # à modifier
 while nb_coups < nb_total_coups :
 ```
 
-Chaque joueur joue selon sa stratégie en tenant compte des coups précédents (le premier
+💲 Chaque joueur joue selon sa stratégie en tenant compte des coups précédents (le premier
 paramètre est la liste des coups de l'adversaire, le second la liste des coups du joueur) :
 ```
 coup_joueur1 = aleatoire(liste['Donnant donnant'],liste['Aléatoire'])
 coup_joueur2 = donnant_donnant(liste['Aléatoire'],liste['Donnant donnant'])
 ```
 
-On ajoute ce coup à la liste des coups :
+🚗 On ajoute ce coup à la liste des coups :
 ```
 liste['Aléatoire'].append(coup_joueur1)
 liste['Donnant donnant'].append(coup_joueur2)
 ```
 
-puis on met à jour les scores et on recommence pour le coup suivant :
+🔎 puis on met à jour les scores et on recommence pour le coup suivant :
 ```
 score['Aléatoire'] += gain(coup_joueur2,coup_joueur1)
 score['Donnant donnant'] += gain(coup_joueur1,coup_joueur2)
 nb_coups += 1
 ```
 
-On affiche finalement les coups joués lors du duel et les scores des deux joueurs :
+🤦‍♀️On affiche finalement les coups joués lors du duel et les scores des deux joueurs :
 ```
 for joueur in liste.keys():
 print("Coups et score du joueur",joueur)
