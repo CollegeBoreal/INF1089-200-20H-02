@@ -1,6 +1,6 @@
 # Laboratoire : Création d’un plan de maintenance MSSQL - Simulation
 
-* Creer deux fichiers powershell dans lesquelles on va ajouter les instructions a suivre pour importer une base de donnee existante par un `restore` et ensuite faire un `backup` de cette base de donnee.
+*  [x] Creer deux fichiers powershell dans lesquelles on va ajouter les instructions a suivre pour importer une base de donnee existante par un `restore` et ensuite faire un `backup` de cette base de donnee.
 
 1- [restore.ps1](restore.ps1)
 
@@ -24,7 +24,7 @@ PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300107361> $SRC
 C:/users/Administrator/Developer/INF1089-200-20H-02/4.SSMS-PS/300107361
 ```
 
-:m: Lancer le conteneur avec une gestion d'état `--volume`
+:m: Lancer le conteneur avec une gestion d'état `--volume`  
 
 :bulb: Le paramètre Docker `--volume` représente l'état à capturer et prend une source et une destination
 
@@ -37,7 +37,7 @@ PS> docker container run --name some-mssql `
            mssql-server-windows-developer-fti
 ```
 
-## :b: Restore Database
+## :b: Restore Database 
 
 :pushpin: Dans son répertoire de travail (i.e. :id: )
 
@@ -71,13 +71,13 @@ Database 'WideWorldImporters' running the upgrade step from version 868 to versi
 RESTORE DATABASE successfully processed 58455 pages in 17.313 seconds (26.377 MB/sec).
 ```
 
-:pushpin: Vérification dans `SSMS` 
+:pushpin: Vérification dans `SSMS`  
 
 * La base de donnees `WorldWideImporters` a été importée
 
 <img src="wwi.PNG"></img>
 
-## :ab: Backup Database
+## :ab: Backup Database  
 
 :pushpin: Dans son répertoire de travail (i.e. :id: )
 
@@ -103,7 +103,7 @@ BACKUP DATABASE successfully processed 58521 pages in 24.778 seconds (18.451 MB/
 PS C:\users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300107361\backup> ls
 ```
 
-* le fichier `wwwi_2.bak` doit ètre présent 
+* le fichier `wwwi_2.bak` doit ètre présent  
 
 ```
 
