@@ -14,5 +14,5 @@ def primes():
         yield from sieve(n for n in numbers if n % head)
         return sieve(count(2))
      
-   list(takewhile(lambda x: x < 30, primes()))
+list(takewhile(lambda x: x < 30, primes()))
 [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]
