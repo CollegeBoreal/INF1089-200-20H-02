@@ -7,4 +7,4 @@
 |:three:| Laboratoire | Conception d’un script Batch                        | 15|:x:               |                         |
 |:four: | Laboratoire | Programmation d’un script Powershell.               | 20|:x:               |                         |
 |:five: | Laboratoire | Crontab, syslog, et filtrage de texte sur Linux     | 15|:x:               |                         |
-|:six:  | Projet      | Programmation Bash et Python                        | 25|:x:               | [P.Projet](../P.Projet) |
+|:six:  | Projet      | Programmation Bash et Python                        | 25|:x:               | [P.Projets](../P.Projets)|
