@@ -17,8 +17,14 @@
  
  – afﬁchezlasous-listedudébutau2eélément; 
  
- – afﬁchezlasous-listedu3eélémentàlaﬁndelaliste; 
+ – afﬁchez lasous-liste du3e élément à laﬁndelaliste; 
  
- – afﬁchezlasous-listecomplètedelaliste;
+ – afﬁchez la sous-liste complète de la liste;
   
-  – afﬁchezledernierélémentenutilisantunindiçagenégatif
+  – afﬁchez le dernier élément en utilisant unindiçage négatif
+  
+  ##   triez et afﬁchezlaliste;
+  
+nombres = [17, 38, 10, 25, 72]
+print(" Liste initiale ".center(50, '-'))
+print(nombres, '\n')
