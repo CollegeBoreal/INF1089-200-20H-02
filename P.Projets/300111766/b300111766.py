@@ -20,3 +20,5 @@
  – afﬁchezlasous-listedu3eélémentàlaﬁndelaliste; 
  
  – afﬁchezlasous-listecomplètedelaliste;
+  
+  – afﬁchezledernierélémentenutilisantunindiçagenégatif
