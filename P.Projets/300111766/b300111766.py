@@ -1,30 +1,103 @@
                                              STRUCTURES DE DONNEES PYTON
                                              
                                             
- déﬁnirlaliste: liste =[17, 38, 10, 25, 72],puiseffectuezlesactionssuivantes: 
+ déﬁnir la liste: liste =[17, 38, 10, 25, 72],puis effectuez les actions suivantes: 
  
- – triezetafﬁchezlaliste;
+ – triez etafﬁchez la liste;
  
- – ajoutezl’élément12àlalisteetafﬁchezlaliste; 
+ – ajoutez l’élément 12 à la liste et afﬁchez laliste; 
  
- – renversezetafﬁchezlaliste; 
+ – renversez et afﬁchez la liste; 
  
- – afﬁchezl’indicedel’élément17; 
+ – afﬁchez l’indice de l’élément 17; 
  
- – enlevezl’élément38etafﬁchezlaliste;
+ – enlevez l’élément 38 et afﬁchez la liste;
  
- – afﬁchezlasous-listedu2eau3eélément; 
+ – afﬁchez la sous-liste du 2e au 3e élément; 
  
- – afﬁchezlasous-listedudébutau2eélément; 
+ – afﬁchez la sous-liste du début au 2e élément; 
  
- – afﬁchez lasous-liste du3e élément à laﬁndelaliste; 
+ – afﬁchez lasous-liste du 3e élément à laﬁndelaliste; 
  
  – afﬁchez la sous-liste complète de la liste;
   
   – afﬁchez le dernier élément en utilisant unindiçage négatif
   
-  ##   triez et afﬁchezlaliste;
   
-nombres = [17, 38, 10, 25, 72]
+  ## Liste initiale
+  
+  nombres = [17, 38, 10, 25, 72] 
+  
 print(" Liste initiale ".center(50, '-'))
+
 print(nombres, '\n')
+  
+   ##  triez et afﬁchez la liste;
+  
+ nombres = [17, 38, 10, 25, 72]
+  
+print(" Liste initiale ".center(50, '-'))
+
+print(nombres, '\n')
+
+  ##  ajoutez l’élément 12 à la liste et afﬁchez laliste;
+  
+  print(" Ajout d'un element ".center(50, '-')) 
+  
+nombres.append(12) 
+
+print(nombres, '\n')
+
+ ## renversez et afﬁchez la liste; 
+  
+ print(" Retournement ".center(50, '-')) 
+  
+nombres.reverse() 
+
+print(nombres, '\n')
+
+ ## afﬁchez l’indice de l’élément 17;
+  
+print(" Indice d'un element ".center(50, '-'))
+
+print(nombres.index(17), '\n')
+
+## enlevez l’élément 38 et afﬁchez la liste;
+
+print(" Retrait d'un element ".center(50, '-')) 
+
+nombres.remove(38) 
+
+print(nombres, '\n')
+
+## afﬁchez la sous-liste du 2e au 3e élément; 
+
+print(" Indicage ".center(50, '-'))
+
+
+
+print("nombres[1:3] =", nombres[1:3]) 
+
+
+print("nombres[:2] =", nombres[:2]) 
+
+
+
+print("nombres[2:] =", nombres[2:]) 
+
+
+
+print("nombres[:] =", nombres[:]) 
+
+
+print("nombres[-1] =", nombres[-1])
+
+
+ 
+
+
+
+
+
+
+
