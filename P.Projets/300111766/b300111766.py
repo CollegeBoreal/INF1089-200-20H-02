@@ -1,4 +1,4 @@
-                                             StructuresdedonnéesPython
+                                             STRUCTURES DE DONNEES PYTON
                                              
                                             
  déﬁnirlaliste: liste =[17, 38, 10, 25, 72],puiseffectuezlesactionssuivantes: 
