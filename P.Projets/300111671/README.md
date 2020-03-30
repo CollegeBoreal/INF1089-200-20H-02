@@ -1,5 +1,5 @@
 
-   DEVELOPING CHAT APPLICATION IN PYTHON WITH SOURCE CODE
+  # DEVELOPING CHAT APPLICATION IN PYTHON WITH SOURCE CODE
 
 
 Le programme serveur a toute la logique pour contrôler et réguler le chat,
@@ -11,7 +11,7 @@ et  de port.
 Donc, pour la compréhension humaine, Abbas et Djuma discuteront mais parun réseau,
 c'est un processus à deux sockets qui envoie et reçoit des octets.
 
-SERVER SCRIPT
+##SERVER SCRIPT
 
 Les étapes impliquées dans ce processus sont les suivantes:
 
@@ -34,7 +34,7 @@ Keep repeating step 5 & 6 as per users wish
 Exit i.e. end the communication by terminating the connection
 
 
-Script client
+###Script client
 
 Le script client est exécuté par l'utilisateur, donc le même code client sera exécuté par un utilisateur différent mais chacun aura un socket séparé afin d'avoir son canal de communication unique. 
 Le script client est généralement léger car il a très peu de travail, c'est-à-dire qu'il ne se connecte qu'au serveur et envoie et reçoit des messages. Les étapes impliquées dans le script client sont les suivantes:
