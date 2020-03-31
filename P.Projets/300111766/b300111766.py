@@ -75,9 +75,11 @@ print(nombres, '\n')
 print(" Indicage ".center(50, '-'))
 
 
+## afﬁchezlasous-listedu2eau3eélément; 
 
 print("nombres[1:3] =", nombres[1:3]) 
 
+ ## afﬁchez la sous-liste du début au 2e élément; 
 
 print("nombres[:2] =", nombres[:2]) 
 
@@ -85,10 +87,12 @@ print("nombres[:2] =", nombres[:2])
 
 print("nombres[2:] =", nombres[2:]) 
 
+ ##  afﬁchez la sous-liste du3eélément à laﬁn de laliste;
 
 
 print("nombres[:] =", nombres[:]) 
 
+ ## extraire de derniers elements de la liste 
 
 print("nombres[-1] =", nombres[-1])
 
