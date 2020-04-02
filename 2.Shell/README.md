@@ -67,4 +67,9 @@ En un mot, récupérer le travail que vous avez fait à travers [Github Leaning 
 
 Le laboratoire vous garantit une note de passage, ajouter du code en améliorant le script embellira la note.
 
+# References
+
+https://devblogs.microsoft.com/scripting/use-powershell-to-enable-or-disable-a-local-user-account/
+
+
 
