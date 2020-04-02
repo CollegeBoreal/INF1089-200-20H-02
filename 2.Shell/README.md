@@ -49,7 +49,7 @@ https://lab.github.com/CollegeBoreal/lab-programmation-script-en-powershell
 :two: Copier votre scripts dans le cours en remplaçant :id: par votre :id: github :octocat: :
 
 
-https://github.com/:id:/lab-algorithme-du-bfs-en-python
+https://github.com/:id:/lab-programmation-script-en-powershell
 
 Copier les scripts:
 
@@ -66,5 +66,29 @@ En un mot, récupérer le travail que vous avez fait à travers [Github Leaning 
 :three: Amélioration
 
 Le laboratoire vous garantit une note de passage, ajouter du code en améliorant le script embellira la note.
+
+# References
+
+** Politique d'execution
+
+- Etablir
+
+
+```
+PS > Set-ExecutionPolicy RemoteSigned
+```
+
+Avec Scope
+
+
+```
+PS > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+```
+
+- Enlever
+
+```
+PS > Set-ExecutionPolicy Restricted
+
 
 
