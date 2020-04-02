@@ -12,7 +12,8 @@
 #>
 
 # Definition de la fonction
-function Stagiaire {
+function Stagiaire
+ {
  [CmdletBinding()]
  param (
         [String]$personneNom,
@@ -28,3 +29,5 @@ function Stagiaire {
 # Appel de la fonction
 Stagiaire Toronto 35
 Stagiaire "Pascal Siakam" 26  -verbose
+
+Get-Help Stagiaire
