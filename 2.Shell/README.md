@@ -39,3 +39,56 @@ $ brew cask install powershell
 PS > get-command -Module Microsoft.PowerShell.Core
 ```
 
+## :b: Laboratoire
+
+:one: Écrire les scripts en suivant le laboratoire ci-dessous dans [Github Leaning Lab](https://lab.github.com/CollegeBoreal):
+
+https://lab.github.com/CollegeBoreal/lab-programmation-script-en-powershell
+
+
+:two: Copier votre scripts dans le cours en remplaçant :id: par votre :id: github :octocat: :
+
+
+https://github.com/:id:/lab-programmation-script-en-powershell
+
+Copier les scripts:
+
+Par example:
+
+- [ ] Copier le fichier `b000000000-structure.ps1` dans votre :id: `Boréal` 
+
+- [ ] Renommer le fichier `b000000000-structure.ps1` avec `b`:id:`-structure.ps1` 
+
+Le faire pour les deux fichiers `b000000000-structure.ps1` et `b000000000-fonction.ps1`
+
+En un mot, récupérer le travail que vous avez fait à travers [Github Leaning Lab](https://lab.github.com/CollegeBoreal) et le mettre dans celui du cours [2.Shell](../2.Shell)
+
+:three: Amélioration
+
+Le laboratoire vous garantit une note de passage, ajouter du code en améliorant le script embellira la note.
+
+# References
+
+** Politique d'execution
+
+- Etablir
+
+
+```
+PS > Set-ExecutionPolicy RemoteSigned
+```
+
+Avec Scope
+
+
+```
+PS > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+```
+
+- Enlever
+
+```
+PS > Set-ExecutionPolicy Restricted
+
+
+
