@@ -1,37 +1,48 @@
-# Devine mon nombre
+# jeu pierre, papier, ciseaux
+# l'ordinateur joue au hasard
 
 from random import randint
 
-nbr_essais_max = 5
-nbr_essais = 1
-borne_sup = 30
-mon_nombre = randint(1,borne_sup)   # nombre choisi par l'ordinateur
-ton_nombre = 0                      # nombre proposÃ© par le joueur
+def ecrire(nombre):
+    if nombre == 1:
+        print("pierre",end=" ")
+    elif nombre ==2:
+        print("papier",end=" ")
+    else :
+        print("ciseaux",end=" ")
 
-print("J'ai choisi un nombre entre 1 et",borne_sup)
-print("A vous de le deviner en",nbr_essais_max,"tentatives au maximum !")
-
-while ton_nombre != mon_nombre and nbr_essais <= nbr_essais_max:
-    print("Essai no ",nbr_essais)
-    
-    while True:
-        try:
-            ton_nombre = int(input("Votre proposition : "))
-            break
-        except ValueError:
-            print("RÃ©ponse non valide. RÃ©essayez !") 
-            
-    if ton_nombre < mon_nombre:
-        print("Trop petit")
-    elif ton_nombre > mon_nombre:
-        print("Trop grand")
-    else:
-        print("Bravo ! Vous avez trouvÃ©",mon_nombre,"en",nbr_essais,"essai(s)")
-    nbr_essais += 1
+def augmenter_scores(mon_coup,ton_coup,mon_score,ton_score):
+    mon_nouveau_score = mon_score
+    ton_nouveau_score = ton_score
+    if mon_coup == 1 and ton_coup == 2:
+        ton_nouveau_score += 1
+    elif mon_coup == 2 and ton_coup == 1:
+        mon_nouveau_score += 1
+    elif mon_coup == 1 and ton_coup == 3:
+        mon_nouveau_score += 1
+    elif mon_coup == 3 and ton_coup == 1:
+        ton_nouveau_score += 1
+    elif mon_coup == 3 and ton_coup == 2:
+        mon_nouveau_score += 1
+    elif mon_coup == 2 and ton_coup == 3:
+        ton_nouveau_score += 1
+    return mon_nouveau_score, ton_nouveau_score
         
-if nbr_essais>nbr_essais_max and ton_nombre != mon_nombre :
-    
-    print("DÃ©solÃ©, vous avez utilisÃ© vos",nbr_essais_max,"essais en vain.")
-    print("J'avais choisi le nombre",mon_nombre,".")
-    
+ton_score = 0
+mon_score = 0
+fin = 5
+print("Pierre-papier-ciseaux. Le premier Ã ",fin,"a gagné !")
+no_manche = 0
+while mon_score < fin and ton_score < fin:
+    ton_coup = int(input("1 : pierre, 2 : papier, 3 : ciseaux ? "))
+    while ton_coup < 1 or ton_coup > 3:
+        ton_coup =int(input("1 : pierre, 2 : papier, 3 : ciseaux ? "))
+    print("Vous montrez",end=" ")
+    ecrire(ton_coup)
+    mon_coup = randint(1,3)
+    print("- Je montre",end=" ")
+    ecrire(mon_coup)
+    print()     # aller Ã  la ligne
+    mon_score,ton_score=augmenter_scores(mon_coup,ton_coup,mon_score,ton_score)
+    print("vous",ton_score,"   moi",mon_score)
     
