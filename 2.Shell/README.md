@@ -69,7 +69,26 @@ Le laboratoire vous garantit une note de passage, ajouter du code en améliorant
 
 # References
 
-https://devblogs.microsoft.com/scripting/use-powershell-to-enable-or-disable-a-local-user-account/
+** Politique d'execution
+
+- Etablir
+
+
+```
+PS > Set-ExecutionPolicy RemoteSigned
+```
+
+Avec Scope
+
+
+```
+PS > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+```
+
+- Enlever
+
+```
+PS > Set-ExecutionPolicy Restricted
 
 
 
