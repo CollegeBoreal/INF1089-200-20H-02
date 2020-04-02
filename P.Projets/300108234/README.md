@@ -1,2 +1,2 @@
-#  Devine mon nombre 🧐
+# jeu pierre, papier, ciseaux
 
