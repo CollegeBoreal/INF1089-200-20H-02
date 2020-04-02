@@ -1,7 +1,7 @@
 # :seven: CI/CD Batch
 
 
-https://www.linkedin.com/learning/l-essentiel-de-windows-powershell-6/
+https://www.linkedin.com/learning/docker-essential-training-3-image-creation-management-and-registry/analyzing-a-dockerfile
 
 ## :a: :id:
 
