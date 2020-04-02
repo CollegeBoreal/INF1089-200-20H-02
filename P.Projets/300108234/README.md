@@ -1,23 +1,24 @@
 # 👇 Mon projet 👇
 
-# _jeu: "pierre, papier, ciseaux"_
+## jeu: "pierre, papier, ciseaux"
 
-## règles du jeu:
+### règles du jeu:
 
+```
 le papier couvre la pierre
-vous gagnez
-
-
+vous gagnez ✔
+```
+```
 la pierre casse les ciseaux
-vous gagnez
-
-
+vous gagnez ✔
+```
+```
 les ciseaux coupe le papier
-vous perdez
-
-
+vous perdez ❌
+```
+```
 pierre vs pierre ou ciseaux vs ciseaux ou papier vs papier
 egalite
-
+```
 
 
