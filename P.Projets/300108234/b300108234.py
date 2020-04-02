@@ -1,4 +1,4 @@
-# Devine mon nombre
+#  Devine mon nombre
 
 from random import randint
 
@@ -19,9 +19,12 @@ while ton_nombre != mon_nombre and nbr_essais <= nbr_essais_max:
     elif ton_nombre > mon_nombre:
         print("Trop grand")
     else:
-        print("Bravo ! Vous avez trouvÃ©",mon_nombre,"en",nbr_essais,"essai(s)")
+        print("Bravo ! Vous avez trouvé",mon_nombre,"en",nbr_essais,"essai(s)")
     nbr_essais += 1
         
 if nbr_essais>nbr_essais_max and ton_nombre != mon_nombre :
-    print("DÃ©solÃ©, vous avez utilisÃ© vos",nbr_essais_max,"essais en vain.")
+    print("Désolé, vous avez utilisé vos",nbr_essais_max,"essais en vain.")
     print("J'avais choisi le nombre",mon_nombre,".")
+
+    
+    
