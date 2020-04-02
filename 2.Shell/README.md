@@ -63,5 +63,8 @@ Le faire pour les deux fichiers `b000000000-structure.ps1` et `b000000000-foncti
 
 En un mot, récupérer le travail que vous avez fait à travers [Github Leaning Lab](https://lab.github.com/CollegeBoreal) et le mettre dans celui du cours [2.Shell](../2.Shell)
 
+:three: Amélioration
+
+Le laboratoire vous garantit une note de passage, ajouter du code en améliorant le script embellira la note.
 
 
