@@ -16,9 +16,16 @@ function Stagiaire
  {
  [CmdletBinding()]
  param (
+	[Parameter(Mandatory=$true)]
         [String]$personneNom,
+
+	[Parameter(Mandatory=$true)]
+	[ValidateRange(9,99)]
         [Int]$personneAge
+	
     )
+
+
 
  # message de bienvenue 
     BEGIN {Write-Verbose "Début du script"}
@@ -29,5 +36,5 @@ function Stagiaire
 # Appel de la fonction
 Stagiaire Toronto 35
 Stagiaire "Pascal Siakam" 26  -verbose
-
-Get-Help Stagiaire
+stagiaire "Alice" 7777
+stagiaire "Alice" 35
