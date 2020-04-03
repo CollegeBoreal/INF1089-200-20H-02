@@ -22,26 +22,33 @@ https://lab.github.com/CollegeBoreal/lab-github-actions:-bonjour-monde
 
 :two: Copier votre scripts dans le cours en remplaçant :id: par votre :id: github :octocat: :
 
-
 https://github.com/:id:/lab-github-actions:-bonjour-monde
 
-Copier les scripts:
+- [ ] Copier les scripts:
 
 Par example:
 
-- [ ] Copier le fichier `Dockerfile` dans votre :id: `Boréal` 
+  - [ ] Copier le fichier `Dockerfile` dans votre :id: `Boréal` 
 
-- [ ] Copier le fichier `entrypoint.sh` dans votre :id: `Boréal` 
+  - [ ] Copier le fichier `entrypoint.sh` dans votre :id: `Boréal` 
 
-- et les autres fichier utiles quand on execute la commande :
 
-`$ docker build --tag `:id:`:v1.0 .`
+- [ ] Créer votre fichier README.md
+
 
 En un mot, récupérer le travail que vous avez fait à travers [Github Leaning Lab](https://lab.github.com/CollegeBoreal) et le mettre dans celui du cours [7.CI-CD](../7.CI-CD)
 
 :three: Amélioration
 
 Le laboratoire vous garantit une note de passage, ajouter du code en améliorant le script embellira la note.
+
+et les autres fichier utiles quand on execute la commande :
+
+`$ docker build --tag `:id:`:v1.0 .`
+`$ docker run --tty --env INPUT_MY_NAME="Brice" b300098957:v1.0
+Hello world my name is Brice
+
+
 
 ```
 
