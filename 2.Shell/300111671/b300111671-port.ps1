@@ -18,7 +18,9 @@
      true
   #>
   
-function Test-Port{
+function Test-Port
+{
+ [CmdletBinding()]
 param(
 [Parameter(Mandatory=$true,Position=0)][String[]]$Host ,
 [Parameter(Mandatory=$true,Position=1)][ValidateRange(0,65535)] [Long]$Port,
