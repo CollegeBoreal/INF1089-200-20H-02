@@ -38,9 +38,10 @@ PS> docker container run --name some-mssql `
 PS > .\restore.ps1
 ```
 * Resultat du restore
-~~~
+```
 (4 rows affected)
 Processed 1464 pages for database 'WideWorldImporters', file 'WWI_Primary' on file 1.
+
 Processed 53096 pages for database 'WideWorldImporters', file 'WWI_UserData' on file 1.
 Processed 33 pages for database 'WideWorldImporters', file 'WWI_Log' on file 1.
 Processed 3862 pages for database 'WideWorldImporters', file 'WWI_InMemory_Data_1' on file 1.
@@ -70,7 +71,7 @@ PS C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300110500>
 
 * La base de donnees `WorldWideImporters` a été importée
 
-<img src="mages/WWI_SSMS.png" width="204" heidth="477"></img>
+<img src="Images/ssms.png"></img>
 
 ## :ab: Backup Database
 
@@ -80,8 +81,21 @@ PS C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300110500>
 
 ```
 PS > .\backup.ps1
+
 ```
 
+* Resultat du backup
+```
+10 percent processed.
+20 percent processed.
+30 percent processed.
+Processed 1496 pages for database 'WideWorldImporters', file 'WWI_Primary' on file 1.
+Processed 53096 pages for database 'WideWorldImporters', file 'WWI_UserData' on file 1.
+Processed 3865 pages for database 'WideWorldImporters', file 'WWI_InMemory_Data_1' on file 1.
+Processed 74 pages for database 'WideWorldImporters', file 'WWI_Log' on file 1.
+100 percent processed.
+BACKUP DATABASE successfully processed 58531 pages in 44.100 seconds (10.369 MB/sec).
+```
 :pushpin: Vérification
 
 ```
@@ -89,4 +103,15 @@ PS > gci backup
 ```
 
 * le fichier `wwwi_2.bak` doit ètre présent 
+```
+Directory: C:\Users\Administrator\Developer\INF1089-200-20H-02\4.SSMS-PS\300110500\backup
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        3/12/2020  11:49 AM                .docs
+-a----        3/12/2020  11:49 AM             79 .gitkeep
+-a----        3/12/2020  12:03 PM      127056896 wwi.bak
+-a----        3/12/2020  12:53 PM      482086912 wwi_2.bak
+```
 

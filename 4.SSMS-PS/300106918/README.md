@@ -1,5 +1,5 @@
 
-# Powershell SQL Backup and restore script 
+ Powershell SQL Backup and restore script 
 
 
 ##  Création du container MSSQL
@@ -27,7 +27,7 @@ PS> docker container run --name some-mssql `
            --env "SA_PASSWORD=Password123" `
            --volume ${SRC}:C:/DATA `
            --publish 1433:1433 --detach `
-           mssql-server-windows-developer-fti
+           kkbruce/mssql-server-windows-express:windowsservercore-1809
 ```
 
 💥 Restore Database
@@ -39,7 +39,7 @@ PS> docker container run --name some-mssql `
 ```
 PS > .\restore.ps1
 ``` 
-![](images/RESTO.png)
+![](images/respr2.png) 
 
 👉 Vérification dans `SSMS` 
 
@@ -63,7 +63,7 @@ PS > .\backup.ps1
 PS > gci backup
 ```
 
-![](images/bak.png)
+![](images/packup.png)
 
 * le fichier `wwwi_2.bak` doit ètre présent 
 ![](images/baki2.png)
