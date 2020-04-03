@@ -11,7 +11,7 @@
 
 #>
 
-function Stagiaire {
+function etudiants {
 
     
     param (
