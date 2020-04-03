@@ -1,15 +1,21 @@
-<#
-.SYNOPSIS
-    Ce script est un laboratoire Powershell
-
-.DESCRIPTION
-    Ce script est utilisé pour le laboratoire de programmation en Powershell.
-
-.NOTES
-    Author: AbbasSadissou
-    Derniere mise à jour: yyyy-mm-dd
-
-#>
+﻿<#
+ .SYNOPSIS
+     Verifie d’un port tcp distant
+ .DESCRIPTION
+     La fonction TEST-Port retourne $true si le port est ouvert sinon $false
+ .PARAMETER Host
+        Nom du volume ex: c:
+ .PARAMETER Port
+        Numéro de port TCP (inférieure  à 65535)
+ .PARAMETER Timeout
+        Durée du timeout en ms (par défaut 300ms)
+ .NOTES
+     Author : AbbasSadissou
+     Requires : PowerShell V2
+ .EXAMPLE
+     [ps] c:\foo> Test-Port « 10.13.5.55 »  8080
+     true
+  #>
 
 # Definition de la fonction
 function Stagiaire
@@ -23,7 +29,9 @@ function Stagiaire
 	[ValidateRange(9,99)]
         [Int]$personneAge
 	
+	
     )
+	
 	#Test d'existance du compte dans Active directory
 	try {$existeAD =(Get-ADUser $personneNom)}
 	catch {$existeAD =$false}
@@ -32,12 +40,14 @@ function Stagiaire
 	if ($existeAD) {"le compte du stagiaire{0} existe dans Active Directory." -F $personneNom}
 	else {"Vous devez creer le compte de {0} dans Active Directory." -F $personneNom}
 
+	
 
 
- # message de bienvenue 
-    BEGIN {Write-Verbose "Début du script"}
-    PROCESS { "Bonjour {0} ! Tu as {1} ans." -F $personneNom, $personneAge }
-    END {Write-Verbose "Fin du script"}
+
+	 # message de bienvenue 
+    	BEGIN {Write-Verbose "Début du script"}
+   	 PROCESS { "Bonjour {0} ! Tu as {1} ans." -F $personneNom, $personneAge }
+    	END {Write-Verbose "Fin du script"}
 }
 
 # Appel de la fonction
@@ -49,6 +59,8 @@ stagiaire "Alice" 35
 stagiaire "Administrator"
 stagiaire "delux" 
 stagiaire "brice" 
+
+Get-Help Stagiaire
 
 
 
