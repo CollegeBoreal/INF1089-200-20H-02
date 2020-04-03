@@ -46,7 +46,7 @@ et les autres fichier utiles quand on execute la commande :
 
 `$ docker build --tag b`:id:`:1.0 .`
 
-`$ docker run --tty --env INPUT_MY_NAME="Draman" b`:id:`:v1.0`
+`$ docker run --tty --env INPUT_MY_NAME="Draman" b`:id:`:1.0`
 
 `Hello world my name is Draman`
 
