@@ -45,13 +45,10 @@ Le laboratoire vous garantit une note de passage, ajouter du code en améliorant
 et les autres fichier utiles quand on execute la commande :
 
 `$ docker build --tag `:id:`:v1.0 .`
+
 ```
 $ docker run --tty --env INPUT_MY_NAME="Drahman" b300098957:v1.0
 Hello world my name is Drahman
-```
-
-
-
 ```
 
 # References
