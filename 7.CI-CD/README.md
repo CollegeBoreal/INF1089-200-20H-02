@@ -50,7 +50,7 @@ et les autres fichier utiles quand on execute la commande :
 
 `Hello world my name is Draman`
 
-`% docker image history b`:id:`:v1.0`
+`% docker image history b`:id:`:1.0`
 ```
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
 a555cf89a1b7        40 seconds ago      /bin/sh -c #(nop)  ENTRYPOINT ["/entrypoint.…   0B                  
