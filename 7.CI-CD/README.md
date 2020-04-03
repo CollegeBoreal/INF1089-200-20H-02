@@ -35,15 +35,15 @@ Par example:
 
 - et les autres fichier utiles quand on execute la commande :
 
-```
-$ docker build .
-```
+`$ docker build --tag `:id:`:v1.0 .`
 
 En un mot, récupérer le travail que vous avez fait à travers [Github Leaning Lab](https://lab.github.com/CollegeBoreal) et le mettre dans celui du cours [7.CI-CD](../7.CI-CD)
 
 :three: Amélioration
 
 Le laboratoire vous garantit une note de passage, ajouter du code en améliorant le script embellira la note.
+
+```
 
 # References
 
