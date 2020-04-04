@@ -1,3 +1,5 @@
+🎡
+
 # 👇 Mon projet 👇
 
 ## jeu: "pierre-feuille-ciseaux"
@@ -48,45 +50,44 @@ Pierre-papier-ciseaux. Le premier Ã  5 a gagné !
 ```
 ##### ⚠ Rappel : La fonction randrange(a, b) (du module random) retourne aléatoirement un entier n compris entre les paramètres a et b : a <= n < b
 
+##### exemple:
+```
+
 1 : pierre, 2 : papier, 3 : ciseaux ? 
-➡1
+➡ 1
 Vous montrez pierre - Je montre ciseaux 
 vous 1    moi 0
 
 1 : pierre, 2 : papier, 3 : ciseaux ? 
-➡2
+➡ 2
 Vous montrez papier - Je montre pierre 
 vous 2    moi 0
 
 
 1 : pierre, 2 : papier, 3 : ciseaux ? 
-3
-Vous montrez ciseaux - Je montre ciseaux 
-vous 2    moi 0
-
-
-1 : pierre, 2 : papier, 3 : ciseaux ? 
-➡1
+➡ 1
 Vous montrez pierre - Je montre papier 
 vous 2    moi 1
 
 
 1 : pierre, 2 : papier, 3 : ciseaux ? 
-➡1
+➡ 1
 Vous montrez pierre - Je montre ciseaux 
 vous 3    moi 1
 
 
 1 : pierre, 2 : papier, 3 : ciseaux ? 
-➡2
+➡ 2
 Vous montrez papier - Je montre ciseaux 
 vous 3    moi 2
 
 
 1 : pierre, 2 : papier, 3 : ciseaux ? 
-➡3
+➡ 3
 Vous montrez ciseaux - Je montre papier 
 vous 5    moi 2
+
+```
 
 #### finalement le premier Ã " 5 "a gagné 🎉🎊
 
