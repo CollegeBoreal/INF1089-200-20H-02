@@ -20,19 +20,19 @@ Programmer un jeu de Pierre-Feuille-Ciseaux dont les deux joueurs sont l’ordin
 
 ```
 la feuille couvre la pierre
-➡vous gagnez ✔
+➡ vous gagnez ✔
 ```
 ```
 la pierre casse les ciseaux
-➡vous gagnez ✔
+➡ vous gagnez ✔
 ```
 ```
 les ciseaux coupe le papier
-➡vous perdez ❌
+➡ vous perdez ❌
 ```
 ```
 pierre vs pierre ou ciseaux vs ciseaux ou papier vs papier
-➡égalite
+➡ égalite
 ```
 ### ♻Comment se fonctione le code ⁉
 
