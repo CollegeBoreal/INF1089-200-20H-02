@@ -9,8 +9,8 @@
 generate_spec () {
    echo "import sys; sys.path.append('.') # Rajouter le repertoire courant" > .scripts/b${id}.spec.py
   
-   echo "from b${id} import selectionSort" >> .scripts/b${id}.spec.py
-   echo "test = selectionSort( [5, 3, 6, 2, 10]) == [2, 3, 5, 6, 10] " >> .scripts/b${id}.spec.py
+   echo "from b${id} import primes" >> .scripts/b${id}.spec.py
+   echo "test = list(takewhile(lambda x: x < 60, primes())) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59] " >> .scripts/b${id}.spec.py
    echo "if  test:" >> .scripts/b${id}.spec.py
    echo "     print('--------------------')" >> .scripts/b${id}.spec.py
    echo "     print(':tada: :tada: :tada:')" >> .scripts/b${id}.spec.py
