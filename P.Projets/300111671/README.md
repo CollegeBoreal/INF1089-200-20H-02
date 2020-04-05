@@ -1,13 +1,19 @@
 
-  # DEVELOPING CHAT APPLICATION IN :python: WITH SOURCE CODE :star: :star: :star: :pray: :pray: :pray:
+  # DEVELOPING CHAT APPLICATION IN :snake: WITH SOURCE CODE :star: :star: :star: :pray: :pray: :pray:
+  
+  
+  
 
 
 Le programme serveur a toute la logique pour contrôler et réguler le chat,
 donc la plupart de la logique de chat est implémentée avec un programme serveur.
-La première étape de la communication consiste donc à identifier les utilisateurs,
+La première étape de la communication consiste donc à identifier les utilisateurs.
+
 comment le serveur fait-il cela?
+
 Dans la communication réseau,les utilisateurs sont identifiés par un socket qui n'est rien d'autre qu'une combinaison d'adresse IP
 et  de port.
+
 Donc, pour la compréhension humaine, Abbas et Djuma discuteront mais parun réseau,
 c'est un processus à deux sockets qui envoie et reçoit des octets.
 
