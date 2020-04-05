@@ -1,5 +1,5 @@
 
-  # DEVELOPING CHAT APPLICATION IN PYTHON WITH SOURCE CODE
+  # DEVELOPING CHAT APPLICATION IN :python: WITH SOURCE CODE :star: :star: :star: :pray: :pray: :pray:
 
 
 Le programme serveur a toute la logique pour contrôler et réguler le chat,
@@ -11,9 +11,9 @@ et  de port.
 Donc, pour la compréhension humaine, Abbas et Djuma discuteront mais parun réseau,
 c'est un processus à deux sockets qui envoie et reçoit des octets.
 
-##SERVER SCRIPT
+ :a: ## SERVER SCRIPT
 
-Les étapes impliquées dans ce processus sont les suivantes:
+:pushpin: Les étapes impliquées dans ce processus sont les suivantes:
 
 Create socket
 
@@ -34,10 +34,12 @@ Keep repeating step 5 & 6 as per users wish
 Exit i.e. end the communication by terminating the connection
 
 
-###Script client
+ :b:  ### Script client
 
 Le script client est exécuté par l'utilisateur, donc le même code client sera exécuté par un utilisateur différent mais chacun aura un socket séparé afin d'avoir son canal de communication unique. 
-Le script client est généralement léger car il a très peu de travail, c'est-à-dire qu'il ne se connecte qu'au serveur et envoie et reçoit des messages. Les étapes impliquées dans le script client sont les suivantes:
+Le script client est généralement léger car il a très peu de travail, c'est-à-dire qu'il ne se connecte qu'au serveur et envoie et reçoit des messages.
+
+:pushpin: Les étapes impliquées dans le script client sont les suivantes:
 
 
 Create a unique client socket per instance/user
@@ -51,5 +53,5 @@ Repeat step 3 as per configuration
 Close the connection
 
 
-Dans le programme ci-dessus, chaque utilisateur doit exécuter le script client séparément après l'exécution du script serveur. 
+:end: Dans le programme ci-dessus, chaque utilisateur doit exécuter le script client séparément après l'exécution du script serveur. 
 Une fois que le programme client se connecte au serveur, le client doit s'enregistrer en tant qu'utilisateur en donnant un nom d'utilisateur, donc le reste de la communication se fera en utilisant le nom d'utilisateur.
