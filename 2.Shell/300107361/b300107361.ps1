@@ -7,7 +7,6 @@ read year
 
 #Conditions pour que l'annee choisie soit une annee bissextile
 =======
-#!/bin/bash
 
 echo "Type the year that you want to check(4 digits), then press [ENTER]:"
 read year
