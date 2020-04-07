@@ -11,19 +11,19 @@
 
 #>
 
-function Stagiaire {
+function etudiant {
 
-    [CmdletBinding()]
+    
     param (
         [String]$personneNom,
-        [Int]$personneAge
+        [Int]$personneId
     )
     # message de bienvenue 
-    BEGIN {Write-Verbose "Début du script"}
-    PROCESS { "Bonjour {0} ! Tu as {1} ans." -F $personneNom, $personneAge }
-    END {Write-Verbose "Fin du script"}
+    
+    "Hello {0} ! Your Student ID is : 300{1} ." -F $personneNom, $personneId
+    
  }
 
 # Appel de la fonction
-Stagiaire Toronto 35
-Stagiaire "Pascal Siakam" 26  -verbose
+etudiant "widby" 113775
+
