@@ -8,5 +8,5 @@
 |:four: | Laboratoire | Programmation d’un script Powershell.               | 20|:+1:               |[2.Shell](../2.Shell)    |
 |:five: | Laboratoire | Crontab, syslog, et filtrage de texte sur Linux     | 15|:x:               |                         |
 |:six:  | Projet      | Programmation Bash et Python                        | 25|:+1:               |[P.Projets](../P.Projets)|
-|       |             |                                                     | 75|                  |                         |
+|       |             |                                                     | 75/:100:|                  |                         |
 
