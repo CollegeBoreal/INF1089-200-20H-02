@@ -18,7 +18,7 @@ $ touch README.md
 
 ## :three: Mettre tous les fichier Python :snake: dans votre répertoire :id:
 
-Le fichier contenant la fonction main devra se trouver dans le fichier b:id:.py
+Le fichier contenant le test de la fonction `main` devra se trouver dans le fichier b:id:.py
 
 
 
