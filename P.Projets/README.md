@@ -20,6 +20,10 @@ $ touch README.md
 
 Le fichier contenant le test de la fonction `main` devra se trouver dans le fichier b:id:.py
 
+```python
+if __name__== "__main__":
+   main()
+```
 
 
 
