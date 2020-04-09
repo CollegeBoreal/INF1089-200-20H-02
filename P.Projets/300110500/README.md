@@ -47,6 +47,7 @@ def get_Host_name_IP():
 get_Host_name_IP()
 ```
 
+
 ## Output
 ```
 Hostname :   LAPTOP-9J91CJSR
