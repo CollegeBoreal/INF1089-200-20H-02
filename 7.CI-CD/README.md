@@ -67,17 +67,19 @@ c010b45de5b3        40 seconds ago      /bin/sh -c #(nop) ADD file:44be7c7e599db
 
 # :fire: Indices 
 
-:round_pushpin: Tu auras besoin de créer une branche avec `git`
+Tu auras besoin de:
+
+:round_pushpin: créer une branche avec `git`:
 
 https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
 
-:round_pushpin: Tu auras également besoin de créer une demande d'extraction `pull request`
+:round_pushpin: Créer une demande d'extraction `pull request` par le biais de l'interface web de github: 
 
 https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 
-:round_pushpin: Répertoire Imbriqué
+:round_pushpin: Creér Répertoire Imbriqué
 
-pour créer un répertoire imbriqué par exemple `.github/workflows` utilise la commande suivante avec le parametre `-p`:
+par exemple pour créer `.github/workflows` utilise la commande suivante avec le parametre `-p`:
 
 ```
 $ mkdir -p .github/workflows
