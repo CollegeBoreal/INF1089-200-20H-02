@@ -4,12 +4,15 @@
 ### Python3 code: Afficher le nom d'hote and l'addresse IP 
  Pour afficher le nom d'hote et l'addresse IP de son ordinateur le script doit comporter les etapes suivantes
   
-# 1. Importer le  socket library 
+## 1. Importer le  socket library 
+```
 What is socket?
+
 Deriver du mot anglais, socketest un trou qui laisse passer des choses,comme une prise electrique ou une bouche.
 Pour notre casil designe une associationau niveau de l'osentre un programequi tourne en boucheet le port de la machinequi lui a ete dedie. En un mot il ecoute le port et repond aux demandes faites par ce port
+  ```
   
-# 2. Definir la fonction qui affichera lee nom d'hote et IP address 
+## 2. Definir la fonction qui affichera lee nom d'hote et IP address 
 ```
 def get_Host_name_IP(): 
     try: 
@@ -20,7 +23,7 @@ def get_Host_name_IP():
     except: 
         print("Unable to get Hostname and IP") 
   ```
-# 3. Inserrer une fonction qui affichera le resultat final puis executer le code 
+## 3. Inserrer une fonction qui affichera le resultat final puis executer le code 
 get_Host_name_IP() #Function call 
   
 ## Script final 
