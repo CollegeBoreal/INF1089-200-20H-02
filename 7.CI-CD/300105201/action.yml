@@ -1,4 +1,4 @@
-```
+
 name: "Bonjour Actions"
 description: "Saluer quelqu'un"
 author: "octocat@github.com"
@@ -16,4 +16,4 @@ runs:
 branding:
   icon: "mic"
   color: "purple"
-```
+
