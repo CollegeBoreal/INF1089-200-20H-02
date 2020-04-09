@@ -69,7 +69,7 @@ c010b45de5b3        40 seconds ago      /bin/sh -c #(nop) ADD file:44be7c7e599db
 
 Tu auras besoin de:
 
-:round_pushpin: créer une branche avec `git`:
+:round_pushpin: créer et manipuler une branche avec `git`:
 
 https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
 
