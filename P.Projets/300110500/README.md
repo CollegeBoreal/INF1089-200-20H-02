@@ -5,7 +5,7 @@
  Pour afficher le nom d'hote et l'addresse IP de son ordinateur le script doit comporter les etapes suivantes
   
 # 1. Importer le  socket library 
-import socket 
+What is socket?
   
 # 2. Definir la fonction qui affichera lee nom d'hote et IP address 
 ```
