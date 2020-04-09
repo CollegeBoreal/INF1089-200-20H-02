@@ -63,5 +63,16 @@ c010b45de5b3        40 seconds ago      /bin/sh -c #(nop) ADD file:44be7c7e599db
 <missing>           2 weeks ago         /bin/sh -c #(nop) ADD file:594fa35cf803361e6…   63.2MB   
 ```
 
-# References
+# :fire: Indices 
 
+:round_pushpin: Tu auras besoin de créer un branche avec `git`
+
+https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
+
+:round_pushpin: Répertoire
+
+pour créer un répertoire imbriqué par exemple `.github/workflows` utilise la commande suivante avec le parametre `-p`:
+
+```
+$ mkdir -p .github/workflows
+```
