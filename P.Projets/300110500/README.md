@@ -11,8 +11,8 @@ What is socket?
 ```
 Deriver du mot anglais, socket est un trou qui laisse passer des choses,comme une prise electrique ou une bouche.
 Pour notre cas il designe une associationau niveau de l'IOS entre un programme qui tourne en boucheet et le port de la machinequi lui a ete dedie
-En un mot il ecoute le port et repond aux demandes faites par ce port`
-``
+En un mot  importer le socket c'est faire communiquer deux a un reseau c'est a dire le port et l'ip
+
 
  ### :b:Definir la fonction qui affichera lee nom d'hote et IP address 
 ```
