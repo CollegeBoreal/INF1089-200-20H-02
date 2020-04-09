@@ -43,9 +43,9 @@ En un mot, récupérer le travail que vous avez fait à travers [Github Leaning 
 
 :three: Amélioration
 
-Le laboratoire vous garantit une note de :five::zero:`%`, ajouter du code en améliorant le script embellira la note.
+Le laboratoire vous garantit une note de :five::zero:`%`, ajouter du code en améliorant les scripts embellira la note.
 
-et les autres fichier utiles quand on execute la commande :
+En rappel, pour éxécuter localement son fichier `Dockerfile`, on execute la commande :
 
 `$ docker build --tag b`:id:`:1.0 .`
 
