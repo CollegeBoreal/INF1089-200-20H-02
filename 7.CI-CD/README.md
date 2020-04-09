@@ -46,9 +46,9 @@ et les autres fichier utiles quand on execute la commande :
 
 `$ docker build --tag b`:id:`:1.0 .`
 
-`$ docker run --tty --env INPUT_MY_NAME="Draman" b`:id:`:1.0`
+`$ docker run --tty --env INPUT_MON_NOM="Draman" b`:id:`:1.0`
 
-`Hello world my name is Draman`
+`Bonjour tout le monde mon nom est Draman`
 
 `% docker image history b`:id:`:1.0`
 ```
