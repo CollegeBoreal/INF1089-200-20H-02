@@ -1,198 +1,316 @@
-<a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
-
-<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
-
-***INSERT GRAPHIC HERE (include hyperlink in image)***
-
-# Repository Title Goes Here
-
-> Subtitle or Short Description Goes Here
-
-> ideally one sentence
-
-> include terms/tags that can be searched
-
-**Badges will go here**
-
-- build status
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- coverage
-- slack
-- downloads
-- gitter chat
-- license
-- etc.
-
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/pulls) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
-
-- For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
-
-***INSERT ANOTHER GRAPHIC HERE***
-
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
-
-- Most people will glance at your `README`, *maybe* star it, and leave
-- Ergo, people should understand instantly what your project is about based on your repo
-
-> Tips
-
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
-
-> GIF Tools
-
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
-
----
-
-## Table of Contents (Optional)
-
-> If your `README` has a lot of info, section headers might be nice.
-
-- [Installation](#installation)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Team](#team)
-- [FAQ](#faq)
-- [Support](#support)
-- [License](#license)
+# Quizz (2019-11-19)
 
 
----
 
-## Example (Optional)
+## Normalisation  [🎥](https://www.linkedin.com/learning/programming-foundations-databases-2/normalization-2?u=56968449)
 
-```javascript
-// code away!
+:pushpin: 1NF [🎥](https://www.linkedin.com/learning/programming-foundations-databases-2/first-normal-form?u=56968449)
 
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
+:pushpin: 2NF [🎥](https://www.linkedin.com/learning/programming-foundations-databases-2/second-normal-form?u=56968449)
+
+:pushpin: 3NF [🎥](https://www.linkedin.com/learning/programming-foundations-databases-2/third-normal-form-2?u=56968449)
+
+
+[:bulb: What are DDL, DML and DQL?](https://en.wikibooks.org/wiki/MySQL/Language/Definitions:_what_are_DDL,_DML_and_DQL%3F)
+
+## :o: Commentaires
+
+```SQL
+-- Je suis un commentaire.
+-- Je commence par deux tirets suivi d'UN ESPACE
+-- Je cause souvent des erreurs d'inattentions
 ```
 
----
+## :a: DDL
 
-## Installation
 
-- All the `code` required to get started
-- Images of what it should look like
 
-### Clone
+:bangbang: Attention: MySQL respecte la règle des `Majuscules` et `Minuscules` pour le nom des tables !
 
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
 
-### Setup
 
-- If you want more syntax highlighting, format your code like this:
 
-> update and install this package first
+:one: CREATE {DATABASE/TABLE/USER} (target);
 
-```shell
-$ brew update
-$ brew install fvcproductions
+##### :m: DATABASE
+
+```SQL
+mysql> CREATE DATABASE <name>;
 ```
 
-> now install npm and bower packages
 
-```shell
-$ npm install
-$ bower install
+##### :m: TABLE [🎥](https://www.linkedin.com/learning/decouvrir-mysql/comprendre-les-commandes-ddl-sur-une-table?u=56968449)
+
+```SQL
+> CREATE TABLE <name> ( 
+    <nom_champ1> <type1> <option1>, 
+    <nom_champ2> <type1> <option2>, 
+    ...
+  );
 ```
 
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
+:pushpin: Type :
 
----
+| Type                 |  SQL                  | Format                   |
+|----------------------|-----------------------|--------------------------|
+| Nombre               |INT, DOUBLE, FLOAT     | 1 - 10, 1.0 - 10.0       |  
+| Date                 | DATE                  | '1990-01-01'             |
+| booleen              | BOOLEAN               | True, False              |
+| Chaine de caracteres | VARCHAR(<size>), TEXT | '1', '2.6', '2009-12-02' |
+  
+:pushpin: Option: 
 
-## Features
-## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
+| Option             | Description                                                  | 
+|--------------------|--------------------------------------------------------------|
+| AUTO_INCREMENT     | Omettre (N'apparait pas) dans le INSERT statement            |
+| NOT NULL           | Le champ ne peut etre nul sinon Erreur                       |
+| PRIMARY KEY        | :bulb: Peut etre placé ailleurs                              |
+| DEFAULT `<valeur>` | :question:                                                   |
 
-- Going into more detail on code and technologies used
-- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
+##### :m: USER 
 
----
+:pushpin: Adresse IP Locale
 
-## Contributing
+```SQL
+mysql> CREATE USER 'nom'@'localhost' IDENTIFIED BY 'passwd'; -- Utilisateur accedant a la machine locale
+```
 
-> To get started...
+:pushpin: Adresse IP Distante (avec `wildcard` **%** )
 
-### Step 1
+```SQL
+mysql> CREATE USER 'nom'@'%' IDENTIFIED BY 'passwd'; -- Utilisateur accedant a la machine distante
+```
 
-- **Option 1**
-    - 🍴 Fork this repo!
+:two: DROP {DATABASE/TABLE} <name>;
 
-- **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
+##### :m: DATABASE
 
-### Step 2
+```SQL
+mysql> DROP DATABASE <name>;
+```
 
-- **HACK AWAY!** 🔨🔨🔨
+##### :m: TABLE 
 
-### Step 3
+```SQL
+mysql> DROP TABLE <name>;
+```
+##### :m: USER 
 
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
+```SQL
+mysql> DROP USER <name>;
+```
 
----
+:three: Keys :key:
+ 
+ ##### :m: [Primaire](http://www.mysqltutorial.org/mysql-primary-key/) 
+     
+```SQL
+    CREATE TABLE CLIENTS ( ...
+       client INT AUTO_INCREMENT,
+    
+    
+    PRIMARY KEY(client)    
+    );
+``` 
 
-## Team
+##### :m: Etrangere
+ 
+ 
+```SQL
+    CREATE TABLE VILLES ( ...
+       ville INT,
+       pays INT,
+    
+    
+    FOREIGN KEY(pays) REFERENCES PAYS(pays),
+    );
+``` 
+:bulb: Observez le trait `discontinu` entre les :two: tables et le champ pays en rouge dans la table `VILLES`
 
-> Or Contributors/People
+ <img src='images/FK.png' width="170" height="328"></img> |  <img src='images/quiz.png' width="600" height="330"></img>
+ 
+##### :m: composite (Primaire) 
 
-| <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> |
-| :---: |:---:| :---:|
-| [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)    | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
-| <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
+```SQL
+    CREATE TABLE VENTES ( ...
+       produit INT,
+       client INT,
+       ...    
+    
+      PRIMARY KEY( produit, client),
+      FOREIGN KEY(produit) REFERENCES PRODUITS(produit),
+      FOREIGN KEY(client) REFERENCES CLIENTS(client)
+    );
+``` 
+:bulb: Observez le trait `continu` entre les :three: tables
 
-- You can just grab their GitHub profile image URL
-- You should probably resize their picture using `?s=200` at the end of the image URL.
+<img src='images/CK.png' width="800" height="328"></img>
 
----
+:four: Constraints
 
-## FAQ
+#### :m: Relationship Constraints
 
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
+:pushpin: [Foreign Key](https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html#foreign-key-examples)
 
----
+```sql
+mysql> SHOW CREATE TABLE VILLES
+*************************** 1. row ***************************
+       Table: VILLES
+Create Table: CREATE TABLE `VILLES` (
+  `ville` int DEFAULT NULL,
+  `pays` int DEFAULT NULL,
+  INDEX `pay_ind` (`pays`),
+  CONSTRAINT `ville_ibfk_1` FOREIGN KEY (`pays`) 
+  REFERENCES `PAYS` (`pays`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+```
 
-## Support
+#### :m: Data Quality Constraints
 
-Reach out to me at one of the following places!
+:pushpin: [Check](https://dev.mysql.com/doc/refman/8.0/en/create-table-check-constraints.html)
 
-- Website at <a href="http://fvcproductions.com" target="_blank">`fvcproductions.com`</a>
-- Twitter at <a href="http://twitter.com/fvcproductions" target="_blank">`@fvcproductions`</a>
-- Insert more social links here.
+```sql
+mysql> CREATE TABLE t1 (
+  c1 INT CHECK (c1 > 10),
+  CONSTRAINT c1_nonzero CHECK (c1 <> 0)
+);
+```
 
----
+:pushpin: [unique](http://www.mysqltutorial.org/mysql-unique-constraint/)
 
-## Donations (Optional)
+```sql
+mysql> CREATE TABLE `ETUDIANTS` (
+  `etudiant` INT NOT NULL AUTO_INCREMENT,
+  `prenom` VARCHAR(45) NOT NULL,
+  `nom` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`etudiant`),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC)
+);
+```
 
-- You could include a <a href="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png" target="_blank">Gratipay</a> link as well.
-
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/fvcproductions/)
+## :b: DCL
 
 
----
+:four: Permissions
 
-## License
+##### :m: [GRANT](http://www.mysqltutorial.org/mysql-grant.aspx)
 
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+```
+mysql> GRANT <Privilege> ON <base de donnee>.<tables> (ou `*` wildcard) TO <USER>;  
+```
 
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
+##### :m: [REVOKE](http://www.mysqltutorial.org/mysql-revoke.aspx)
+
+```
+mysql> REVOKE <Privilege> ON <base de donnee>.<tables> (ou `*` wildcard) FROM <USER>;  
+```
+
+:pushpin: Privileges [:blue_book:](http://ask.xmodulo.com/create-configure-mysql-user-command-line.html) 
+
+| Privileges | Description                   | 
+|------------|-------------------------------|
+| ALL        | Tous les privileges           |
+| SELECT     | Lecture seulement             |
+| INSERT     | Ajout uniquement              |
+
+
+## :ab: DML
+
+voir l'explication  [`INSERT AUTO_INCREMENT`](https://dev.mysql.com/doc/mysql-tutorial-excerpt/5.7/en/example-auto-increment.html)
+
+
+## :x: DQL 
+
+##### :m: Join
+
+http://code.openark.org/blog/mysql/mysql-joins-on-vs-using-vs-theta-style
+
+```
+MySQL joins: ON vs. USING vs. Theta-style
+July 11, 2012
+What is the difference between the following three syntaxes?
+
+  SELECT * FROM film JOIN film_actor ON (film.film_id = film_actor.film_id)
+  SELECT * FROM film JOIN film_actor USING (film_id)
+  SELECT * FROM film, film_actor WHERE film.film_id = film_actor.film_id
+
+The difference is mostly syntactic sugar, but with a couple interesting notes.
+
+To put names, the first two are called "ANSI-style" while the third is called "Theta-style".
+```
+
+##### :m: Stats
+
+```sql
+mysql> SELECT COUNT(*) FROM ETUDIANTS;
+```
+
+##### :m: Explain
+
+```
+Explain sert à montrer le chemin pris par la recherche de données.
+
+Le but étant de trouver la meilleure route pour accélérer le retour des données
+
+Activer un index indique une meilleur performance
+```
+
+:pushpin: Sans utiliser un index
+
+```sql
+mysql> EXPLAIN SELECT * from ETUDIANTS;
+```
+
+![image](images/EXPLAIN_ALL.png)
+
+:pushpin: Utilise deux indexes (i.e. possible keys)
+
+```sql
+mysql> EXPLAIN SELECT * from ETUDIANTS WHERE programme > 1 OR etudiant = 1;
+```
+
+![image](images/EXPLAIN_KEY.png)
+
+
+## :o2: MySQL Admin Commands
+
+##### :m: SHOW <artifacts>
+    
+```mysql
+mysql> SHOW DATABASES;
+```
+
+```mysql
+mysql> SHOW TABLES;
+```
+
+```mysql
+mysql> SHOW GRANTS FOR rfc@localhost;
+```
+
+##### :m: describe
+
+```mysql
+mysql> DESCRIBE <nom de table>;
+```
+
+
+##### :m:  use
+
+```mysql
+mysql> USE <database>;
+```
+
+##### :m:  mysql.user
+
+```mysql
+mysql> SELECT host, user, password FROM mysql.user;
++------+-----------+-------------------------------------------+
+| host | user      | password                                  |
++------+-----------+-------------------------------------------+
+| %    | root      | *2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19 |
+| %    | etudiants | *DAFBEF26A36FED36DEDC56E4B03974353E90F522 |
++------+-----------+-------------------------------------------+
+2 rows in set (0.00 sec)
+```
