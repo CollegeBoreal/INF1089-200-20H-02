@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Quizz (2019-11-19)
 
 
@@ -314,3 +315,6 @@ mysql> SELECT host, user, password FROM mysql.user;
 +------+-----------+-------------------------------------------+
 2 rows in set (0.00 sec)
 ```
+=======
+
+>>>>>>> 81f6660a9c40f3bd5dc48fde7f6f420b14036fed
