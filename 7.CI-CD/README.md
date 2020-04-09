@@ -75,7 +75,7 @@ https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
 
 :round_pushpin: Créer une demande d'extraction `pull request` par le biais de l'interface web de github: 
 
-https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request
 
 :round_pushpin: Creér Répertoire Imbriqué
 
