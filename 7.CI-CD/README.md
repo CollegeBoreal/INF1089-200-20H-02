@@ -53,6 +53,8 @@ En rappel, pour éxécuter localement son fichier `Dockerfile`, on execute la co
 
 `Bonjour tout le monde mon nom est Draman`
 
+Pour visualiser les couches images de l'image créée
+
 `% docker image history b`:id:`:1.0`
 ```
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
