@@ -8,6 +8,7 @@
 import socket 
   
 # 2. Definir la fonction qui affichera lee nom d'hote et IP address 
+```
 def get_Host_name_IP(): 
     try: 
         host_name = socket.gethostname() 
@@ -16,12 +17,13 @@ def get_Host_name_IP():
         print("IP : ",host_ip) 
     except: 
         print("Unable to get Hostname and IP") 
-  
+  ```
 # 3. Inserrer une fonction qui affichera le resultat final puis executer le code 
 get_Host_name_IP() #Function call 
   
 ## Script final 
 
+```
 get_Host_name_IP() ]
    
 import socket 
@@ -35,6 +37,7 @@ def get_Host_name_IP():
         print("Unable to get Hostname and IP") 
   
 get_Host_name_IP()
+```
 
 ## Output
 
