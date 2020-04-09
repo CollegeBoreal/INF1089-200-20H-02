@@ -40,6 +40,7 @@ get_Host_name_IP()
 ```
 
 ## Output
-
+```
 Hostname :   LAPTOP-9J91CJSR
 IP :  169.254.162.12
+```
