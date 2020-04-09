@@ -25,6 +25,7 @@ def get_Host_name_IP():
     except: 
         print("Unable to get Hostname and IP") 
   ```
+  
 ### :c:Inserrer une fonction qui affichera le resultat final puis executer le code 
 get_Host_name_IP() #Function call 
   
