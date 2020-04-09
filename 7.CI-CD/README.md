@@ -7,9 +7,11 @@ https://www.linkedin.com/learning/docker-essential-training-3-image-creation-man
 
 * Créer un répertoire avec votre :id:
 
-* Créer votre script PowerShell en donnant le nom b:id:.ps1
+* Créer votre fichier `README.md`
 
-Example b300098957.ps1
+```
+$ touch README.md
+```
 
 [Participation](Participation.md)
 
@@ -22,7 +24,7 @@ https://lab.github.com/CollegeBoreal/lab-github-actions:-bonjour-monde
 
 :two: Copier votre scripts dans le cours en remplaçant :id: par votre :id: github :octocat: :
 
-https://github.com/:id:/lab-github-actions:-bonjour-monde
+https://github.com/:id:/lab-bonjour-github-actions
 
 - [ ] Copier les scripts:
 
@@ -33,7 +35,7 @@ Par example:
   - [ ] Copier le fichier `entrypoint.sh` dans votre :id: `Boréal` 
 
 
-- [ ] Créer votre fichier README.md
+- [ ] Modifie ton fichier README.md pour plus de documentation
 
 
 En un mot, récupérer le travail que vous avez fait à travers [Github Leaning Lab](https://lab.github.com/CollegeBoreal) et le mettre dans celui du cours [7.CI-CD](../7.CI-CD)
