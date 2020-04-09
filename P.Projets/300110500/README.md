@@ -6,6 +6,7 @@
   
 ### :a: Importer le  socket library 
 ```
+import socket
 What is socket?
 ```
 Deriver du mot anglais, socket est un trou qui laisse passer des choses,comme une prise electrique ou une bouche.
