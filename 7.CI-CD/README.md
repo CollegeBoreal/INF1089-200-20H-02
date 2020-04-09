@@ -2,7 +2,7 @@
 
 Ce laboratoire t'apprendra à utiliser les commandes `shell` sous Unix en créant un fichier `entrypoint.sh`, à créer ton propre conteneur `Docker` en créant un fichier `Dockerfile` et t'apprendra les bases du [`CI/CD`](https://en.wikipedia.org/wiki/CI/CD) `Continuous Integration` et `Continuous Delivery` avec le service `github actions` de `github.com`.
 
-Une section [#Indices] est fournie ci-dessous comme documentation d'aide à terminer ce laboratoire.
+Une section [Indices](README.md#Indices) est fournie ci-dessous comme documentation d'aide à terminer ce laboratoire.
 
 Tu pourras t'appuyer d'une documentation en ligne pour continuer ce labobratoire en améliorant le fichier `Dockerfile` avec le [cours en ligne suivant](https://www.linkedin.com/learning/docker-essential-training-3-image-creation-management-and-registry/analyzing-a-dockerfile)
 
