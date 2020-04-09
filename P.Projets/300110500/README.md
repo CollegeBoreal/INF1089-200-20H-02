@@ -7,7 +7,7 @@
 ## 1. Importer le  socket library 
 ```
 What is socket?
-
+```
 Deriver du mot anglais, socketest un trou qui laisse passer des choses,comme une prise electrique ou une bouche.
 Pour notre casil designe une associationau niveau de l'osentre un programequi tourne en boucheet le port de la machinequi lui a ete dedie. En un mot il ecoute le port et repond aux demandes faites par ce port
   ```
