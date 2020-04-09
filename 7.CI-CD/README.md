@@ -73,7 +73,7 @@ https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
 
 https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 
-:round_pushpin: Répertoire
+:round_pushpin: Répertoire Imbriqué
 
 pour créer un répertoire imbriqué par exemple `.github/workflows` utilise la commande suivante avec le parametre `-p`:
 
