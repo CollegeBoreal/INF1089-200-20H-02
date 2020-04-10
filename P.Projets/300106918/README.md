@@ -54,6 +54,18 @@
           Prompt              A String, representing a default message before the input
 
 
+''
+    :star: Les index
+
+         le programme utilise Les index de liste de -x signifient le xth élément de la fin de la liste, donc n [-1] 
+         signifie le dernier élément de la liste n. Tout bon tutoriel Python aurait dû vous le dire.
+
+          En termes simples, la méthode index () trouve l'élément donné dans une liste et renvoie sa position.
+          Si le même élément est présent plusieurs fois, la méthode renvoie l'index de la première occurrence de l'élément.
+          
+                       if accounts.current_user_index==-1:
+                           print('account number does not exists')
+
 ##### :m: Les boucle
   ''
          :star: Les boucles permettent d'exécuter plusieurs fois les mêmes ordres
