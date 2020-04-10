@@ -40,8 +40,10 @@
           correspondant à ce qui a été frappé au clavier 
           
  '   - Le même cas dans le programme l’utilisateur tape le numéro de compte et le mot de passe
- '         ![](image/code.png) 
- ''
+
+''
+![](image/code.png) 
+''
     :star: Syntax
 
           input(prompt) 
