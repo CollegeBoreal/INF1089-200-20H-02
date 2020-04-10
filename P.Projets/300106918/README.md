@@ -44,7 +44,7 @@
 
 
 ##### :m: Les boucle
-   '''
+  ''
          :star: Les boucles permettent d'exécuter plusieurs fois les mêmes ordres
 
         ● Pour parcourir une liste :
@@ -56,18 +56,20 @@
                                        for x in list2:
                                            list1.append(x)
                                        print(list1)
-'''
 
-      :pushpin: while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
+
+
+''
+      :star: while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
          tant qu’une condition donnée est vraie. 
 
               while nom_variable = valeur:
                     instructions
                     modification de variable
- 
+
 ##### :m: instruction conditionnelle
-           
-       :bulb:  if  dans le cas où elle l'est, à effectuer un traitement spécifique, 
+''        
+       :star:  if  dans le cas où elle l'est, à effectuer un traitement spécifique, 
          et si elle ne l'est pas à effectuer un autre traitement else 
 
              if condition: 
@@ -87,7 +89,7 @@
 ##### :m:  elif 
       Le mot clé elif est un raccourci pour else if, mais permet de gagner un niveau d’indentation.
 
-:one:Autrement 
+ :star:Autrement 
 
         L'instruction elif est une compression de else if qui signifie sinon si. 
         Elle doit être utilisée après un if ou un autre elif. 
