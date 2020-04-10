@@ -8,11 +8,10 @@
      # Programme python pour gérer ATM Machine, tout d'abord l'utilisateur 
       a besoin d'un mot de passe pour entrer dans le programme,
       alors une liste apparaît :
-
-   1. retirer de l'argent.
-   2. appuyez sur 2 pour transférer de l'argent.
-   3. pour déposer de l'argent.
-   4. pour afficher le solde actuel.
+           1. retirer de l'argent.
+           2. appuyez sur 2 pour transférer de l'argent.
+           3. pour déposer de l'argent.
+           4. pour afficher le solde actuel.
 
 
 
@@ -52,17 +51,14 @@
 
             for variable in liste:
                code de la boucle
-
-list1 = ["a", "b" , "c"]
-list2 = [1, 2, 3]
-
-for x in list2:
-  list1.append(x)
-
-print(list1)
+                                    list1 = ["a", "b" , "c"]
+                                    list2 = [1, 2, 3]
+                                       for x in list2:
+                                           list1.append(x)
+                                       print(list1)
 
 
-        :while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
+        while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
          tant qu’une condition donnée est vraie. 
 
               while nom_variable = valeur:
