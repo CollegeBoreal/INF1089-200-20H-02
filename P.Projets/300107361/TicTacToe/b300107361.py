@@ -195,3 +195,11 @@ while(True):
     pg.display.update()
     CLOCK.tick(fps)
 
+    
+    
+def main():
+    if __name__== "__main__":
+          main()
+    return main
+
+main = game_opening()
