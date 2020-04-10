@@ -1,5 +1,6 @@
 
-# Projet Python - Étapes pour construire un jeu Python
+# Projet Python - Étapes pour construire un jeu Python 
+:snake:
 
 Il ne fait aucun doute que vous devez avoir joué au Tic Tac Toe a l'ecole et chacun de nous aime jouer au jeu. 
 Vous serez surpris de savoir que le jeu de Tic Tac Toe existe depuis les temps de l'Égypte antique.
@@ -298,6 +299,16 @@ while(True):
     pg.display.update()
     CLOCK.tick(fps)
 ```
+Ajoutons une petite fonction `main` comme test a la fin du code pour faire plaisir au Prof.
+```python
+def main():
+    if __name__== "__main__":
+          main()
+    return main
+
+main = game_opening()
+```
+
 Le jeu est terminé et prêt à jouer. Enregistrez le fichier du code source avec le nom de fichier [b300107361.py](https://github.com/CollegeBoreal/INF1089-200-20H-02/blob/master/P.Projets/300107361/TicTacToe/b300107361.py) et exécutez le fichier.
 
 ## LE `DEMO:`
