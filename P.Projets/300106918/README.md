@@ -12,18 +12,17 @@
            2. appuyez sur 2 pour transférer de l'argent.
            3. pour déposer de l'argent.
            4. pour afficher le solde actuel.
- 
+ ''
     :star: dépôt d'argent
+''
     ![](image/depo.png)
  
  ''
     :star:afficher le solde actuel
-    
+ ''
     ![](image/tranf.png )
 
 
-
-[:
 
 ## :o: Structures de données
 
