@@ -2,6 +2,7 @@
 # Projet Python - Étapes pour construire un jeu Python
 
 Il ne fait aucun doute que vous devez avoir joué au Tic Tac Toe a l'ecole et chacun de nous aime jouer au jeu. 
+
 Vous serez surpris de savoir que le jeu de Tic Tac Toe existe depuis les temps de l'Égypte antique.
 
 Avec ce projet Python de [Toch90](https://github.com/toch90), nous allons construire un jeu interactif de Tic Tac Toe où nous apprendrons de nouvelles choses en cours de route.
@@ -9,11 +10,14 @@ Avec ce projet Python de [Toch90](https://github.com/toch90), nous allons constr
 ## Qu'est-ce que Tic Tac Toe?
 
 Tic Tac Toe est l'un des jeux les plus joués et est le meilleur jeu tueur de temps auquel vous pouvez jouer n'importe où avec juste un stylo et du papier. 
+
 Si vous ne savez pas comment jouer à ce jeu, ne vous inquiétez pas, laissez-nous d'abord comprendre cela.
 
 Le jeu est joué par deux personnes. Tout d'abord, nous dessinons un tableau avec une grille carrée 3 × 3. 
 Le premier joueur choisit «X» et le dessine sur l’une des grilles carrées, puis c’est la chance du deuxième joueur de dessiner «O» sur les cases disponibles. 
-Comme cela, les joueurs dessinent alternativement «X» et «O» sur les espaces vides jusqu'à ce qu'un joueur réussisse à dessiner 3 marques consécutives soit horizontalement, verticalement ou diagonalement. 
+
+Comme cela, les joueurs dessinent alternativement «X» et «O» sur les espaces vides jusqu'à ce qu'un joueur réussisse à dessiner 3 marques consécutives soit horizontalement, verticalement ou diagonalement.
+
 Ensuite, le joueur gagne la partie, sinon la partie est nulle lorsque toutes les places sont remplies.
 
 ![image](https://dkb46014en6d6.cloudfront.net/tutorials/wp-content/uploads/sites/2/2019/12/tic-tac-toe-project-in-python.gif)
