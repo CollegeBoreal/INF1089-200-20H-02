@@ -104,19 +104,6 @@ mysql> CREATE DATABASE <name>;
 ```
 
 
-##### :m: TABLE [🎥](https://www.linkedin.com/learning/decouvrir-mysql/comprendre-les-commandes-ddl-sur-une-table?u=56968449)
-
-```SQL
-> CREATE TABLE <name> ( 
-    <nom_champ1> <type1> <option1>, 
-    <nom_champ2> <type1> <option2>, 
-    ...
-  );
-```
-
-:pushpin: Type :
-
-kkkkkkkkk                                                   |
 
 ##### :m: USER 
 
@@ -138,35 +125,20 @@ llllllll
 
 ##### :m: DAT
 
-```SQL
-mysql> DROP DATABASE <name>;
+```lllll
 ```
 
-##### :m: TABLE 
 
-```SQL
-mysql> DROP TABLE <name>;
-```
-##### :m: USER 
 
-```SQL
-mysql> DROP USER <name>;
-```
 
-:three: Keys :key:
  
- ##### :m: [Primaire](http://www.mysqltutorial.org/mysql-primary-key/) 
+ ##### :m: vvv
      
-```SQL
-    CREATE TABLE CLIENTS ( ...
-       client INT AUTO_INCREMENT,
-    
-    
-    PRIMARY KEY(client)    
-    );
+```   
+   
 ``` 
 
-##### :m: Etrangere
+##### :m: nnnn
  
  
 ```SQL
