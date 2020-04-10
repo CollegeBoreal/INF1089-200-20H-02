@@ -44,7 +44,7 @@
 
 
 ##### :m: Les boucle
-   
+   '''
          :star: Les boucles permettent d'exécuter plusieurs fois les mêmes ordres
 
         ● Pour parcourir une liste :
@@ -56,9 +56,9 @@
                                        for x in list2:
                                            list1.append(x)
                                        print(list1)
+'''
 
-
-      :star: while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
+      :pushpin: while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
          tant qu’une condition donnée est vraie. 
 
               while nom_variable = valeur:
