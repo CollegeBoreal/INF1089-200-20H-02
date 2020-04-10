@@ -37,8 +37,7 @@
 ##### :m: input
           La fonction input() demande un argument (qui peut être vide) qui est de type chaîne de caractère. 
           Elle attend que l'utilisateur frappe quelque chose au clavier. Elle renvoie une valeur de type
-          correspondant à ce qui a été frappé au clavier 
-          
+          correspondant à ce qui a été frappé au clavier         
  ''
  - Le même cas dans le programme l’utilisateur tape le numéro de compte et le mot de passe
 
