@@ -58,7 +58,7 @@
     :star: Les index
 
          le programme utilise Les index de liste de -x signifient le xth élément de la fin de la liste, donc n [-1] 
-         signifie le dernier élément de la liste n. Tout bon tutoriel Python aurait dû vous le dire.
+         signifie le dernier élément de la liste n.
 
           En termes simples, la méthode index () trouve l'élément donné dans une liste et renvoie sa position.
           Si le même élément est présent plusieurs fois, la méthode renvoie l'index de la première occurrence de l'élément.
