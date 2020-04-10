@@ -1,7 +1,6 @@
 
 
 FROM debian:9.5-slim
-RUN install_packages ca-certificates curl git
 RUN apt-get install -y redis-server && \
     apt-get clean
 
