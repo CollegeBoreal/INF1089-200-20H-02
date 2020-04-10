@@ -56,7 +56,7 @@ Ensuite, nous dessinerons l'image appropriée «X» ou «O» sur la toile. C'est
 Commençons donc par importer la bibliothèque pygame et la bibliothèque de temps car nous allons utiliser la méthode `time.sleep()` pour mettre le jeu en pause à certaines positions. 
 
 Ensuite, nous initialisons toutes les variables globales que nous utiliserons dans notre jeu Tic Tac Toe.
-```
+```python
 import pygame as pg,sys
 from pygame.locals import *
 import time
