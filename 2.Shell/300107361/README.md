@@ -44,7 +44,7 @@ En un mot, récupérer le travail que vous avez fait à travers [Github Leaning 
 
 Le laboratoire vous garantit une note de passage, ajouter du code en améliorant le script embellira la note.
 
-[x] Example d'améliorations :
+- [x] Example d'améliorations :
  
 * la validation de paramètres :
  
