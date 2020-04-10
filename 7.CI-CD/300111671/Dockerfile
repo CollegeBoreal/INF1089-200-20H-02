@@ -2,7 +2,7 @@
 
 FROM debian:9.5-slim
 RUN install_packages ca-certificates curl git
-    apt-get install -y redis-server && \
+RUN apt-get install -y redis-server && \
     apt-get clean
 
 RUN mkdir /myvol
