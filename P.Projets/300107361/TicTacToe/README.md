@@ -1,39 +1,39 @@
 
-# Projet Python - Étapes pour construire un jeu Python
+# Projet Python - Ã‰tapes pour construire un jeu Python
 
-Il ne fait aucun doute que vous devez avoir joué au Tic Tac Toe a l'ecole et chacun de nous aime jouer au jeu. Vous serez surpris de savoir que le jeu de Tic Tac Toe existe depuis les temps de l'Égypte antique.
+Il ne fait aucun doute que vous devez avoir jouÃ© au Tic Tac Toe a l'ecole et chacun de nous aime jouer au jeu. Vous serez surpris de savoir que le jeu de Tic Tac Toe existe depuis les temps de l'Ã‰gypte antique.
 
-Avec ce projet Python de ![Toch90](https://github.com/toch90), nous allons construire un jeu interactif de Tic Tac Toe où nous apprendrons de nouvelles choses en cours de route.
+Avec ce projet Python de [Toch90](https://github.com/toch90), nous allons construire un jeu interactif de Tic Tac Toe oÃ¹ nous apprendrons de nouvelles choses en cours de route.
 
 ## Qu'est-ce que Tic Tac Toe?
 
-Tic Tac Toe est l'un des jeux les plus joués et est le meilleur jeu tueur de temps auquel vous pouvez jouer n'importe où avec juste un stylo et du papier. Si vous ne savez pas comment jouer à ce jeu, ne vous inquiétez pas, laissez-nous d'abord comprendre cela.
+Tic Tac Toe est l'un des jeux les plus jouÃ©s et est le meilleur jeu tueur de temps auquel vous pouvez jouer n'importe oÃ¹ avec juste un stylo et du papier. Si vous ne savez pas comment jouer Ã  ce jeu, ne vous inquiÃ©tez pas, laissez-nous d'abord comprendre cela.
 
-Le jeu est joué par deux personnes. Tout d'abord, nous dessinons un tableau avec une grille carrée 3 × 3. Le premier joueur choisit «X» et le dessine sur l’une des grilles carrées, puis c’est la chance du deuxième joueur de dessiner «O» sur les cases disponibles. Comme cela, les joueurs dessinent alternativement «X» et «O» sur les espaces vides jusqu'à ce qu'un joueur réussisse à dessiner 3 marques consécutives soit horizontalement, verticalement ou diagonalement. Ensuite, le joueur gagne la partie, sinon la partie est nulle lorsque toutes les places sont remplies.
+Le jeu est jouÃ© par deux personnes. Tout d'abord, nous dessinons un tableau avec une grille carrÃ©e 3 Ã— 3. Le premier joueur choisit Â«XÂ» et le dessine sur lâ€™une des grilles carrÃ©es, puis câ€™est la chance du deuxiÃ¨me joueur de dessiner Â«OÂ» sur les cases disponibles. Comme cela, les joueurs dessinent alternativement Â«XÂ» et Â«OÂ» sur les espaces vides jusqu'Ã  ce qu'un joueur rÃ©ussisse Ã  dessiner 3 marques consÃ©cutives soit horizontalement, verticalement ou diagonalement. Ensuite, le joueur gagne la partie, sinon la partie est nulle lorsque toutes les places sont remplies.
 
 ![image](https://dkb46014en6d6.cloudfront.net/tutorials/wp-content/uploads/sites/2/2019/12/tic-tac-toe-project-in-python.gif)
 
-## Tic Tac Toe - À propos du projet Python
+## Tic Tac Toe - Ã€ propos du projet Python
 
-L'intéressant projet Python sera construit en utilisant la bibliothèque pygame. Nous expliquerons toutes les méthodes d'objet pygame utilisées dans ce projet. Pygame est une excellente bibliothèque qui nous permettra de créer la fenêtre et de dessiner des images et des formes sur la fenêtre. De cette façon, nous capturerons les coordonnées de la souris et identifierons le bloc où nous devons marquer «X» ou «O». Ensuite, nous vérifierons si l'utilisateur gagne le jeu ou non.
+L'intÃ©ressant projet Python sera construit en utilisant la bibliothÃ¨que pygame. Nous expliquerons toutes les mÃ©thodes d'objet pygame utilisÃ©es dans ce projet. Pygame est une excellente bibliothÃ¨que qui nous permettra de crÃ©er la fenÃªtre et de dessiner des images et des formes sur la fenÃªtre. De cette faÃ§on, nous capturerons les coordonnÃ©es de la souris et identifierons le bloc oÃ¹ nous devons marquer Â«XÂ» ou Â«OÂ». Ensuite, nous vÃ©rifierons si l'utilisateur gagne le jeu ou non.
 
 ## Prerequis
-Pour implémenter ce jeu, nous utiliserons les concepts de base de Python et Pygame qui est une bibliothèque Python pour construire des jeux multi-plateformes. Il contient les modules nécessaires aux graphiques informatiques et aux bibliothèques de sons. Pour installer la bibliothèque, vous pouvez utiliser le programme d'installation pip à partir de la ligne de commande:
+Pour implÃ©menter ce jeu, nous utiliserons les concepts de base de Python et Pygame qui est une bibliothÃ¨que Python pour construire des jeux multi-plateformes. Il contient les modules nÃ©cessaires aux graphiques informatiques et aux bibliothÃ¨ques de sons. Pour installer la bibliothÃ¨que, vous pouvez utiliser le programme d'installation pip Ã  partir de la ligne de commande:
 ```
 pip install pygame
 ```
 
-## Tout d'abord, vérifions les étapes pour construire le programme Tic Tac Toe en Python:
+## Tout d'abord, vÃ©rifions les Ã©tapes pour construire le programme Tic Tac Toe en Python:
 
-*Créez la fenêtre d'affichage de notre jeu.
-*Dessinez la grille sur la toile où nous jouerons Tic Tac Toe.
-*Tracez la barre d’état sous le canevas pour montrer quel est le tour du joueur et qui remporte la partie.
-*Lorsque quelqu'un gagne la partie ou que la partie est nulle, nous réinitialisons la partie.
+*CrÃ©ez la fenÃªtre d'affichage de notre jeu.
+*Dessinez la grille sur la toile oÃ¹ nous jouerons Tic Tac Toe.
+*Tracez la barre dâ€™Ã©tat sous le canevas pour montrer quel est le tour du joueur et qui remporte la partie.
+*Lorsque quelqu'un gagne la partie ou que la partie est nulle, nous rÃ©initialisons la partie.
 
-Nous devons exécuter notre jeu dans une boucle infinie. Il recherchera continuellement des événements et lorsqu'un utilisateur appuiera sur le bouton de la souris sur la grille, nous obtiendrons d'abord les coordonnées X et Y de la souris. Ensuite, nous vérifierons sur quel carré l'utilisateur a cliqué. Ensuite, nous dessinerons l'image appropriée «X» ou «O» sur la toile. C'est donc essentiellement ce que nous ferons dans cette idée de projet Python.
+Nous devons exÃ©cuter notre jeu dans une boucle infinie. Il recherchera continuellement des Ã©vÃ©nements et lorsqu'un utilisateur appuiera sur le bouton de la souris sur la grille, nous obtiendrons d'abord les coordonnÃ©es X et Y de la souris. Ensuite, nous vÃ©rifierons sur quel carrÃ© l'utilisateur a cliquÃ©. Ensuite, nous dessinerons l'image appropriÃ©e Â«XÂ» ou Â«OÂ» sur la toile. C'est donc essentiellement ce que nous ferons dans cette idÃ©e de projet Python.
 
 ## 1. Initialisation des composants du jeu
-Commençons donc par importer la bibliothèque pygame et la bibliothèque de temps car nous allons utiliser la méthode time.sleep() pour mettre le jeu en pause à certaines positions. Ensuite, nous initialisons toutes les variables globales que nous utiliserons dans notre jeu Tic Tac Toe.
+CommenÃ§ons donc par importer la bibliothÃ¨que pygame et la bibliothÃ¨que de temps car nous allons utiliser la mÃ©thode time.sleep() pour mettre le jeu en pause Ã  certaines positions. Ensuite, nous initialisons toutes les variables globales que nous utiliserons dans notre jeu Tic Tac Toe.
 ```
 import pygame as pg,sys
 from pygame.locals import *
@@ -49,17 +49,17 @@ line_color = (10,10,10)
 #TicTacToe 3x3 board
 TTT = [[None]*3,[None]*3,[None]*3]
 ```
-Ici, le TTT est la principale planche Tic Tac Toe 3 × 3 et, dans un premier temps, il aura 9 valeurs None. La hauteur et la largeur de la toile sur laquelle nous allons jouer est de 400 × 400.
+Ici, le TTT est la principale planche Tic Tac Toe 3 Ã— 3 et, dans un premier temps, il aura 9 valeurs None. La hauteur et la largeur de la toile sur laquelle nous allons jouer est de 400 Ã— 400.
 
-## 3. Initialisation de la fenêtre Pygame
+## 3. Initialisation de la fenÃªtre Pygame
 
-Nous utilisons le pygame pour créer une nouvelle fenêtre où nous jouerons à notre jeu Tic Tac Toe. Nous initialisons donc le pygame avec la méthode `pg.init()` et l'affichage de la fenêtre est défini avec une largeur de 400 et une hauteur de 500. Nous avons réservé un espace de 100 pixels pour afficher l'état du jeu.
+Nous utilisons le pygame pour crÃ©er une nouvelle fenÃªtre oÃ¹ nous jouerons Ã  notre jeu Tic Tac Toe. Nous initialisons donc le pygame avec la mÃ©thode `pg.init()` et l'affichage de la fenÃªtre est dÃ©fini avec une largeur de 400 et une hauteur de 500. Nous avons rÃ©servÃ© un espace de 100 pixels pour afficher l'Ã©tat du jeu.
 
-Le `pg.display.set_mode()` initialise l'affichage et nous le référençons avec la variable screen. Cette variable d'écran sera utilisée chaque fois que nous voulons dessiner quelque chose sur l'écran.
+Le `pg.display.set_mode()` initialise l'affichage et nous le rÃ©fÃ©renÃ§ons avec la variable screen. Cette variable d'Ã©cran sera utilisÃ©e chaque fois que nous voulons dessiner quelque chose sur l'Ã©cran.
 
 
  
-La méthode `pg.display.set_caption` est utilisée pour définir un nom qui apparaîtra en haut de la fenêtre d'affichage.
+La mÃ©thode `pg.display.set_caption` est utilisÃ©e pour dÃ©finir un nom qui apparaÃ®tra en haut de la fenÃªtre d'affichage.
 ```
 #initializing pygame window
 pg.init()
@@ -71,7 +71,7 @@ pg.display.set_caption("Tic Tac Toe")
 
 ## 3.Charger et transformer des images
 
-Le projet d'apprentissage automatique Python utilise de nombreuses images comme l'image d'ouverture qui s'affichera au démarrage ou à la réinitialisation du jeu. Les images X et O que nous allons dessiner lorsque l'utilisateur clique sur la grille. Nous chargeons toutes les images et les redimensionnons afin qu'elles s'intègrent facilement dans notre fenêtre.
+Le projet d'apprentissage automatique Python utilise de nombreuses images comme l'image d'ouverture qui s'affichera au dÃ©marrage ou Ã  la rÃ©initialisation du jeu. Les images X et O que nous allons dessiner lorsque l'utilisateur clique sur la grille. Nous chargeons toutes les images et les redimensionnons afin qu'elles s'intÃ¨grent facilement dans notre fenÃªtre.
 ```
 #loading the images
 opening = pg.image.load('tic tac opening.png')
@@ -83,13 +83,13 @@ o_img = pg.transform.scale(o_img, (80,80))
 opening = pg.transform.scale(opening, (width, height+100))
 ```
 
-## 4.Définir les fonctions
+## 4.DÃ©finir les fonctions
 
-Nous créons maintenant une fonction qui lancera le jeu. Nous utiliserons également cette fonction lorsque nous voulons redémarrer le jeu. Dans pygame, la fonction `blit()` est utilisée sur la surface pour dessiner une image au-dessus d'une autre image.
+Nous crÃ©ons maintenant une fonction qui lancera le jeu. Nous utiliserons Ã©galement cette fonction lorsque nous voulons redÃ©marrer le jeu. Dans pygame, la fonction `blit()` est utilisÃ©e sur la surface pour dessiner une image au-dessus d'une autre image.
 
-Nous dessinons donc l'image d'ouverture et après le dessin, nous devons toujours mettre à jour l'affichage avec `pg.display.update()`. Lorsque l'image d'ouverture est dessinée, nous attendons 1 seconde en utilisant `time.sleep(1)` et remplissons l'écran de couleur blanche.
+Nous dessinons donc l'image d'ouverture et aprÃ¨s le dessin, nous devons toujours mettre Ã  jour l'affichage avec `pg.display.update()`. Lorsque l'image d'ouverture est dessinÃ©e, nous attendons 1 seconde en utilisant `time.sleep(1)` et remplissons l'Ã©cran de couleur blanche.
 
-Ensuite, nous dessinons 2 lignes verticales et horizontales sur le fond blanc pour faire la grille 3 × 3. Au final, on appelle la fonction `draw_status()`
+Ensuite, nous dessinons 2 lignes verticales et horizontales sur le fond blanc pour faire la grille 3 Ã— 3. Au final, on appelle la fonction `draw_status()`
 ```
 def game_opening():
     screen.blit(opening,(0,0))
@@ -105,7 +105,7 @@ def game_opening():
     draw_status()
 ```
 
-La fonction `draw_status()` dessine un rectangle noir où nous mettons à jour le statut du jeu en indiquant le tour du joueur et si le jeu se termine ou se dessine.
+La fonction `draw_status()` dessine un rectangle noir oÃ¹ nous mettons Ã  jour le statut du jeu en indiquant le tour du joueur et si le jeu se termine ou se dessine.
 ```
 def draw_status():
     global draw
@@ -124,7 +124,7 @@ def draw_status():
     pg.display.update()
 ```
 
-La fonction `check_win()` vérifie la carte Tic Tac Toe pour voir toutes les marques de «X» et «O». Il calcule si un joueur a gagné le jeu ou non. Ils peuvent soit gagner lorsque le joueur a marqué 3 marques consécutives dans une rangée, une colonne ou en diagonale. Cette fonction est appelée à chaque fois que nous dessinons une marque «X» ou «O» sur la carte.
+La fonction `check_win()` vÃ©rifie la carte Tic Tac Toe pour voir toutes les marques de Â«XÂ» et Â«OÂ». Il calcule si un joueur a gagnÃ© le jeu ou non. Ils peuvent soit gagner lorsque le joueur a marquÃ© 3 marques consÃ©cutives dans une rangÃ©e, une colonne ou en diagonale. Cette fonction est appelÃ©e Ã  chaque fois que nous dessinons une marque Â«XÂ» ou Â«OÂ» sur la carte.
 ```
 def check_win():
     global TTT, winner,draw
@@ -159,7 +159,7 @@ def check_win():
     draw_status()
 ```
 
-La fonction `drawXO(ligne, col)` prend la ligne et la colonne où la souris est cliquée, puis elle trace la marque «X» ou «O». Nous calculons les coordonnées x et y du point de départ à partir desquelles nous allons dessiner l'image png de la marque.
+La fonction `drawXO(ligne, col)` prend la ligne et la colonne oÃ¹ la souris est cliquÃ©e, puis elle trace la marque Â«XÂ» ou Â«OÂ». Nous calculons les coordonnÃ©es x et y du point de dÃ©part Ã  partir desquelles nous allons dessiner l'image png de la marque.
 ```
 def drawXO(row,col):
     global TTT,XO
@@ -187,9 +187,9 @@ else:
     #print(TTT)
 ```
 
-La fonction `userClick()` est déclenchée chaque fois que l'utilisateur appuie sur le bouton de la souris.
+La fonction `userClick()` est dÃ©clenchÃ©e chaque fois que l'utilisateur appuie sur le bouton de la souris.
 
-Lorsque l’utilisateur clique sur la souris, nous prenons d’abord les coordonnées x et y de l’endroit où la souris est cliquée dans la fenêtre d’affichage, puis si cet endroit n’est pas occupé, nous dessinons le ‘XO’ sur la toile. Nous vérifions également si le joueur gagne ou non après avoir tiré "XO" sur le plateau.
+Lorsque lâ€™utilisateur clique sur la souris, nous prenons dâ€™abord les coordonnÃ©es x et y de lâ€™endroit oÃ¹ la souris est cliquÃ©e dans la fenÃªtre dâ€™affichage, puis si cet endroit nâ€™est pas occupÃ©, nous dessinons le â€˜XOâ€™ sur la toile. Nous vÃ©rifions Ã©galement si le joueur gagne ou non aprÃ¨s avoir tirÃ© "XO" sur le plateau.
 ```
 def userClick():
     #get coordinates of mouse click
@@ -221,7 +221,7 @@ def userClick():
 ```
 
 
-La dernière fonction est le `reset_game()`. Cela redémarrera le jeu et nous réinitialiserons également toutes les variables au début du jeu.
+La derniÃ¨re fonction est le `reset_game()`. Cela redÃ©marrera le jeu et nous rÃ©initialiserons Ã©galement toutes les variables au dÃ©but du jeu.
 ```
 def reset_game():
     global TTT, winner,XO, draw
@@ -233,10 +233,10 @@ def reset_game():
     TTT = [[None]*3,[None]*3,[None]*3]
 ```
 
-## 5.Exécutez le jeu pour toujours
+## 5.ExÃ©cutez le jeu pour toujours
 
-Pour démarrer le jeu, nous appellerons la fonction `game_opening()`. Ensuite, nous exécutons une boucle infinie et vérifions en permanence tout événement créé par l'utilisateur. Si l'utilisateur appuie sur le bouton de la souris, l'événement MOUSEBUTTONDOWN sera capturé, puis nous déclencherons la fonction `userClick()`. Ensuite, si l'utilisateur gagne ou que le jeu tire, nous réinitialisons le jeu en appelant la fonction `reset_game()`. 
-Nous mettons à jour l'affichage à chaque itération et nous avons défini les images par seconde à 30.
+Pour dÃ©marrer le jeu, nous appellerons la fonction `game_opening()`. Ensuite, nous exÃ©cutons une boucle infinie et vÃ©rifions en permanence tout Ã©vÃ©nement crÃ©Ã© par l'utilisateur. Si l'utilisateur appuie sur le bouton de la souris, l'Ã©vÃ©nement MOUSEBUTTONDOWN sera capturÃ©, puis nous dÃ©clencherons la fonction `userClick()`. Ensuite, si l'utilisateur gagne ou que le jeu tire, nous rÃ©initialisons le jeu en appelant la fonction `reset_game()`. 
+Nous mettons Ã  jour l'affichage Ã  chaque itÃ©ration et nous avons dÃ©fini les images par seconde Ã  30.
 ```
 game_opening()
 # run the game loop forever
@@ -253,7 +253,7 @@ while(True):
     pg.display.update()
     CLOCK.tick(fps)
 ```
-Le jeu est terminé et prêt à jouer. Enregistrez le fichier du code source avec le nom de fichier b300107361.py et exécutez le fichier.
+Le jeu est terminÃ© et prÃªt Ã  jouer. Enregistrez le fichier du code source avec le nom de fichier b300107361.py et exÃ©cutez le fichier.
 
 `Resultat:`
 
@@ -266,6 +266,6 @@ Le jeu est terminé et prêt à jouer. Enregistrez le fichier du code source avec l
 
 
 
-## Résumé
+## RÃ©sumÃ©
 
-Avec ce projet en Python, nous avons réussi à créer le jeu Tic Tac Toe. Nous avons utilisé la bibliothèque pygame populaire pour le rendu des graphiques sur une fenêtre d'affichage. Nous avons appris à capturer des événements à partir du clavier ou de la souris et à déclencher une fonction lorsque le bouton de la souris est enfoncé. De cette façon, nous pouvons calculer la position de la souris, dessiner X ou O sur l'écran et vérifier si le joueur gagne la partie ou non. J'espère que vous avez apprécié la construction du jeu.
+Avec ce projet en Python, nous avons rÃ©ussi Ã  crÃ©er le jeu Tic Tac Toe. Nous avons utilisÃ© la bibliothÃ¨que pygame populaire pour le rendu des graphiques sur une fenÃªtre d'affichage. Nous avons appris Ã  capturer des Ã©vÃ©nements Ã  partir du clavier ou de la souris et Ã  dÃ©clencher une fonction lorsque le bouton de la souris est enfoncÃ©. De cette faÃ§on, nous pouvons calculer la position de la souris, dessiner X ou O sur l'Ã©cran et vÃ©rifier si le joueur gagne la partie ou non. J'espÃ¨re que vous avez apprÃ©ciÃ© la construction du jeu.
