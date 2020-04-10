@@ -62,10 +62,10 @@
 
           En termes simples, la méthode index () trouve l'élément donné dans une liste et renvoie sa position.
           Si le même élément est présent plusieurs fois, la méthode renvoie l'index de la première occurrence de l'élément.
-  ''
+ 
                        if accounts.current_user_index==-1:
                            print('account number does not exists')
-  ''              
+              
 
 ##### :m: Les boucle
   ''
