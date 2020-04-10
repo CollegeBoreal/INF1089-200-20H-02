@@ -14,9 +14,8 @@
            4. pour afficher le solde actuel.
   ''
     :star: dépôt d'argent
-    
     ![](image/depo.png)
- '' 
+ 
  ''
     :star:afficher le solde actuel
     
