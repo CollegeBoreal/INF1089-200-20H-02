@@ -1,20 +1,24 @@
-<<<<<<< HEAD
+﻿<<<<<<< HEAD
 # Quizz (2019-11-19)
 
 
 
-## Normalisation  [🎥](https://www.linkedin.com/learning/programming-foundations-databases-2/normalization-2?u=56968449)
+## Description 
 
-:pushpin: 1NF [🎥](https://www.linkedin.com/learning/programming-foundations-databases-2/first-normal-form?u=56968449)
+     # Programme python pour gérer ATM Machine, tout d'abord l'utilisateur 
+      a besoin d'un mot de passe pour entrer dans le programme,
+      alors une liste apparaît :
 
-:pushpin: 2NF [🎥](https://www.linkedin.com/learning/programming-foundations-databases-2/second-normal-form?u=56968449)
+   1. retirer de l'argent.
+   2. appuyez sur 2 pour transférer de l'argent.
+   3. pour déposer de l'argent.
+   4. pour afficher le solde actuel.
 
-:pushpin: 3NF [🎥](https://www.linkedin.com/learning/programming-foundations-databases-2/third-normal-form-2?u=56968449)
 
 
-[:bulb: What are DDL, DML and DQL?](https://en.wikibooks.org/wiki/MySQL/Language/Definitions:_what_are_DDL,_DML_and_DQL%3F)
+[:
 
-## :o: Commentaires
+## :o: Structures de données
 
 ```SQL
 -- Je suis un commentaire.
@@ -22,16 +26,80 @@
 -- Je cause souvent des erreurs d'inattentions
 ```
 
-## :a: DDL
+## :a: Structures de données
+    
+   # -input
+          La fonction input() demande un argument (qui peut être vide) qui est de type chaîne de caractère. 
+          Elle attend que l'utilisateur frappe quelque chose au clavier. Elle renvoie une valeur de type
+          correspondant à ce qui a été frappé au clavier 
+          
+          Le même cas dans le programme l’utilisateur tape le numéro de compte et le mot de passe 
+
+   # -Syntax
+
+          input(prompt) 
+          Parameter Values
+
+          Parameter       Description
+          Prompt              A String, representing a default message before the input
+
+
+## Les boucles 
+
+            Les boucles permettent d'exécuter plusieurs fois les mêmes ordres
+
+        ● Pour parcourir une liste :
+
+            for variable in liste:
+               code de la boucle
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+for x in list2:
+  list1.append(x)
+
+print(list1)
+
+
+        :while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
+         tant qu’une condition donnée est vraie. 
+
+              while nom_variable = valeur:
+                    instructions
+                    modification de variable
+
+## instruction conditionnelle
+           
+         if  dans le cas où elle l'est, à effectuer un traitement spécifique, 
+         et si elle ne l'est pas à effectuer un autre traitement else 
+
+             if condition: 
+                 exécuté si condition est vraie 
+            [else: 
+                 exécuté si condition est fausse]
 
 
 
-:bangbang: Attention: MySQL respecte la règle des `Majuscules` et `Minuscules` pour le nom des tables !
+## l’instruction + break + 
+             vous offre la possibilité de sortir d’une boucle lorsqu’une condition externe
+             est déclenchée sert, non pas à interrompre le programme, mais à sortir de la boucle.
 
 
 
 
-:one: CREATE {DATABASE/TABLE/USER} (target);
+## elif 
+      Le mot clé elif est un raccourci pour else if, mais permet de gagner un niveau d’indentation.
+
+:one:Autrement 
+
+        L'instruction elif est une compression de else if qui signifie sinon si. 
+        Elle doit être utilisée après un if ou un autre elif. 
+
+
+        
+
+
 
 ##### :m: DATABASE
 
@@ -52,39 +120,27 @@ mysql> CREATE DATABASE <name>;
 
 :pushpin: Type :
 
-| Type                 |  SQL                  | Format                   |
-|----------------------|-----------------------|--------------------------|
-| Nombre               |INT, DOUBLE, FLOAT     | 1 - 10, 1.0 - 10.0       |  
-| Date                 | DATE                  | '1990-01-01'             |
-| booleen              | BOOLEAN               | True, False              |
-| Chaine de caracteres | VARCHAR(<size>), TEXT | '1', '2.6', '2009-12-02' |
-  
-:pushpin: Option: 
-
-| Option             | Description                                                  | 
-|--------------------|--------------------------------------------------------------|
-| AUTO_INCREMENT     | Omettre (N'apparait pas) dans le INSERT statement            |
-| NOT NULL           | Le champ ne peut etre nul sinon Erreur                       |
-| PRIMARY KEY        | :bulb: Peut etre placé ailleurs                              |
-| DEFAULT `<valeur>` | :question:                                                   |
+kkkkkkkkk                                                   |
 
 ##### :m: USER 
 
 :pushpin: Adresse IP Locale
 
 ```SQL
-mysql> CREATE USER 'nom'@'localhost' IDENTIFIED BY 'passwd'; -- Utilisateur accedant a la machine locale
+kkkkkkkkkkkkk
+
 ```
 
-:pushpin: Adresse IP Distante (avec `wildcard` **%** )
+:pushpin: kkkkkkk
 
-```SQL
-mysql> CREATE USER 'nom'@'%' IDENTIFIED BY 'passwd'; -- Utilisateur accedant a la machine distante
+```jjjjjjj
+
+llllllll
 ```
 
-:two: DROP {DATABASE/TABLE} <name>;
+:two:jjjjjjj
 
-##### :m: DATABASE
+##### :m: DAT
 
 ```SQL
 mysql> DROP DATABASE <name>;
