@@ -97,247 +97,33 @@
 ## :o:les modules en python
 
 
-##### :m: DATABASE
 
-```SQL
-mysql> CREATE DATABASE <name>;
-```
-
-
-
-##### :m: USER 
-
-:pushpin: Adresse IP Locale
-
-```SQL
-kkkkkkkkkkkkk
-
-```
-
-:pushpin: kkkkkkk
-
-```jjjjjjj
-
-llllllll
-```
-
-:two:jjjjjjj
-
-##### :m: DAT
-
-```lllll
-```
-
-
-
-
- 
- ##### :m: vvv
-     
-```   
-   
-``` 
-
-##### :m: nnnn
- 
- 
-```SQL
-    CREATE TABLE VILLES ( ...
-       ville INT,
-       pays INT,
-    
-    
-    FOREIGN KEY(pays) REFERENCES PAYS(pays),
-    );
-``` 
-:bulb: Observez le trait `discontinu` entre les :two: tables et le champ pays en rouge dans la table `VILLES`
-
- <img src='images/FK.png' width="170" height="328"></img> |  <img src='images/quiz.png' width="600" height="330"></img>
- 
-##### :m: composite (Primaire) 
-
-```SQL
-    CREATE TABLE VENTES ( ...
-       produit INT,
-       client INT,
-       ...    
-    
-      PRIMARY KEY( produit, client),
-      FOREIGN KEY(produit) REFERENCES PRODUITS(produit),
-      FOREIGN KEY(client) REFERENCES CLIENTS(client)
-    );
-``` 
-:bulb: Observez le trait `continu` entre les :three: tables
-
-<img src='images/CK.png' width="800" height="328"></img>
-
-:four: Constraints
-
-#### :m: Relationship Constraints
-
-:pushpin: [Foreign Key](https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html#foreign-key-examples)
-
-```sql
-mysql> SHOW CREATE TABLE VILLES
-*************************** 1. row ***************************
-       Table: VILLES
-Create Table: CREATE TABLE `VILLES` (
-  `ville` int DEFAULT NULL,
-  `pays` int DEFAULT NULL,
-  INDEX `pay_ind` (`pays`),
-  CONSTRAINT `ville_ibfk_1` FOREIGN KEY (`pays`) 
-  REFERENCES `PAYS` (`pays`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
-```
-
-#### :m: Data Quality Constraints
-
-:pushpin: [Check](https://dev.mysql.com/doc/refman/8.0/en/create-table-check-constraints.html)
-
-```sql
-mysql> CREATE TABLE t1 (
-  c1 INT CHECK (c1 > 10),
-  CONSTRAINT c1_nonzero CHECK (c1 <> 0)
-);
-```
-
-:pushpin: [unique](http://www.mysqltutorial.org/mysql-unique-constraint/)
-
-```sql
-mysql> CREATE TABLE `ETUDIANTS` (
-  `etudiant` INT NOT NULL AUTO_INCREMENT,
-  `prenom` VARCHAR(45) NOT NULL,
-  `nom` VARCHAR(45) NOT NULL,
-  `email` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`etudiant`),
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC)
-);
-```
-
-## :b: DCL
-
-
-:four: Permissions
-
-##### :m: [GRANT](http://www.mysqltutorial.org/mysql-grant.aspx)
-
-```
-mysql> GRANT <Privilege> ON <base de donnee>.<tables> (ou `*` wildcard) TO <USER>;  
-```
-
-##### :m: [REVOKE](http://www.mysqltutorial.org/mysql-revoke.aspx)
-
-```
-mysql> REVOKE <Privilege> ON <base de donnee>.<tables> (ou `*` wildcard) FROM <USER>;  
-```
-
-:pushpin: Privileges [:blue_book:](http://ask.xmodulo.com/create-configure-mysql-user-command-line.html) 
-
-| Privileges | Description                   | 
-|------------|-------------------------------|
-| ALL        | Tous les privileges           |
-| SELECT     | Lecture seulement             |
-| INSERT     | Ajout uniquement              |
-
-
-## :ab: DML
-
-voir l'explication  [`INSERT AUTO_INCREMENT`](https://dev.mysql.com/doc/mysql-tutorial-excerpt/5.7/en/example-auto-increment.html)
-
-
-## :x: DQL 
-
-##### :m: Join
-
-http://code.openark.org/blog/mysql/mysql-joins-on-vs-using-vs-theta-style
-
-```
-MySQL joins: ON vs. USING vs. Theta-style
-July 11, 2012
-What is the difference between the following three syntaxes?
-
-  SELECT * FROM film JOIN film_actor ON (film.film_id = film_actor.film_id)
-  SELECT * FROM film JOIN film_actor USING (film_id)
-  SELECT * FROM film, film_actor WHERE film.film_id = film_actor.film_id
-
-The difference is mostly syntactic sugar, but with a couple interesting notes.
-
-To put names, the first two are called "ANSI-style" while the third is called "Theta-style".
-```
 
 ##### :m: Stats
 
-```sql
-mysql> SELECT COUNT(*) FROM ETUDIANTS;
+```
 ```
 
-##### :m: Explain
+##### :m: E
+
+
+
+
+
+##### :m: d
 
 ```
-Explain sert à montrer le chemin pris par la recherche de données.
-
-Le but étant de trouver la meilleure route pour accélérer le retour des données
-
-Activer un index indique une meilleur performance
-```
-
-:pushpin: Sans utiliser un index
-
-```sql
-mysql> EXPLAIN SELECT * from ETUDIANTS;
-```
-
-![image](images/EXPLAIN_ALL.png)
-
-:pushpin: Utilise deux indexes (i.e. possible keys)
-
-```sql
-mysql> EXPLAIN SELECT * from ETUDIANTS WHERE programme > 1 OR etudiant = 1;
-```
-
-![image](images/EXPLAIN_KEY.png)
-
-
-## :o2: MySQL Admin Commands
-
-##### :m: SHOW <artifacts>
-    
-```mysql
-mysql> SHOW DATABASES;
-```
-
-```mysql
-mysql> SHOW TABLES;
-```
-
-```mysql
-mysql> SHOW GRANTS FOR rfc@localhost;
-```
-
-##### :m: describe
-
-```mysql
-mysql> DESCRIBE <nom de table>;
 ```
 
 
 ##### :m:  use
 
-```mysql
-mysql> USE <database>;
+```
 ```
 
-##### :m:  mysql.user
+##### :m:  m
 
-```mysql
-mysql> SELECT host, user, password FROM mysql.user;
-+------+-----------+-------------------------------------------+
-| host | user      | password                                  |
-+------+-----------+-------------------------------------------+
-| %    | root      | *2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19 |
-| %    | etudiants | *DAFBEF26A36FED36DEDC56E4B03974353E90F522 |
-+------+-----------+-------------------------------------------+
-2 rows in set (0.00 sec)
+```
 ```
 =======
 
