@@ -1,9 +1,9 @@
 ﻿<<<<<<< HEAD
-# Quizz (2019-11-19)
+# ATM Machine
 
 
 
-## Description 
+## :o: Description 
 
      # Programme python pour gérer ATM Machine, tout d'abord l'utilisateur 
       a besoin d'un mot de passe pour entrer dans le programme,
@@ -20,15 +20,15 @@
 
 ## :o: Structures de données
 
-```SQL
+```
 -- Je suis un commentaire.
 -- Je commence par deux tirets suivi d'UN ESPACE
 -- Je cause souvent des erreurs d'inattentions
 ```
 
-## :a: Structures de données
+## :a: 
     
-   # -input
+   # input
           La fonction input() demande un argument (qui peut être vide) qui est de type chaîne de caractère. 
           Elle attend que l'utilisateur frappe quelque chose au clavier. Elle renvoie une valeur de type
           correspondant à ce qui a été frappé au clavier 
