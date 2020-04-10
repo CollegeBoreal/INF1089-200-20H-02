@@ -8,14 +8,11 @@ RUN apt-get install -y python python-pip
 RUN pip install -r /app/requirements.txt 
 RUN cd /app ; python setup.py 
 CMD python app.py 
-RUN mkdir /myvol
-RUN echo "hello world" > /myApp/greeting
-VOLUME /App
-
+CMD ["entry.py"]
+EXPOSE 5000 
+WORKDIR /app 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
-EXPOSE 80
 
-CMD ["redis-server", "--protected-mode no"]
