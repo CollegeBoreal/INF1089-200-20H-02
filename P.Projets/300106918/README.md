@@ -45,7 +45,7 @@
 
 ##### :m: Les boucle
   ``` 
-         :bulb: Les boucles permettent d'exécuter plusieurs fois les mêmes ordres
+         :star: Les boucles permettent d'exécuter plusieurs fois les mêmes ordres
 
         ● Pour parcourir une liste :
 
@@ -58,7 +58,7 @@
                                        print(list1)
 ``` 
 
-       :bulb: while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
+      :star: while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
          tant qu’une condition donnée est vraie. 
 
               while nom_variable = valeur:
