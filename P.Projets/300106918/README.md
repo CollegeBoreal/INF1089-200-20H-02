@@ -93,10 +93,8 @@
 
         L'instruction elif est une compression de else if qui signifie sinon si. 
         Elle doit être utilisée après un if ou un autre elif. 
-
-
         
-
+## :o:les modules en python
 
 
 ##### :m: DATABASE
