@@ -43,7 +43,7 @@
  - Le même cas dans le programme l’utilisateur tape le numéro de compte et le mot de passe
 
 ''
-![](image/code.png) 
+![](image/CODE.png) 
 
 ''
     :star: Syntax
