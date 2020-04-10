@@ -27,15 +27,15 @@
 ```
 
 ## :a: 
-    
-   # input
+   
+##### :m: input
           La fonction input() demande un argument (qui peut être vide) qui est de type chaîne de caractère. 
           Elle attend que l'utilisateur frappe quelque chose au clavier. Elle renvoie une valeur de type
           correspondant à ce qui a été frappé au clavier 
           
           Le même cas dans le programme l’utilisateur tape le numéro de compte et le mot de passe 
 
-   # -Syntax
+##### :m: Syntax
 
           input(prompt) 
           Parameter Values
@@ -44,7 +44,7 @@
           Prompt              A String, representing a default message before the input
 
 
-## Les boucles 
+##### :m: Les boucles 
 
             Les boucles permettent d'exécuter plusieurs fois les mêmes ordres
 
@@ -69,7 +69,7 @@ print(list1)
                     instructions
                     modification de variable
 
-## instruction conditionnelle
+##### :m: instruction conditionnelle
            
          if  dans le cas où elle l'est, à effectuer un traitement spécifique, 
          et si elle ne l'est pas à effectuer un autre traitement else 
@@ -81,14 +81,14 @@ print(list1)
 
 
 
-## l’instruction + break + 
+##### :m:  l’instruction + break + 
              vous offre la possibilité de sortir d’une boucle lorsqu’une condition externe
              est déclenchée sert, non pas à interrompre le programme, mais à sortir de la boucle.
 
 
 
 
-## elif 
+##### :m:  elif 
       Le mot clé elif est un raccourci pour else if, mais permet de gagner un niveau d’indentation.
 
 :one:Autrement 
