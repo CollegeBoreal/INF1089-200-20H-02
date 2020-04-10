@@ -85,7 +85,7 @@ Le `pg.display.set_mode()` initialise l'affichage et nous le référençons avec
 Cette variable d'écran sera utilisée chaque fois que nous voulons dessiner quelque chose sur l'écran.
 
 La méthode `pg.display.set_caption` est utilisée pour définir un nom qui apparaîtra en haut de la fenêtre d'affichage.
-```
+```python
 #initializing pygame window
 pg.init()
 fps = 30
@@ -100,7 +100,7 @@ Le projet d'apprentissage automatique Python utilise de nombreuses images comme 
 
 Les images X et O que nous allons dessiner lorsque l'utilisateur clique sur la grille. 
 Nous chargeons toutes les images et les redimensionnons afin qu'elles s'intègrent facilement dans notre fenêtre.
-```
+```python
 #loading the images
 opening = pg.image.load('tic tac opening.png')
 x_img = pg.image.load('x.png')
@@ -121,7 +121,7 @@ Lorsque l'image d'ouverture est dessinée, nous attendons 1 seconde en utilisant
 
 Ensuite, nous dessinons 2 lignes verticales et horizontales sur le fond blanc pour faire la grille 3 × 3. 
 Au final, on appelle la fonction `draw_status()`
-```
+```python
 def game_opening():
     screen.blit(opening,(0,0))
     pg.display.update()
@@ -137,7 +137,7 @@ def game_opening():
 ```
 
 La fonction `draw_status()` dessine un rectangle noir où nous mettons à jour le statut du jeu en indiquant le tour du joueur et si le jeu se termine ou se dessine.
-```
+```python
 def draw_status():
     global draw
     if winner is None:
@@ -160,7 +160,7 @@ Il calcule si un joueur a gagné le jeu ou non.
 
 Ils peuvent soit gagner lorsque le joueur a marqué 3 marques consécutives dans une rangée, une colonne ou en diagonale. 
 Cette fonction est appelée à chaque fois que nous dessinons une marque «X» ou «O» sur la carte.
-```
+```python
 def check_win():
     global TTT, winner,draw
     # check for winning rows
@@ -197,7 +197,7 @@ def check_win():
 La fonction `drawXO(ligne, col)` prend la ligne et la colonne où la souris est cliquée, puis elle trace la marque «X» ou «O». 
 
 Nous calculons les coordonnées x et y du point de départ à partir desquelles nous allons dessiner l'image png de la marque.
-```
+```python
 def drawXO(row,col):
     global TTT,XO
     if row==1:
@@ -229,7 +229,7 @@ La fonction `userClick()` est déclenchée chaque fois que l'utilisateur appuie 
 Lorsque l’utilisateur clique sur la souris, nous prenons d’abord les coordonnées x et y de l’endroit où la souris est cliquée dans la fenêtre d’affichage, puis si cet endroit n’est pas occupé, nous dessinons le ‘XO’ sur la toile.
 
 Nous vérifions également si le joueur gagne ou non après avoir tiré "XO" sur le plateau.
-```
+```python
 def userClick():
     #get coordinates of mouse click
     x,y = pg.mouse.get_pos()
@@ -262,7 +262,7 @@ def userClick():
 
 La dernière fonction est le `reset_game()`. 
 Cela redémarrera le jeu et nous réinitialiserons également toutes les variables au début du jeu.
-```
+```python
 def reset_game():
     global TTT, winner,XO, draw
     time.sleep(3)
@@ -282,7 +282,7 @@ Si l'utilisateur appuie sur le bouton de la souris, l'événement MOUSEBUTTONDOW
 
 Ensuite, si l'utilisateur gagne ou que le jeu tire, nous réinitialisons le jeu en appelant la fonction `reset_game()`. 
 Nous mettons à jour l'affichage à chaque itération et nous avons défini les images par seconde à 30.
-```
+```python
 game_opening()
 # run the game loop forever
 while(True):
