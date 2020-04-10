@@ -29,13 +29,13 @@ https://lab.github.com/CollegeBoreal/lab-github-actions:-bonjour-monde
 
 https://github.com/:id:/lab-bonjour-github-actions
 
-- [ ] Copier les scripts:
+- [x] Copier les scripts:
 
 Par example:
 
-  - [ ] Copier le fichier `Dockerfile` dans votre :id: `Boréal` 
+  - [x] Copier le fichier `Dockerfile` dans votre :id: `Boréal` 
 
-  - [ ] Copier le fichier `entrypoint.sh` dans votre :id: `Boréal` 
+  - [x] Copier le fichier `entrypoint.sh` dans votre :id: `Boréal` 
 
 
 - [ ] Modifie ton fichier README.md pour plus de documentation
