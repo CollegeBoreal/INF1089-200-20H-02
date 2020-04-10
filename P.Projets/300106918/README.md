@@ -33,8 +33,8 @@
           correspondant à ce qui a été frappé au clavier 
           
           Le même cas dans le programme l’utilisateur tape le numéro de compte et le mot de passe 
-
-##### :m: Syntax
+ ''
+    :star: Syntax
 
           input(prompt) 
           Parameter Values
