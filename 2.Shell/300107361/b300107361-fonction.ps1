@@ -1,14 +1,14 @@
+<#
+.SYNOPSIS
+    Ce script est un laboratoire Powershell
 
-#.SYNOPSIS
-#    Ce script est un laboratoire Powershell
+.DESCRIPTION
+   Ce script est utilisé pour le laboratoire de programmation en Powershell.
 
-#.DESCRIPTION
-#   Ce script est utilisé pour le laboratoire de programmation en Powershell.
-
-#.NOTES
-#    Author: toch90
-#    Derniere mise à jour: yyyy-mm-dd
-
+.NOTES
+     Author: toch90
+    Derniere mise à jour: yyyy-mm-dd
+#>
 
 
 # Definition de la fonction
