@@ -122,6 +122,12 @@
         Elle doit être utilisée après un if ou un autre elif. 
         
 ## :o:les modules en python
+  
+        Un module peut définir des fonctions, des classes et des variables de tous types (tableaux, dictionnaires,
+        objets etc): que vous souhaitez inclure dans votre application, et  en utilisant l'instruction "import" 
+        pour appeler une fonction 
+        
+        
 
 
 
