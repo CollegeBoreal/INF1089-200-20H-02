@@ -24,7 +24,7 @@
 
 
 
-## :o: Structures de données
+## :d: 
  
    
 ##### :m: input
