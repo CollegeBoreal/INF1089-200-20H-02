@@ -25,14 +25,7 @@
 
 
 ## :o: Structures de données
-
-```
--- Je suis un commentaire.
--- Je commence par deux tirets suivi d'UN ESPACE
--- Je cause souvent des erreurs d'inattentions
-```
-
-## :a: 
+ 
    
 ##### :m: input
           La fonction input() demande un argument (qui peut être vide) qui est de type chaîne de caractère. 
@@ -121,11 +114,7 @@
         L'instruction elif est une compression de else if qui signifie sinon si. 
         Elle doit être utilisée après un if ou un autre elif. 
         
-## :o:les modules en python
-  
-        Un module peut définir des fonctions, des classes et des variables de tous types (tableaux, dictionnaires,
-        objets etc): que vous souhaitez inclure dans votre application, et  en utilisant l'instruction "import" 
-        pour appeler une fonction 
+
         
         
 
