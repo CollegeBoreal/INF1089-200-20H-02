@@ -50,7 +50,7 @@ PS > .\restore.ps1
 
 * Lancer son script de backup
 
-<img src="bcup2.PNG" width="204" heidth="477"></img>
+
 ```
 PS > .\backup.ps1
 ```
@@ -63,3 +63,4 @@ PS > gci backup
 
 * le fichier `wwwi_2.bak` doit ètre présent 
 
+<img src="bcup2.PNG" width="204" heidth="477"></img>
