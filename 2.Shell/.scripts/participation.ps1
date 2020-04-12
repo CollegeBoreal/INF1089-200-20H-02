@@ -1,6 +1,6 @@
 #. ..\..\scripts\students.ps1
 
-Import-Module ../../.scripts/students.ps1
+Import-Module ..\..\.scripts\students.ps1
 
 echo "$ETUDIANTS"
 
