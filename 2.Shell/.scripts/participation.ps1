@@ -4,7 +4,7 @@ echo "$here\.scripts"
 $there = Split-Path -Path "$here\.scripts\*" 
 echo $there
 
-. "$there\students.ps1"
+#. "$there\students.ps1"
 
 #echo $ETUDIANTS
 
