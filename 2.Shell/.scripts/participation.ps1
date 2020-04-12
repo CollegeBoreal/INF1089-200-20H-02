@@ -1,3 +1,3 @@
-$here = Split-Path --path .. -Parent $MyInvocation.MyCommand.Path
+$here = Split-Path -Path ..\..\.scripts -Resolve -NoQualifier
 echo $here
 
