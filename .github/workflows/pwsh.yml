@@ -9,5 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Display the path
-        run: echo ${env:PATH}
         shell: pwsh
+        run: |
+          echo ${env:PATH}
+          cd 2.Shell
+          .scripts\participation.ps1
