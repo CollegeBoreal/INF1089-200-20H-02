@@ -1,7 +1,7 @@
 #. ..\..\scripts\students.ps1
 
 #$here = Split-Path --path . -Parent $MyInvocation.MyCommand.Path
-$here = Split-Path -Path ../../.scripts/students.ps1 -Resolve -Parent
+$here = Split-Path -Path ..\..\.scripts/students.ps1 -Resolve -Parent
 echo $here
 . "$here\students.ps1"
 
