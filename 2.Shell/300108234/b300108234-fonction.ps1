@@ -13,9 +13,10 @@ function Stagiaire
  {
 <#
 .SYNOPSIS
-    Ce script est un laboratoire Powershell qui presente la Promo2018
+Ce script est un laboratoire Powershell qui presente la Promo2018
+
 .DESCRIPTION
-    Ce script est utilisé pour presenter les noms et les numéros d'identification des eleves de la promotion 2018... 
+Ce script est utilisé pour presenter les noms et les numéros d'identification des eleves de la promotion 2018... 
 
 .PARAMETER personneNom, personneId
 personneNom est l'identifiant de l'etudiant. Generalement, il s'agit du prénom.
