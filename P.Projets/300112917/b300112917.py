@@ -1,9 +1,10 @@
-print(“Apple”)
+print(“Good Morning”)
  
-def my_main():
-            print(“Mango”)
+def main():
+           print(“Hello Python”)
  
 if __name__ == “__main__”:
-         my_main()
+            main()
  
-print(“Orange”)
+ 
+print(“Good Evening”)
