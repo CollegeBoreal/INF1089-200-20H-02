@@ -67,7 +67,15 @@ En un mot, récupérer le travail que vous avez fait à travers [Github Leaning 
 
 :two: Amélioration
 
+* [x] La création d’aide à la fonction
+ 
+https://www.linkedin.com/learning/l-essentiel-de-windows-powershell-6/creer-l-aide-d-une-fonction?u=56968449
+
 Le laboratoire vous garantit une note de passage, ajouter du code en améliorant le script embellira la note.
+
+
+
+
 
 Example d'améliorations :
  
