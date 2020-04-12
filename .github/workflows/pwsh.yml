@@ -12,5 +12,7 @@ jobs:
         shell: pwsh
         run: |
           echo ${env:PATH}
+          Install-Module -Name Pester -Force
           cd 2.Shell
-          .scripts\participation.ps1
+          .scripts\Add-Numbers.Tests.ps1
+          # .scripts\participation.ps1
