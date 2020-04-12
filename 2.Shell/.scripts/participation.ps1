@@ -1,6 +1,7 @@
 $here = Split-Path -Path ..\..\  -Resolve -NoQualifier
 echo $here
-. "$here\.scripts\students.ps1"
+echo "$here\.scripts"
+#. "$here\.scripts\students.ps1"
 
-echo $ETUDIANTS
+#echo $ETUDIANTS
 
