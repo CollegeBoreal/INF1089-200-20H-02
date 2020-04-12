@@ -1,3 +1,3 @@
-$here = Split-Path -Path ..\..\.scripts  -Resolve -NoQualifier
+$here = Split-Path -Path ..\..\  -Resolve -NoQualifier
 echo $here
 
