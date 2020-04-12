@@ -1,7 +1,7 @@
 $here = Split-Path -Path ..\..\  -Resolve -NoQualifier
 echo $here
 echo "$here\.scripts"
-ls "$here\.scripts"
+Get-ChildItem $here
 
 #. "$here\.scripts\students.ps1"
 
