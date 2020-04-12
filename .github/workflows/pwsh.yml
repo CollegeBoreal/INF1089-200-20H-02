@@ -1,0 +1,12 @@
+name: Share data between jobs
+
+on: [push]
+
+jobs:
+  run-script:
+    name: Run script
+    runs-on: windows-latest
+    steps:
+    - name: Display the path
+      run: echo ${env:PATH}
+      shell: pwsh
