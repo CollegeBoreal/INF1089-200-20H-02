@@ -26,14 +26,14 @@ def get_Host_name_IP():
         print("Unable to get Hostname and IP") 
   ```
   
-### :three:Inserrer une fonction qui affichera le resultat final puis executer le code 
+### :three: Inserrer une fonction qui affichera le resultat final puis executer le code 
 get_Host_name_IP() #Function call 
   
 ### :four: Script final 
 
 ```
 get_Host_name_IP() ]
-   
+  
 import socket 
 def get_Host_name_IP(): 
     try: 
