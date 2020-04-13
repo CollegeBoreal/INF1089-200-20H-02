@@ -15,7 +15,14 @@ En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'
 
  ### :two: Definir la fonction qui affichera le nom d'hote et IP address 
  ```
+ 
+En programmation, les fonctions sont très utiles pour réaliser plusieurs fois la même opération au sein d'un programme. Elles rendent également le code plus lisible et plus clair en le fractionnant en blocs logiques.
 
+Vous connaissez déjà certaines fonctions Python. Par exemple math.cos(angle) du module math renvoie le cosinus de la variable angle exprimé en radian. Vous connaissez aussi des fonctions internes à Python comme range() ou len(). Pour l'instant, une fonction est à vos yeux une sorte de « boîte noire » (voir figure 1) :
+
+À laquelle vous passez aucune, une ou plusieurs variable(s) entre parenthèses. Ces variables sont appelées arguments. Il peut s'agir de n'importe quel type d'objet Python.
+Qui effectue une action.
+Et qui renvoie un objet Python ou rien du tout.
 def get_Host_name_IP(): 
     try: 
         host_name = socket.gethostname() 
