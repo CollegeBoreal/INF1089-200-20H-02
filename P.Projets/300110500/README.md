@@ -35,7 +35,7 @@ def get_Host_name_IP():
     try: 
         host_name = socket.gethostname() 
         host_ip = socket.gethostbyname(host_name) 
-```
+        
 ### :three: Appel de la foction
 L'appel d'une fonction qui renvoie une valeur est une expression, et on peut dès lors l'utiliser partout 
 là où une expression est acceptée. 
@@ -64,8 +64,6 @@ def get_Host_name_IP():
   
 get_Host_name_IP()
 ```
-
-
 ### :five: Output
 ```
 Hostname :   LAPTOP-9J91CJSR
