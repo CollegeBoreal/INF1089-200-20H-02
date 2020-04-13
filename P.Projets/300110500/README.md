@@ -15,10 +15,7 @@ En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'
 
  ### :two: Definir la fonction qui affichera le nom d'hote et IP address 
  ```
- En programmation les fonctions sont utiles pour realiseer plusieurs fois la meme operation au sein d'un programme. 
- Elles rendent le code puls lisible et plus clair en le fonctionant en bloc logiques
-Quant au variables entre oarentheses elles sont appelees argumentspeuvent s'agir de n'importe quel type d'argument.
-```
+ 
 def get_Host_name_IP(): 
     try: 
         host_name = socket.gethostname() 
