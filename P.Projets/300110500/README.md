@@ -21,7 +21,6 @@ Deriver du mot anglais, socket est un trou qui laisse passer des choses,comme un
 Pour notre cas il designe une associationau niveau de l'IOS entre un programme qui tourne en boucheet et 
 le port de la machine qui lui a ete dedie.
 En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'est a dire le port et l'ip
-``` 
 
 ### :two: Definir la fonction et ses parametres tels que le nom d'hote et IP address 
 
