@@ -10,7 +10,6 @@ Pour mon cas j'ai realiser un script qui permet afficher le nom d'hote et l'addr
 Le processus de ce script doit suit les etapes suivante.
 
 ### :one: Importation du socket library 
-
 import socket
 What is socket?
 Deriver du mot anglais, socket est un trou qui laisse passer des choses,comme une prise electrique ou une bouche.
