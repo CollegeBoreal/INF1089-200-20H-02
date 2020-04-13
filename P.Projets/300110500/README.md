@@ -15,18 +15,7 @@ En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'
 
  ### :two: Definir la fonction qui affichera le nom d'hote et IP address 
  ```
-En programmation, les fonctions sont tres utiles pour realiser plusieurs fois la même operation au sein d'un programme. Elles rendent egalement le code plus lisible et plus clair en le fractionnant en blocs logiques.
-La syntaxe pour d´efinir une fonction :
-def nomdefonction(liste_de_parametres) :
-bloc_instructions
-Le bloc instructions effectue les calculs pour rrealiser les taaches confiees a la fonction
-definie. Les calculs peuvent produire de nouvelles valeurs que l’on peut renvoyer dans
-une expression (affecter a  variable, utiliser comme arguments d’une autre fonction).
-Pour cela, on utilise l’instruction return valeur (ou return tuple de valeurs). Lors qu’une
-instruction return valeur est executee dans le bloc, la valeur est renvoy´ee et l’ex´ecution
-de la fonction s’arrete ; toutes autres instructions apres cette instruction return valeur
-sont abandonn´ees. Dans le bloc instructions on peut avoir plusieurs instructions return,
-```
+
 def get_Host_name_IP(): 
     try: 
         host_name = socket.gethostname() 
