@@ -6,10 +6,10 @@
 En windows CMD, la commande ipconfig permet d'afficher les parametres du reseau tel que l'addresse ip de l'hote, 
 le masque de sous reseau etc
 En python nous pouvons avoir le meme resultat en utilisant un script
-
- Pour afficher le nom d'hote et l'addresse IP de son ordinateur le script doit comporter les etapes suivantes
+Pour mon cas j'ai realiser un script qui permet afficher le nom d'hote et l'addresse IP de son ordinateur.
+Le processus de ce script doit suit les etapes suivantes
   
-### :one: Importer le  socket library 
+### :one: Importation du socket library 
 
 ```
 import socket
@@ -21,7 +21,7 @@ Deriver du mot anglais, socket est un trou qui laisse passer des choses,comme un
 Pour notre cas il designe une associationau niveau de l'IOS entre un programme qui tourne en boucheet et 
 le port de la machine qui lui a ete dedie.
 En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'est a dire le port et l'ip
-```
+
 ### :two: Definir la fonction qui affichera le nom d'hote et IP address 
 
  ```
