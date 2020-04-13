@@ -4,7 +4,7 @@
 ## Python3 code: Afficher le nom d'hote et l'addresse IP 
  Pour afficher le nom d'hote et l'addresse IP de son ordinateur le script doit comporter les etapes suivantes
   
-### :a: Importer le  socket library 
+### :A: Importer le  socket library 
 ```
 import socket
 What is socket?
