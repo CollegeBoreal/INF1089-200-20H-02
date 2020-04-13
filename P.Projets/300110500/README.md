@@ -16,7 +16,17 @@ Pour notre cas il designe une associationau niveau de l'IOS entre un programme q
 le port de la machine qui lui a ete dedie.
 En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'est a dire le port et l'ip
 ```
- ### :two: Definir la fonction qui affichera le nom d'hote et IP address 
+### :two: Definir la fonction qui affichera le nom d'hote et IP address 
+ ```
+ En programmation python les fonction sont utiles pour realiser plusieurs fois la meme operation.
+ Elle rend le code plus lisible et clair en le fonctionnant en bloc logiques.
+ D'ou la representation de la fonction de facon suivante:
+ ```
+ def nomDeLaFonction(liste de param�tres):
+    ...
+    bloc d'instructions
+    ...
+ 
  ```
  
 def get_Host_name_IP(): 
@@ -30,7 +40,7 @@ def get_Host_name_IP():
   ```
   
 ### :three: Inserrer une fonction qui affichera le resultat final puis executer le code 
-get_Host_name_IP() #Function call 
+ get_Host_name_IP() #Function call 
   
 ### :four: Script final 
 
