@@ -1,7 +1,8 @@
 
 # 🎈 Mon premier script en python:
 
-## Python3 code: Afficher le nom d'hote et l'addresse IP 
+## Python3 code: Afficher le nom d'hote et l'addresse IP
+
  Pour afficher le nom d'hote et l'addresse IP de son ordinateur le script doit comporter les etapes suivantes
   
 ### :one: Importer le  socket library 
