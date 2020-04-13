@@ -2,13 +2,13 @@
 # 🎈 Mon premier script en python:
 
 ## Python3 code: Afficher le nom d'hote et l'addresse IP
-
+```
 En windows CMD, la commande ipconfig permet d'afficher les parametres du reseau tel que l'addresse ip de l'hote, 
 le masque de sous reseau etc
 En python nous pouvons avoir le meme resultat en utilisant un script
 Pour mon cas j'ai realiser un script qui permet afficher le nom d'hote et l'addresse IP de son ordinateur.
 Le processus de ce script doit suit les etapes suivante.
-
+```
 ### :one: Importation du socket library 
 
 import socket
