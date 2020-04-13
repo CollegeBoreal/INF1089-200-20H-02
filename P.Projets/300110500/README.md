@@ -14,7 +14,6 @@ Le processus de ce script doit suit les etapes suivantes
 
 ```
 import socket
-```
 What is socket?
 
 ```
