@@ -26,6 +26,9 @@ En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'
     ...
     bloc d'instructions
     ...
+    
+ ```
+
  
  ```
  
