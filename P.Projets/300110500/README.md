@@ -48,7 +48,7 @@ get_Host_name_IP()
 ```
 
 
-### :ofive: Output
+### :five: Output
 ```
 Hostname :   LAPTOP-9J91CJSR
 IP :  169.254.162.12
