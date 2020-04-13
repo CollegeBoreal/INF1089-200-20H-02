@@ -10,15 +10,16 @@ Pour mon cas j'ai realiser un script qui permet afficher le nom d'hote et l'addr
 Le processus de ce script doit suit les etapes suivante.
 ```
 ### :one: Importation du socket library 
-
+```
 import socket
 What is socket?
 Deriver du mot anglais, socket est un trou qui laisse passer des choses,comme une prise electrique ou une bouche.
 Pour notre cas il designe une associationau niveau de l'IOS entre un programme qui tourne en boucheet et 
 le port de la machine qui lui a ete dedie.
 En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'est a dire le port et l'ip
-
+```
 ### :two: Definir la fonction et ses parametres tels que le nom d'hote et IP address 
+```
  En programmation python les fonction sont utiles pour realiser plusieurs fois la meme operation.
  Elle rend le code plus lisible et clair en le fonctionnant en bloc logiques.
  D'ou la representation de la fonction de facon suivante:
