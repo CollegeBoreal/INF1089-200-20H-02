@@ -28,28 +28,22 @@ En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'
     ...
     bloc d'instructions
     ...
-    
- ```
-
- 
- ```
+Voici le nom de la fonction et les parametres de ip address et hostname
  
 def get_Host_name_IP(): 
     try: 
         host_name = socket.gethostname() 
         host_ip = socket.gethostbyname(host_name) 
   ```
+### :three:Appel de la foction:
 L'appel d'une fonction qui renvoie une valeur est une expression, et on peut dès lors l'utiliser partout là où une expression est         acceptée. 
-        
+```
         print("Hostname :  ",host_name) 
         print("IP : ",host_ip) 
-    except: 
+     except: 
         print("Unable to get Hostname and IP") 
-  ```
-  
-### :three: Inserrer une fonction qui affichera le resultat final puis executer le code 
  get_Host_name_IP() #Function call 
-  
+```
 ### :four: Script final 
 
 ```
