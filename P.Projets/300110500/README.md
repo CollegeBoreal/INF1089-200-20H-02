@@ -8,7 +8,8 @@ le masque de sous reseau etc
 En python nous pouvons avoir le meme resultat en utilisant un script
 Pour mon cas j'ai realiser un script qui permet afficher le nom d'hote et l'addresse IP de son ordinateur.
 Le processus de ce script doit suit les etapes suivantes
-  
+```
+
 ### :one: Importation du socket library 
 
 ```
@@ -21,6 +22,7 @@ Deriver du mot anglais, socket est un trou qui laisse passer des choses,comme un
 Pour notre cas il designe une associationau niveau de l'IOS entre un programme qui tourne en boucheet et 
 le port de la machine qui lui a ete dedie.
 En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'est a dire le port et l'ip
+``` 
 
 ### :two: Definir la fonction qui affichera le nom d'hote et IP address 
 
@@ -39,7 +41,7 @@ def get_Host_name_IP():
         host_name = socket.gethostname() 
         host_ip = socket.gethostbyname(host_name) 
   ```
-### :three:Appel de la foction:
+### :three: Appel de la foction:
 L'appel d'une fonction qui renvoie une valeur est une expression, et on peut dès lors l'utiliser partout là où une expression est         acceptée. 
 ```
         print("Hostname :  ",host_name) 
