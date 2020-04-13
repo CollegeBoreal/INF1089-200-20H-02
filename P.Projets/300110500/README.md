@@ -39,8 +39,8 @@ def get_Host_name_IP():
     try: 
         host_name = socket.gethostname() 
         host_ip = socket.gethostbyname(host_name) 
-  ```
 ### :three: Appel de la foction:
+
 L'appel d'une fonction qui renvoie une valeur est une expression, et on peut dès lors l'utiliser partout là où une expression est         acceptée. 
 ```
         print("Hostname :  ",host_name) 
@@ -48,7 +48,7 @@ L'appel d'une fonction qui renvoie une valeur est une expression, et on peut dè
      except: 
         print("Unable to get Hostname and IP") 
  get_Host_name_IP() #Function call 
-```
+ ````
 ### :four: Script final 
 
 ```
