@@ -1,6 +1,6 @@
 
 
-[Water Pouring Problem](https://www.youtube.com/watch?v=q6M_pco_5Vo)
+Water Pouring Problem - https://www.youtube.com/watch?v=q6M_pco_5Vo
 
 ```
 # https://sjashwin.wordpress.com/2016/10/09/water-jug-problem-solved-python/
