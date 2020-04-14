@@ -41,7 +41,7 @@
     print(" Indicage ".center(50, '-'))
 
 
-## afﬁchez la sous-listedu2eau3eélément; 
+## afﬁchez la sous-liste du 2e au3e élément; 
 
     print("nombres[1:3] =", nombres[1:3]) 
 
@@ -53,7 +53,7 @@
 
     print("nombres[2:] =", nombres[2:]) 
 
- ##  afﬁchez la sous-liste du3eélément à laﬁn de laliste;
+ ##  afﬁchez la sous-liste du3e élément à laﬁn de la liste;
 
 
     print("nombres[:] =", nombres[:]) 
