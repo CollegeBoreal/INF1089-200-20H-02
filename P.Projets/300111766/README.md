@@ -1,9 +1,9 @@
                                   
-                                             STRUCTURES DE DONNEES PYTHON       
+##  STRUCTURE DE DONNEES      
 
 
 
-déﬁnir la liste: liste =[17, 38, 10, 25, 72],puis effectuez les actions suivantes: 
+déﬁnir la liste: Nombres = [17, 38, 10, 25, 72], puis effectuez les actions suivantes: 
  
  – triez etafﬁchez la liste;
  
