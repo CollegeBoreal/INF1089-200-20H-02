@@ -81,7 +81,7 @@ SECURITY WARNING: You are building a Docker image from Windows against a non-Win
 
 * $ docker run --tty --env INPUT_MON_NOM="halima" b300108234:1.0
 
-`Bonjour tout le monde mon nom est Draman`
+`Bonjour tout le monde mon nom est halima`
 
 Pour visualiser les couches images de l'image créée
 
