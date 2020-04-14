@@ -1,5 +1,5 @@
                                   
-                                                  ##  STRUCTURE DE DONNEES      
+  ##  STRUCTURE DE DONNEES      
 
 
 
