@@ -97,6 +97,11 @@ print("nombres[:] =", nombres[:])
 print("nombres[-1] =", nombres[-1])
 
 
+## _LA FONCTION mean()_
+
+
+
+
  
 
 
