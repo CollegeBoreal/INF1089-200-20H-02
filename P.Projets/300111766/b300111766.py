@@ -1,112 +1,73 @@
-                                             ## STRUCTURES DE DONNEES PYTON
-                                             
-                                            
- déﬁnir la liste: liste =[17, 38, 10, 25, 72],puis effectuez les actions suivantes: 
- 
- – triez etafﬁchez la liste;
- 
- – ajoutez l’élément 12 à la liste et afﬁchez laliste; 
- 
- – renversez et afﬁchez la liste; 
- 
- – afﬁchez l’indice de l’élément 17; 
- 
- – enlevez l’élément 38 et afﬁchez la liste;
- 
- – afﬁchez la sous-liste du 2e au 3e élément; 
- 
- – afﬁchez la sous-liste du début au 2e élément; 
- 
- – afﬁchez lasous-liste du 3e élément à laﬁndelaliste; 
- 
- – afﬁchez la sous-liste complète de la liste;
-  
-  – afﬁchez le dernier élément en utilisant unindiçage négatif
-  
-  
-  ## Liste initiale
-  
-  nombres = [17, 38, 10, 25, 72] 
-  
-print(" Liste initiale ".center(50, '-'))
+   def manip(nombres,rem_value,val_ajout,val_ind):
+    
+    print(" Liste initiale ".center(50, '-'))
+    print(nombres, '\n')
+    print(" Liste trier: {} ".format(sorted(nombres)))
 
-print(nombres, '\n')
-  
-   ##  triez et afﬁchez la liste;
-  
- nombres = [17, 38, 10, 25, 72]
-  
-print(" Liste initiale ".center(50, '-'))
-
-print(nombres, '\n')
+#print(nombres, '\n')
 
   ##  ajoutez l’élément 12 à la liste et afﬁchez laliste;
-  
-  print(" Ajout d'un element ".center(50, '-')) 
-  
-nombres.append(12) 
-
-print(nombres, '\n')
+    print(" Ajout d'un element ".center(50, '-')) 
+    nombres.append(val_ajout) 
+    print(nombres, '\n')
 
  ## renversez et afﬁchez la liste; 
   
- print(" Retournement ".center(50, '-')) 
+    print(" list inverser ".center(50, '-')) 
   
-nombres.reverse() 
+    nombres.reverse() 
 
-print(nombres, '\n')
+    print(nombres, '\n')
 
  ## afﬁchez l’indice de l’élément 17;
-  
-print(" Indice d'un element ".center(50, '-'))
-
-print(nombres.index(17), '\n')
+    if val_ind not in nombres:
+        print("La valeur que vous voulez son index nest pas la list")
+    else:
+        print(" Indice d'un element ".center(50, '-'))
+        print(nombres.index(val_ind), '\n')
 
 ## enlevez l’élément 38 et afﬁchez la liste;
 
-print(" Retrait d'un element ".center(50, '-')) 
+    print(" Retrait d'un element ".center(50, '-')) 
 
-nombres.remove(38) 
-
-print(nombres, '\n')
+    if rem_value not in nombres:
+        print("La valeur nest pas la liste")
+    else:
+        nombres.remove(rem_value) 
+        print(nombres, '\n')
 
 ## afﬁchez la sous-liste du 2e au 3e élément; 
 
-print(" Indicage ".center(50, '-'))
+    print(" Indicage ".center(50, '-'))
 
 
-## afﬁchezlasous-listedu2eau3eélément; 
+## afﬁchez la sous-listedu2eau3eélément; 
 
-print("nombres[1:3] =", nombres[1:3]) 
+    print("nombres[1:3] =", nombres[1:3]) 
 
  ## afﬁchez la sous-liste du début au 2e élément; 
 
-print("nombres[:2] =", nombres[:2]) 
+    print("nombres[:2] =", nombres[:2]) 
 
 
 
-print("nombres[2:] =", nombres[2:]) 
+    print("nombres[2:] =", nombres[2:]) 
 
  ##  afﬁchez la sous-liste du3eélément à laﬁn de laliste;
 
 
-print("nombres[:] =", nombres[:]) 
+    print("nombres[:] =", nombres[:]) 
 
  ## extraire de derniers elements de la liste 
 
-print("nombres[-1] =", nombres[-1])
+    print("nombres[-1] =", nombres[-1])
+    
 
-
-## _LA FONCTION mean()_
-
-
-
-
- 
-
-
-
-
-
-
-
+def main():
+    print("Pour tester mon program")
+    #manip([236,179,3,10,9,13],1,1000,17)
+    manip([17, 38, 10, 25, 72],38,12,17)
+    
+if __name__=="__main__":
+    main()
+    
