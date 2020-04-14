@@ -1,4 +1,4 @@
-                                             STRUCTURES DE DONNEES PYTON
+                                             ## STRUCTURES DE DONNEES PYTON
                                              
                                             
  déﬁnir la liste: liste =[17, 38, 10, 25, 72],puis effectuez les actions suivantes: 
