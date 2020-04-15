@@ -138,7 +138,7 @@
             print('your balance equal',accounts_balances[counter])
      ''
      
-##### :m: si la condition if a==c:  est vraie 
+:star: si la condition if a==c:  est vraie 
   l’instruction elif va parcourir et exécuter le code d’autre bloc et dans ce cas le client peut entrer 
   la somme " inter money amount"    d’argent et à la fin il peut voir "accounts_balances" de son compte 
 
