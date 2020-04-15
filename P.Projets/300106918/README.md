@@ -79,11 +79,7 @@
             
    
 
-  :star:  si le passaekey est correcte le programme va imprimer un ensemble d’options numéroté de 1 à 5 
-  
-   un client choisit 1 withdraw (un retrait)  il peut retirer la somme d’argent demandée si la condition 
-   if money>accounts_balances[counter]: est vraie a une somme d’argent suffisante dans le compte si no 
-   il revoit un message not enough money in your balance
+ 
 
 ''
       :star: while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
@@ -95,7 +91,7 @@
 
 ##### :m: instruction conditionnelle
 ''        
-       :star:  if  dans le cas où elle l'est, à effectuer un traitement spécifique, 
+    :star:  if  dans le cas où elle l'est, à effectuer un traitement spécifique, 
          et si elle ne l'est pas à effectuer un autre traitement else 
 
              if condition: 
@@ -103,7 +99,12 @@
             [else: 
                  exécuté si condition est fausse]
 
-    
+   :star:  si le passaekey est correcte le programme va imprimer un ensemble d’options numéroté de 1 à 5 
+   un client choisit 1 withdraw (retrait)  il peut retirer la somme d’argent demandée si la condition 
+   if money>accounts_balances[counter]: est vraie a une somme d’argent suffisante dans le compte si no 
+   il revoit un message not enough money in your balance   
+   
+![](image/ret.png )
 
 ##### :m:  l’instruction + break + 
              vous offre la possibilité de sortir d’une boucle lorsqu’une condition externe
