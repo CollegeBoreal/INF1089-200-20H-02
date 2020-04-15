@@ -74,7 +74,16 @@
                                            list1.append(x)
                                        print(list1)
 
+               
+            
+            
+   
 
+  :star:  si le passaekey est correcte le programme va imprimer un ensemble d’options numéroté de 1 à 5 
+  
+   un client choisit 1 withdraw (un retrait)  il peut retirer la somme d’argent demandée si la condition 
+   if money>accounts_balances[counter]: est vraie a une somme d’argent suffisante dans le compte si no 
+   il revoit un message not enough money in your balance
 
 ''
       :star: while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
@@ -94,7 +103,7 @@
             [else: 
                  exécuté si condition est fausse]
 
-
+    
 
 ##### :m:  l’instruction + break + 
              vous offre la possibilité de sortir d’une boucle lorsqu’une condition externe
