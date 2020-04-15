@@ -89,7 +89,7 @@
                     instructions
                     modification de variable
 
-##### :m: instruction conditionnelle
+##### :m: Instruction Conditionnelle
 ''        
     :star:  if  dans le cas où elle l'est, à effectuer un traitement spécifique, 
          et si elle ne l'est pas à effectuer un autre traitement else 
