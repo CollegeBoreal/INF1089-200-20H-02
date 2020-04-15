@@ -99,10 +99,11 @@
             [else: 
                  exécuté si condition est fausse]
 
-   :star:  si le passaekey est correcte le programme va imprimer un ensemble d’options numéroté de 1 à 5 
-   un client choisit 1 withdraw (retrait)  il peut retirer la somme d’argent demandée si la condition 
-   if money>accounts_balances[counter]: est vraie a une somme d’argent suffisante dans le compte si no 
-   il revoit un message not enough money in your balance   
+   :star:  si le passaekey est correcte le programme va imprimer un ensemble d’options numéroté 
+   de 1 à 5 
+   un client choisit 1 withdraw (retrait)  il peut retirer la somme d’argent demandée 
+   si la condition  if money>accounts_balances[counter]: est vraie a une somme d’argent suffisante dans le compte
+   si no il revoit un message not enough money in your balance   
    
 ![](image/ret.png )
 
@@ -139,8 +140,9 @@
      ''
      
 :star: si la condition if a==c:  est vraie 
-  l’instruction elif va parcourir et exécuter le code d’autre bloc et dans ce cas le client peut entrer 
-  la somme " inter money amount"    d’argent et à la fin il peut voir "accounts_balances" de son compte 
+  l’instruction elif va parcourir et exécuter le code d’autre bloc et dans ce cas 
+  le client peut entrer  la somme " inter money amount"    d’argent et à la fin il peut 
+  voir "accounts_balances" de son compte 
 
         
         
