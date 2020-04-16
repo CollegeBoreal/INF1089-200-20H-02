@@ -3,8 +3,8 @@
 
 ## Python3 code: LE SAVOIR POUR ADMINISTRER SON RESEAU
 ```
-En windows CMD, plusieurs commandes permettent d'afficher  permet d'afficher les parametres du reseau, 
-et faire des pings pour tester la connectivite de son hote et le masque de sous reseau. 
+En windows CMD, plusieurs commandes permettent d'afficher  permet d'afficher les parametres du reseau, et 
+faire des pings pour tester la connectivite de son hote et le masque de sous reseau. 
 De meme en pyrhon des scripts peuvent etre utilises pour obtenir les memes resultat
 
 En python nous pouvons avoir le meme resultat en utilisant un script
@@ -69,7 +69,9 @@ get_Host_name_IP()
 UUID, Universal Unique Identifier, est une bibliothèque python qui aide à générer des objets aléatoires
 de 128 bits comme identifiants. Il fournit l'unicité car il génère des identifiants en fonction du temps,
 du matériel informatique (MAC, etc.).
-A la fonction principale nous pouvons inserer 
+
+A la fonction principale nous pouvons inserer le second module 
+
 import uuid 
 print (hex(uuid.getnode())) 
 ```
