@@ -1,13 +1,14 @@
 
 # 🎈 Mon premier script en python:
 
-## Python3 code:  Comment connaitre mon adresseip sur un reseau, mon nom d'hotes et les informations de mon reseau
+## Python3 code: LE SAVOIR POUR ADMINISTRER SON RESEAU
 ```
-En windows CMD, la commande ipconfig permet d'afficher les parametres du reseau tel que l'addresse ip de l'hote, 
-le masque de sous reseau etc
+En windows CMD, plusieurs commandes permettent d'afficher  permet d'afficher les parametres du reseau, et faire des pings pour tester la connectivite de son hote et le masque de sous reseau. 
+De meme en pyrhon des scripts peuvent etre utilises pour obtenir les memes resultat
+
 En python nous pouvons avoir le meme resultat en utilisant un script
-Pour mon cas j'ai realiser un script qui permet afficher le nom d'hote et l'addresse IP de son ordinateur.
-Le processus de ce script doit suit les etapes suivante.
+Pour mon cas j'ai realiser un script qui permet afficher le nom d'hote et l'addresse IP de son ordinateur ainsi que la configuration de mon reseau.
+Le processus de ce script suit plusieurs processus les etapes suivante.
 ```
 ### :one: Importation du socket library 
 ```
@@ -44,7 +45,7 @@ là où une expression est acceptée.
         print("Unable to get Hostname and IP") 
  get_Host_name_IP() #Function call 
  ````
-### :four: Script final 
+### :four: Script d'affichage partiel
 
 ```
 get_Host_name_IP() ]
@@ -61,6 +62,26 @@ def get_Host_name_IP():
   
 get_Host_name_IP()
 ```
+### :five: Ajouter un UUID pour generer l'adreese MAC
+```
+UUID, Universal Unique Identifier, est une bibliothèque python qui aide à générer des objets aléatoires
+de 128 bits comme identifiants. Il fournit l'unicité car il génère des identifiants en fonction du temps,
+du matériel informatique (MAC, etc.).
+A la fonction principale nous pouvons inserer 
+import uuid 
+print (hex(uuid.getnode())) 
+```
+### :six: importation  d'un dernier module supprocess
+Le module subprocess vous permet de lancer de nouveaux processus, les connecter a des
+tubes d'entree/sortie/erreur, et d'obtenir leurs codes de retour. 
+Ce module a l'intention de remplacer plusieurs anciens modules et fonctions os.system.
+
+### :six:  informations du reseau
+import subprocess
+proc = subprocess.check_output("ipconfig" ).decode('utf-8')
+print (proc)
+
+
 ### :five: Output
 
 ![image](py2.PNG)
