@@ -86,4 +86,3 @@ print (proc)
 
 ![image](py2.PNG)
 ````
-:pray:
