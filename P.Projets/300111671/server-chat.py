@@ -1,6 +1,5 @@
 
-<<<<<<< HEAD
-=======
+
 
 import socket,select
 port = 12345
@@ -30,4 +29,4 @@ while True:
             except:
                 continue
 server_socket.close()
->>>>>>> 6dfe9d9b2452742f716463df975bc5fa01c23610
+

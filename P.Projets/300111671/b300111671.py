@@ -4,7 +4,8 @@ port = 12345
 client_socket.connect(('127.0.0.1',port))
 #recieve connection message from server
 recv_msg = client_socket.recv(1024)
-print recv_msg
+
+     print recv_msg
 #send user details to server
 send_msg = raw_input("Enter your user name(prefix with #):")
 client_socket.send(send_msg)
