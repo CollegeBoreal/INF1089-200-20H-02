@@ -38,7 +38,7 @@ Par example:
   - [x] Copier le fichier `entrypoint.sh` dans votre :id: `Boréal` 
 
 
-- [ ] Modifie ton fichier README.md pour plus de documentation
+- [x] Modifie ton fichier README.md pour plus de documentation
 
 
 En un mot, récupérer le travail que vous avez fait à travers [Github Leaning Lab](https://lab.github.com/CollegeBoreal) et le mettre dans celui du cours [7.CI-CD](../7.CI-CD)
@@ -49,43 +49,17 @@ Le laboratoire vous garantit une note de :five::zero:`%`, ajouter du code en am�
 
 En rappel, pour éxécuter localement son fichier `Dockerfile`, on execute la commande :
 
+
 `$ docker build --tag b300104541:1.0 .`
 
 `$ docker run b300104541:1.0`
 
-`Barcode` 
+Nous devons avoir comme reponse un Barcode conmme vous le voyez ci-dessous
 
-Pour visualiser les couches images de l'image créée
+![image](images6.png)
+![image](images7.png)
 
-`% docker image history b`:id:`:1.0`
-```
-IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
-a555cf89a1b7        40 seconds ago      /bin/sh -c #(nop)  ENTRYPOINT ["/entrypoint.…   0B                  
-4bb76bfb1e74        40 seconds ago      /bin/sh -c chmod +x /entrypoint.sh              65B                 
-c010b45de5b3        40 seconds ago      /bin/sh -c #(nop) ADD file:44be7c7e599db7b1d…   65B                 
-4e5021d210f6        2 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B                  
-<missing>           2 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B                  
-<missing>           2 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   745B                
-<missing>           2 weeks ago         /bin/sh -c [ -z "$(apt-get indextargets)" ]     987kB               
-<missing>           2 weeks ago         /bin/sh -c #(nop) ADD file:594fa35cf803361e6…   63.2MB   
-```
 
-# :fire: Indices 
+`Lecon: le but etait de modifie l'image que nous avons faire prealablement.`
 
-Tu auras besoin de:
 
-:round_pushpin: créer et manipuler une branche avec `git`:
-
-https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
-
-:round_pushpin: Créer une demande d'extraction `pull request` par le biais de l'interface web de github: 
-
-https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request
-
-:round_pushpin: Creér Répertoire Imbriqué
-
-par exemple pour créer `.github/workflows` utilise la commande suivante avec le parametre `-p`:
-
-```
-$ mkdir -p .github/workflows
-```
