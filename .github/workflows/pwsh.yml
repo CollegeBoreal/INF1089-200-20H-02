@@ -1,0 +1,18 @@
+name: Share data between jobs
+
+on: [push]
+
+jobs:
+  run-script:
+    name: Run script
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Display the path
+        shell: pwsh
+        run: |
+          echo ${env:PATH}
+          Install-Module -Name Pester -Force
+          cd 2.Shell
+          # .scripts\participation.ps1
+          # .scripts\Add-Numbers.Tests.ps1

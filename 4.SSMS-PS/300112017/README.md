@@ -29,7 +29,7 @@ PS> docker container run --name some-mssql `
            --env "SA_PASSWORD=Password123" `
            --volume ${SRC}:C:/DATA `
            --publish 1433:1433 --detach `
-           mssql-server-windows-developer-fti
+           kkbruce/mssql-server-windows-express:windowsservercore-1809
 ```
 
 💥 Restore Database
@@ -46,7 +46,7 @@ PS > .\restore.ps1
 
 * La base de donnees `WorldWideImporters` a été importée
 
-<img src="sql.JPG" width="204" heidth="477"></img>
+<img src="bcup.PNG" width="204" heidth="477"></img>
 
 🤷‍♀️ Backup Database
 
@@ -54,6 +54,7 @@ PS > .\restore.ps1
 
 * Lancer son script de backup
 
+<img src="bcup2.PNG" width="204" heidth="477"></img>
 ```
 PS > .\backup.ps1
 ```

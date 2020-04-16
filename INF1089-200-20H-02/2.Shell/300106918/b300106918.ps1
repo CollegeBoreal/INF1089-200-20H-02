@@ -1,3 +1,0 @@
-Write-host "hello world"
-
-
