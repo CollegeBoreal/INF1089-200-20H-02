@@ -1,15 +1,19 @@
-# Participation au 16-04-2020 03:47
-\n
+# Participation au 16-04-2020 03:49
+
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
 | :a: [Présence](#a-présence)   | L'étudiant.e a fait son travail    :heavy_check_mark:   |
 | :b: [Précision](#b-précision) | L'étudiant.e a réussi son travail  :tada:               |
-\n## Légende\n
+
+## Légende
+
 | Signe              | Signification                 |
 |--------------------|-------------------------------|
 | :heavy_check_mark: | Prêt à être corrigé           |
 | :x:                | Projet inexistant             |
-\n## :a: Présence\n
+
+## :a: Présence
+
 |:hash:| Boréal :id:                | Fait               |
 |------|----------------------------|--------------------|
 | 1 | [300104524](../300104524/b300104524-fonction.ps1) | [:heavy_check_mark:] |
