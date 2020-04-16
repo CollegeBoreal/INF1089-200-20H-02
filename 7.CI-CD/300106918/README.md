@@ -29,16 +29,16 @@ https://lab.github.com/CollegeBoreal/lab-github-actions:-bonjour-monde
 
 https://github.com/:id:/lab-bonjour-github-actions
 
-- [ ] Copier les scripts:
+- [x] Copier les scripts:
 
 Par example:
 
-  - [ ] Copier le fichier `Dockerfile` dans votre :id: `Boréal` 
+  - [x] Copier le fichier `Dockerfile` dans votre :id: `Boréal` 
 
-  - [ ] Copier le fichier `entrypoint.sh` dans votre :id: `Boréal` 
+  - [x] Copier le fichier `entrypoint.sh` dans votre :id: `Boréal` 
 
 
-- [ ] Modifie ton fichier README.md pour plus de documentation
+- [x] Modifie ton fichier README.md pour plus de documentation
 
 
 En un mot, récupérer le travail que vous avez fait à travers [Github Leaning Lab](https://lab.github.com/CollegeBoreal) et le mettre dans celui du cours [7.CI-CD](../7.CI-CD)
