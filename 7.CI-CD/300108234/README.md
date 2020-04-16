@@ -124,7 +124,7 @@ print(encoder.get_ascii())
 
 ```
 
-Maintenant, je suis prêt à créer une image à partir de ce Dockerfile en lancant cette comande:
+* Maintenant, je suis prêt à créer une image à partir de ce Dockerfile en lancant cette comande:
 
 ```
 > docker build -t python-300108234 .
@@ -161,7 +161,7 @@ Successfully built e0fd6b916c73
 Successfully tagged python-300108234:latest
 SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
 ```
-* Pour verifier que l<image est creer lancez cette commande:
+* Pour verifier que l'image est creer lancez cette commande:
 
 ```
 > docker images
