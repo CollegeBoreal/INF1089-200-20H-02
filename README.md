@@ -34,7 +34,7 @@ Après la contingence,
 |:----------:|:------------------------|:-----------------------------------------------------------------------------------|
 | 2020-04-18 | [P.Projets](P.Projets/.scripts/Participation.md)  | Programmation en Python                                                            |
 | 2020-04-18 | [7.CI-CD](7.CI-CD/.scripts/Participation.md)      | Dockerfile et shell scripts                                                        |
-| 2020-04-02 | [2.Shell](2.Shell/.scripts/Participation.md)      | Programmation de script Powershell                                                 |
+| 2020-04-18 | [2.Shell](2.Shell/.scripts/Participation.md)      | Programmation de script Powershell                                                 |
 
 Avant la contingence, 
 | Date       | Devoir                  |     Commentaires                                                                   |
