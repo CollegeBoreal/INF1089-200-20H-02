@@ -3,11 +3,13 @@
 
 ## Python3 code: LE SAVOIR POUR ADMINISTRER SON RESEAU
 ```
-En windows CMD, plusieurs commandes permettent d'afficher  permet d'afficher les parametres du reseau, et faire des pings pour tester la connectivite de son hote et le masque de sous reseau. 
+En windows CMD, plusieurs commandes permettent d'afficher  permet d'afficher les parametres du reseau, 
+et faire des pings pour tester la connectivite de son hote et le masque de sous reseau. 
 De meme en pyrhon des scripts peuvent etre utilises pour obtenir les memes resultat
 
 En python nous pouvons avoir le meme resultat en utilisant un script
-Pour mon cas j'ai realiser un script qui permet afficher le nom d'hote et l'addresse IP de son ordinateur ainsi que la configuration de mon reseau.
+Pour mon cas j'ai realiser un script qui permet afficher le nom d'hote et l'addresse IP de son ordinateur 
+ainsi que la configuration de mon reseau.
 Le processus de ce script suit plusieurs processus les etapes suivante.
 ```
 ### :one: Importation du socket library 
