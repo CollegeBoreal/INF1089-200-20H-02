@@ -1,3 +1,7 @@
+#Nginx
+#
+#VERSION
+
 FROM Ubuntu
 
 ADD entrypoint.sh /entrypoint.sh
