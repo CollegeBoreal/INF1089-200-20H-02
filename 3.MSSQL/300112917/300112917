@@ -1,75 +1,31 @@
-param(
-    [Parameter(Mandatory=$false)]
-    [string]$sa_password,
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
 
-    [Parameter(Mandatory=$false)]
-    [string]$attach_dbs,
+LABEL maintainer "Thomas Purrer"
 
-    [Parameter(Mandatory=$false)]
-    [string]$restore_dbs
-)
+ENV exe "https://go.microsoft.com/fwlink/?linkid=840945"
+ENV box "https://go.microsoft.com/fwlink/?linkid=840944"
 
-Write-Verbose "Starting SQL Server"
-start-service MSSQLSERVER
+ENV attach_dbs="[]" 
+ENV restore_dbs="[]"
 
-if(!$sa_password) {
-    Write-Verbose "ERROR: No password for user 'sa' provided"
-    exit 1
-} 
-else 
-{
-    Write-Verbose "Changing SA login credentials"
-    $sqlcmd = "ALTER LOGIN sa with password=" +"'" + $sa_password + "'" + ";ALTER LOGIN sa ENABLE;"
-    & sqlcmd -Q $sqlcmd
-}
+SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 
-$attach_dbs_cleaned = $attach_dbs.TrimStart('\\').TrimEnd('\\')
-$attach_dbs_Json = $attach_dbs_cleaned | ConvertFrom-Json
+COPY start.ps1 /
+COPY restore.sql /
 
-if ($null -ne $attach_dbs_Json -And $attach_dbs_Json.Length -gt 0)
-{
-    Write-Verbose "Attaching $($attach_dbs_Json.Length) database(s)"
-	    
-    Foreach($db in $attach_dbs_Json) 
-    {            
-        $files = @();
-        Foreach($file in $db.dbFiles)
-        {
-            $files += "(FILENAME = N'$($file)')";           
-        }
+WORKDIR /
 
-        $files = $files -join ","
-        $sqlcmd = "IF EXISTS (SELECT 1 FROM SYS.DATABASES WHERE NAME = '" + $($db.dbName) + "') BEGIN EXEC sp_detach_db [$($db.dbName)] END;CREATE DATABASE [$($db.dbName)] ON $($files) FOR ATTACH;"
+RUN Invoke-WebRequest -Uri $env:box -OutFile SQL.box ; \
+        Invoke-WebRequest -Uri $env:exe -OutFile SQL.exe ; \
+        Start-Process -Wait -FilePath .\SQL.exe -ArgumentList /qs, /x:setup ; \
+        .\setup\setup.exe /q /ACTION=Install /INSTANCENAME=MSSQLSERVER /FEATURES=SQLEngine,FullText /UPDATEENABLED=0 /SQLSVCACCOUNT='NT AUTHORITY\System' /SQLSYSADMINACCOUNTS='BUILTIN\ADMINISTRATORS' /TCPENABLED=1 /NPENABLED=0 /IACCEPTSQLSERVERLICENSETERMS ; \
+        Remove-Item -Recurse -Force SQL.exe, SQL.box, setup
 
-        Write-Verbose "Invoke-Sqlcmd -Query $($sqlcmd)"
-        & sqlcmd -Q $sqlcmd
-	}
-}
+RUN stop-service MSSQLSERVER ; \
+        set-itemproperty -path 'HKLM:\software\microsoft\microsoft sql server\mssql14.MSSQLSERVER\mssqlserver\supersocketnetlib\tcp\ipall' -name tcpdynamicports -value '' ; \
+        set-itemproperty -path 'HKLM:\software\microsoft\microsoft sql server\mssql14.MSSQLSERVER\mssqlserver\supersocketnetlib\tcp\ipall' -name tcpport -value 1433 ; \
+        set-itemproperty -path 'HKLM:\software\microsoft\microsoft sql server\mssql14.MSSQLSERVER\mssqlserver\' -name LoginMode -value 2 ;
 
-$restore_dbs_cleaned = $restore_dbs.TrimStart('\\').TrimEnd('\\')
-$restore_dbs_Json = $restore_dbs_cleaned | ConvertFrom-Json
+HEALTHCHECK CMD [ "sqlcmd", "-Q", "select 1" ]
 
-if ($null -ne $restore_dbs_Json -And $restore_dbs_Json.Length -gt 0)
-{
-    Write-Verbose "Restoring $($restore_dbs_Json.Length) database(s)"
-	    
-    Foreach($db in $restore_dbs_Json) 
-    {            
-        $parameters = @("backup=" + $db.dbBackup + "") + @("databaseName=" + $db.dbName + "") + @("databaseLocation=" + $db.dbLocation + "")
-
-        Write-Host "Parameters for restore:" $parameters
-
-        Invoke-Sqlcmd -InputFile "restore.sql" -Variable $parameters
-	}
-}
-
-Write-Verbose "Started SQL Server."
-
-$lastCheck = (Get-Date).AddSeconds(-2) 
-while ($true) 
-{ 
-    Get-EventLog -LogName Application -Source "MSSQL*" -After $lastCheck | Select-Object TimeGenerated, EntryType, Message	 
-    $lastCheck = Get-Date 
-    Start-Sleep -Seconds 2 
-}
-
+CMD .\start -sa_password $env:sa_password -attach_dbs \"$env:attach_dbs\" -restore_dbs \"$env:restore_dbs\" -Verbose

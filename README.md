@@ -28,9 +28,17 @@ Find your local number: https://collegeboreal.zoom.us/u/axPBnQGUF
 
 ## Devoirs
 
+Après la contingence, 
+
 | Date       | Devoir                  |     Commentaires                                                                   |
 |:----------:|:------------------------|:-----------------------------------------------------------------------------------|
-| 2020-04-02 | [2.Shell](2.Shell)      | Programmation de script Powershell                                                 |
+| 2020-04-17 | [P.Projets](P.Projets/.scripts/Participation.md)  | Programmation en Python                                                            |
+| 2020-04-17 | [7.CI-CD](7.CI-CD/.scripts/Participation.md)      | Dockerfile et shell scripts                                                        |
+| 2020-04-02 | [2.Shell](2.Shell/.scripts/Participation.md)      | Programmation de script Powershell                                                 |
+
+Avant la contingence, 
+| Date       | Devoir                  |     Commentaires                                                                   |
+|:----------:|:------------------------|:-----------------------------------------------------------------------------------|
 | 2020-03-12 | [4.SSMS-PS](4.SSMS-PS)  | Reproduire les scripts Powershell et SSMS SQL                                      |
 
 ## Déroulement de cours:

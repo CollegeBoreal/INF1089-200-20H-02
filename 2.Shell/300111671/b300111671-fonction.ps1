@@ -1,21 +1,15 @@
 ﻿<#
- .SYNOPSIS
-     Verifie d’un port tcp distant
- .DESCRIPTION
-     La fonction TEST-Port retourne $true si le port est ouvert sinon $false
- .PARAMETER Host
-        Nom du volume ex: c:
- .PARAMETER Port
-        Numéro de port TCP (inférieure  à 65535)
- .PARAMETER Timeout
-        Durée du timeout en ms (par défaut 300ms)
- .NOTES
-     Author : AbbasSadissou
-     Requires : PowerShell V2
- .EXAMPLE
-     [ps] c:\foo> Test-Port « 10.13.5.55 »  8080
-     true
-  #>
+.SYNOPSIS
+    Ce script est un laboratoire Powershell
+
+.DESCRIPTION
+    Ce script est utilisé pour le laboratoire de programmation en Powershell.
+
+.NOTES
+    Author: AbbasSadissou
+    Derniere mise à jour: yyyy-mm-dd
+
+#>
 
 # Definition de la fonction
 function Stagiaire
