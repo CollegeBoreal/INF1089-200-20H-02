@@ -63,4 +63,4 @@ get_Host_name_IP()
 ```
 ### :five: Output
 
-![image](py1.PNG)
+![image](py2.PNG)
