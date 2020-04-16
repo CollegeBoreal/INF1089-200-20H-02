@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr 14 12:23:45 2020
+
+@author: LENOVO
+"""
 
 <#
  .SYNOPSIS
@@ -33,21 +39,23 @@ function Test-Port
    $wait = $iar.AsyncWaitHandle.WaitOne($Timeout,$false)
 
    # Check to see if the connection is done
-   if(!$wait)
+if(!$wait)
    {
    # Close the connection and report timeout
    $tcpclient.Close()
    Return $false
    }
-   else
+else
   {
   # Close the connection and report the error if there is one
   $error.Clear()
   $tcpclient.EndConnect($iar) | out-Null
-  if(!$?){$failed = $true}
+if(!$?){$failed = $true}
   $tcpclient.Close()
   }
 
  # Return $true if connection Establish else $False
- if($failed){return $false}else{return $true}
- }
+if($failed){return $false}else{return $true}
+ 
+}
+

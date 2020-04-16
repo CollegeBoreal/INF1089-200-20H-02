@@ -23,9 +23,9 @@ PS> $SRC = (pwd).Path | Foreach-Object {$_ -replace '\\','/'}
 PS> docker container run --name some-mssql `
            --env "ACCEPT_EULA=Y" `
            --env "SA_PASSWORD=Password123" `
-           --volume ${SRC}:C:/DATA `
+           --volume ${SRC}:C:\DATA `
            --publish 1433:1433 --detach `
-           mssql-server-windows-developer-fti
+           kkbruce/mssql-server-windows-express:windowsservercore-1809
 ```
 
 ## :b: Restore Database
@@ -42,13 +42,14 @@ PS > .\restore.ps1
 
 * La base de donnees `WorldWideImporters` a été importée
 
-<img src="images/WWI_SSMS.png" width="204" heidth="477"></img>
+<img src="bcup.PNG" width="204" heidth="477"></img>
 
 ## :ab: Backup Database
 
 :pushpin: Dans son répertoire de travail (i.e. :id: )
 
 * Lancer son script de backup
+
 
 ```
 PS > .\backup.ps1
@@ -62,3 +63,4 @@ PS > gci backup
 
 * le fichier `wwwi_2.bak` doit ètre présent 
 
+<img src="bcup2.PNG" width="204" heidth="477"></img>
