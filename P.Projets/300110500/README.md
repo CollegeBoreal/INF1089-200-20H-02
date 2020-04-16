@@ -1,7 +1,7 @@
 
 # 🎈 Mon premier script en python  :snake:
 
-## Python3 code: LE SAVOIR POUR ADMINISTRER SON RESEAU 👇
+## Python3 code: ADMINISTRER SON RESEAU AVECUN SCRIPT PYTHON 👇
 
 En windows CMD, plusieurs commandes permettent d'afficher les parametres du reseau, et 
 faire des pings pour tester la connectivite de son hote. 
