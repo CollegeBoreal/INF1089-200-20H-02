@@ -6,10 +6,9 @@ Created on Wed Apr 15 22:01:05 2020
 
 """
 
-# import le socket library
-import socket 
 
-# definition de la fonction et les parametres ip address et hostname
+
+import socket 
 def get_Host_name_IP(): 
     try: 
         host_name = socket.gethostname() 
@@ -18,17 +17,16 @@ def get_Host_name_IP():
         print("IP : ",host_ip) 
     except: 
         print("Unable to get Hostname and IP") 
-# Appel de la fonction definieet execution du code
 get_Host_name_IP()
   
-# ajout d'un UUID module  qui affichera le MAC address de lèhote(pc) 
+# Python Program to compute 
+# MAC address of host 
+# using UUID module 
   
 import uuid 
   
-# imprime la valeur unique de MAC  address 
+# printing the value of unique MAC 
+# address using uuid and getnode() function  
 print (hex(uuid.getnode())) 
 
-# Ajout des informations du reseau
-import subprocess
-proc = subprocess.check_output("ipconfig" ).decode('utf-8')
-print (proc)
+
