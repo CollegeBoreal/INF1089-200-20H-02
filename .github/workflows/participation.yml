@@ -1,14 +1,21 @@
-name: Check fichers programmation Python pour P.Projets
+name: Participations
 
 on: [push]
 
 jobs:
-  run-script:
-    name: Run script
+  presence:
+    name: presence de fichiers pour la participation
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v1
+      - shell: bash
+        run: |
+          cd 2.Shell
+          bash .scripts/run.sh
+      - shell: bash
+        run: |
+          cd 7.CI-CD
+          bash .scripts/run.sh
       - shell: bash
         run: |
           cd P.Projets
@@ -17,7 +24,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit -m "Correction P.Projets" -a
+          git commit -m "Vérification de la participation" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
