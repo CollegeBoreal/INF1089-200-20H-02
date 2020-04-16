@@ -1,3 +1,7 @@
-#!/bin/sh -l
+# Sample taken from pyStrich GitHub repository
+# https://github.com/mmulqueen/pyStrich
+from pystrich.datamatrix import DataMatrixEncoder
 
-sh -c "echo Bonjour tout le monde mon nom est $INPUT_MON_NOM"
+encoder = DataMatrixEncoder('This is a DataMatrix.')
+encoder.save('./datamatrix_test.png')
+print(encoder.get_ascii())
