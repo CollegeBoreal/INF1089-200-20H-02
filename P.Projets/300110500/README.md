@@ -66,8 +66,8 @@ get_Host_name_IP()
 ```
 ### :five: Ajouter un UUID pour generer l'adreese MAC
 ```
-UUID, Universal Unique Identifier, est une bibliothèque python qui aide à générer des objets aléatoires
-de 128 bits comme identifiants. Il fournit l'unicité car il génère des identifiants en fonction du temps,
+UUID, Universal Unique Identifier, est une bibliotheque python qui aide à generer des objets aeéatoires
+de 128 bits comme identifiants. Il fournit l'unicité car il genere des identifiants en fonction du temps,
 du matériel informatique (MAC, etc.).
 
 A la fonction principale nous pouvons inserer le second module 
@@ -84,7 +84,7 @@ import subprocess
 proc = subprocess.check_output("ipconfig" ).decode('utf-8')
 print (proc)
 
-### :five: Output
+### :seven: Output
 
 ![image](py2.PNG)
 ````
