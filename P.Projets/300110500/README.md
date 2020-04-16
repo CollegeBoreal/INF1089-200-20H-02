@@ -1,5 +1,5 @@
 
-# 🎈 Mon premier script en python :star: :star:
+# 🎈 Mon premier script en python  :snake:
 
 ## Python3 code: LE SAVOIR POUR ADMINISTRER SON RESEAU 👇
 
@@ -86,3 +86,4 @@ print (proc)
 
 ![image](py2.PNG)
 ````
+ :snake:
