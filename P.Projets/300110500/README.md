@@ -1,5 +1,5 @@
 
-# 🎈 Mon premier script en python ::pray:
+# 🎈 Mon premier script en python :star: :star:
 
 ## Python3 code: LE SAVOIR POUR ADMINISTRER SON RESEAU 👇
 
