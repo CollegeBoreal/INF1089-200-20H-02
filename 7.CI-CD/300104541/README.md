@@ -29,13 +29,13 @@ https://lab.github.com/CollegeBoreal/lab-github-actions:-bonjour-monde
 
 https://github.com/:id:/lab-bonjour-github-actions
 
-- [ ] Copier les scripts:
+- [x] Copier les scripts:
 
 Par example:
 
-  - [ ] Copier le fichier `Dockerfile` dans votre :id: `Boréal` 
+  - [x] Copier le fichier `Dockerfile` dans votre :id: `Boréal` 
 
-  - [ ] Copier le fichier `entrypoint.sh` dans votre :id: `Boréal` 
+  - [x] Copier le fichier `entrypoint.sh` dans votre :id: `Boréal` 
 
 
 - [ ] Modifie ton fichier README.md pour plus de documentation
@@ -49,11 +49,11 @@ Le laboratoire vous garantit une note de :five::zero:`%`, ajouter du code en am�
 
 En rappel, pour éxécuter localement son fichier `Dockerfile`, on execute la commande :
 
-`$ docker build --tag b`:id:`:1.0 .`
+`$ docker build --tag b300104541:1.0 .`
 
-`$ docker run --tty --env INPUT_MON_NOM="Draman" b`:id:`:1.0`
+`$ docker run b300104541:1.0`
 
-`Bonjour tout le monde mon nom est Draman`
+`Barcode` 
 
 Pour visualiser les couches images de l'image créée
 
