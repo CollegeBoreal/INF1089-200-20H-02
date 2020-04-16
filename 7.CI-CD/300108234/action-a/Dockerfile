@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-#Nginx
-#
-#VERSION
-
-FROM Ubuntu
-=======
 FROM debian:9.5-slim
->>>>>>> 3dbf4fe1eee91d7d99c1383859cfc2eec12b34ff
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh

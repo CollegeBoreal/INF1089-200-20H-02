@@ -74,7 +74,12 @@
                                            list1.append(x)
                                        print(list1)
 
+               
+            
+            
+   
 
+ 
 
 ''
       :star: while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
@@ -84,9 +89,9 @@
                     instructions
                     modification de variable
 
-##### :m: instruction conditionnelle
+##### :m: Instruction Conditionnelle
 ''        
-       :star:  if  dans le cas où elle l'est, à effectuer un traitement spécifique, 
+    :star:  if  dans le cas où elle l'est, à effectuer un traitement spécifique, 
          et si elle ne l'est pas à effectuer un autre traitement else 
 
              if condition: 
@@ -94,7 +99,13 @@
             [else: 
                  exécuté si condition est fausse]
 
-
+   :star:  si le passaekey est correcte le programme va imprimer un ensemble d’options numéroté 
+   de 1 à 5 
+   un client choisit 1 withdraw (retrait)  il peut retirer la somme d’argent demandée 
+   si la condition  if money>accounts_balances[counter]: est vraie a une somme d’argent suffisante dans le compte
+   si no il revoit un message not enough money in your balance   
+   
+![](image/ret.png )
 
 ##### :m:  l’instruction + break + 
              vous offre la possibilité de sortir d’une boucle lorsqu’une condition externe
@@ -113,7 +124,25 @@
 
         L'instruction elif est une compression de else if qui signifie sinon si. 
         Elle doit être utilisée après un if ou un autre elif. 
-        
+     ''   
+        for a in accounts_numbers:
+                    count=count+1
+                    if a==c:
+                        accounts_balances[counter] = accounts_balances[counter] - money
+                        accounts_balances[count]=accounts_balances[count]+money
+                        break
+
+        elif choice==3:
+            money=int(input('inter money amount:'))
+            accounts_balances[counter] = accounts_balances[counter] + money
+        elif choice==4:
+            print('your balance equal',accounts_balances[counter])
+     ''
+     
+:star: si la condition if a==c:  est vraie 
+  l’instruction elif va parcourir et exécuter le code d’autre bloc et dans ce cas 
+  le client peut entrer  la somme " inter money amount"    d’argent et à la fin il peut 
+  voir "accounts_balances" de son compte 
 
         
         
@@ -123,30 +152,3 @@
 
 ##### :m: Stats
 
-```
-```
-
-##### :m: E
-
-
-
-
-
-##### :m: d
-
-```
-```
-
-
-##### :m:  use
-
-```
-```
-
-##### :m:  m
-
-```
-```
-=======
-
->>>>>>> 81f66
