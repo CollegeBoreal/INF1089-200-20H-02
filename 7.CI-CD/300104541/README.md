@@ -56,8 +56,8 @@ En rappel, pour éxécuter localement son fichier `Dockerfile`, on execute la co
 
 Nous devons avoir comme reponse un Barcode conmme vous le voyez ci-dessous
 
-![image](images6.png)
-![image](images7.png)
+![image](images6.PNG)
+![image](images7.PNG)
 
 
 `Lecon: le but etait de modifie l'image que nous avons faire prealablement.`
