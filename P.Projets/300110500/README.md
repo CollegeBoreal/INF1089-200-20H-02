@@ -31,6 +31,7 @@ En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'
  Elle rend le code plus lisible et clair en le fonctionnant en bloc logiques.
  
  D'ou la representation de la fonction de facon suivante:
+ 
  def nomDeLaFonction(liste de param�tres):
  
     ...
