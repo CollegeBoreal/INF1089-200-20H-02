@@ -73,19 +73,20 @@ du matériel informatique (MAC, etc.).
 A la fonction principale nous pouvons inserer le second module 
 import uuid 
 print (hex(uuid.getnode())) 
-
-
  ### :six: importation  d'un dernier module supprocess 👇
+ ````
 Le module subprocess vous permet de lancer de nouveaux processus, les connecter a des
 tubes d'entree/sortie/erreur, et d'obtenir leurs codes de retour. 
-Ce module a l'intention de remplacer plusieurs anciens modules et fonctions os.system.\
-WARNING: Utiliser ipconfig ou ifconfig selon votre os
+Ce module a l'intention de remplacer plusieurs anciens modules et fonctions os.system.
+````
+WARNING: Utiliser ipconfig ou ifconfig selon votre os.
 
 import subprocess
 proc = subprocess.check_output("ipconfig" ).decode('utf-8')
+````
 print (proc)
-### :seven: Output 👇
+````
+### :seven: Output 👇\
 
 ![image](py2.PNG)
-
 
