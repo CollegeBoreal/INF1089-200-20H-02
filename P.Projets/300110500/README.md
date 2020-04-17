@@ -77,7 +77,9 @@ print (hex(uuid.getnode()))
 Le module subprocess vous permet de lancer de nouveaux processus, les connecter a des
 tubes d'entree/sortie/erreur, et d'obtenir leurs codes de retour. 
 Ce module a l'intention de remplacer plusieurs anciens modules et fonctions os.system.\
+
 ```
+WARNING: Utiliser ipconfig ou ifconfig selon votre os
 import subprocess
 proc = subprocess.check_output("ipconfig" ).decode('utf-8')
 print (proc)
