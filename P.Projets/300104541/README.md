@@ -30,16 +30,17 @@ C'est une hypothèse courante, énoncée dans le cadre de ces puzzles, que les c
 ![image](images8.PNG)
 
 ## Pour terminer 
- Nous allons rajouter une fonction main 
+
+`Nous allons rajouter une fonction main 
  
- 
- def main():
+def main():
     print("Bravoo")
 
 if __name__ == "__main__":
-    main()
+     main()
 
 print("Vous avez reussi")
+`
 
 ## Resultat 
 
