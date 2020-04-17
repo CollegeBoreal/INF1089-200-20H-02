@@ -52,8 +52,7 @@ là où une expression est acceptée.
      except: 
         print("Unable to get Hostname and IP") 
  get_Host_name_IP() #Function call 
-````
-````
+
 ### :four: Script d'affichage partiel  👇
 ````
 get_Host_name_IP() ]
@@ -94,7 +93,7 @@ import subprocess
 proc = subprocess.check_output("ipconfig" ).decode('utf-8')
 
 print (proc)
-````
+
  :seven:Output 👇
  
 ![image](py2.PNG)
