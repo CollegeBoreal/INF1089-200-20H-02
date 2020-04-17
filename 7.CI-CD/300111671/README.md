@@ -50,12 +50,8 @@ Le laboratoire vous garantit une note de :five::zero:`%`, ajouter du code en am�
 
 En rappel, pour éxécuter localement son fichier `Dockerfile`, on execute la commande :
 
-Pour ceci il faut rentrer d'abord dans le repertoire `action-a`
 
-* $ cd action-a
-
-* $.
-docker build --tag b300111671:1.0 .
+* $ `docker build --tag b300111671:1.0 .`
 ```
 Sending build context to Docker daemon  14.85kB
 Step 1/4 : FROM python:3
@@ -172,7 +168,7 @@ print(encoder.get_ascii())
 * Maintenant, je suis prêt à créer une image à partir de ce Dockerfile en lancant cette comande:
 
 ```
-> docker build -t python-300108234 .
+> docker build -t python-300111671 .
 ```
 ```
 Sending build context to Docker daemon  14.85kB
