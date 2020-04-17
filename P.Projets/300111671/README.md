@@ -52,7 +52,9 @@ d = {1:"hi", 2: "there"}
 
 ```
 
-Faire le script complet(nous essayons juste d'illustrer l'envoi d'objets):
+
+
+:pushpin: Faire le script complet(nous essayons juste d'illustrer l'envoi d'objets):
 
 ```
 
@@ -110,7 +112,8 @@ if len(full_msg)-HEADERSIZE == msglen:
             full_msg = b""
 ```
 
-Full client.py
+
+:pushpin: Full client.py
 
 ```
 import socket
@@ -153,7 +156,8 @@ Connection from ('192.168.0.17', 50373) has been established.
 b'33        \x80\x03}q\x00(K\x01X\x02\x00\x00\x00hiq\x01K\x02X\x05\x00\x00\x00thereq\x02u.'
 
 ```
-Et sur le client:
+
+:pushpin: Et sur le client:
 
 ```
 (base) PS C:\Users\LENOVO\Developer\INF1089-200-20H-02\P.Projets\300111671>python b300111671.py
