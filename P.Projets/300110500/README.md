@@ -67,7 +67,7 @@ def get_Host_name_IP():
 get_Host_name_IP()
 ````
 ### :five: Ajouter un UUID pour generer l'adreese MAC  👇
-
+````
  UUID, Universal Unique Identifier, est une bibliotheque python qui aide à generer des objets aeéatoires
 de 128 bits comme identifiants. Il fournit l'unicité car il genere des identifiants en fonction du temps,
 du matériel informatique (MAC, etc.).
@@ -80,15 +80,13 @@ print (hex(uuid.getnode()))
 Le module subprocess vous permet de lancer de nouveaux processus, les connecter a des
 tubes d'entree/sortie/erreur, et d'obtenir leurs codes de retour. 
 Ce module a l'intention de remplacer plusieurs anciens modules et fonctions os.system.
-````
+``````
 WARNING: Utiliser ipconfig ou ifconfig selon votre os.
 
 import subprocess
 proc = subprocess.check_output("ipconfig" ).decode('utf-8')
-````
 print (proc)
 ````
-### :seven: Output 👇\
-
+ Output 👇
+`````
 ![image](py2.PNG)
-
