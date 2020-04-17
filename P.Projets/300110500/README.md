@@ -63,10 +63,11 @@ def get_Host_name_IP():
 get_Host_name_IP()
 
 ### :five: Ajouter un UUID pour generer l'adreese MAC  👇
-UUID, Universal Unique Identifier, est une bibliotheque python qui aide à generer des objets aeéatoires
+```
+- UUID, Universal Unique Identifier, est une bibliotheque python qui aide à generer des objets aeéatoires
 de 128 bits comme identifiants. Il fournit l'unicité car il genere des identifiants en fonction du temps,
 du matériel informatique (MAC, etc.).
-````
+```
 A la fonction principale nous pouvons inserer le second module 
 import uuid 
 print (hex(uuid.getnode())) 
