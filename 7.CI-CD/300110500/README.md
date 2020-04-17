@@ -58,13 +58,13 @@ En rappel, pour éxécuter localement son fichier `Dockerfile`, on execute la co
 `$ docker build --tag b300110500:1.0 .`
 ![image](b1.PNG)
 
-`$ docker run --tty --env INPUT_MON_NOM="Draman" b`:id:`:1.0`
+`$ docker run --tty --env INPUT_MON_NOM="Draman" b300110500:1.0`
 
 `Bonjour tout le monde mon nom est Draman`
 
 Pour visualiser les couches images de l'image créée
 
-`% docker image history b`:id:`:1.0`
+`% docker image history b300110500:1.0`
 ```
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
 a555cf89a1b7        40 seconds ago      /bin/sh -c #(nop)  ENTRYPOINT ["/entrypoint.…   0B                  
