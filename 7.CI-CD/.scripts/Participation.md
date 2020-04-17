@@ -1,4 +1,4 @@
-# Participation au 17-04-2020 16:23 UTC
+# Participation au 17-04-2020 20:06 UTC
  
 ## Légende
  
@@ -14,7 +14,7 @@
 | 1 | [300104524](../300104524/Dockerfile) | [:heavy_check_mark:] |
 | 2 | [300104541](../300104541/Dockerfile) | [:heavy_check_mark:] |
 | 3 | [300105201](../300105201/Dockerfile) | [:heavy_check_mark:] |
-| 4 | [300106918](../300106918/Dockerfile) | [:x:] |
+| 4 | [300106918](../300106918/Dockerfile) | [:heavy_check_mark:] |
 | 5 | [300107361](../300107361/Dockerfile) | [:heavy_check_mark:] |
 | 6 | [300108234](../300108234/Dockerfile) | [:heavy_check_mark:] |
 | 7 | [300110500](../300110500/Dockerfile) | [:heavy_check_mark:] |
@@ -24,7 +24,7 @@
 | 11 | [300112917](../300112917/Dockerfile) | [:heavy_check_mark:] |
 | 12 | [300113775](../300113775/Dockerfile) | [:heavy_check_mark:] |
  
-# Participation au 17-04-2020 16:23 UTC
+# Participation au 17-04-2020 20:06 UTC
  
 ## Légende
  
