@@ -55,7 +55,7 @@ Le laboratoire vous garantit une note de :five::zero:`%`, ajouter du code en am�
 
 En rappel, pour éxécuter localement son fichier `Dockerfile`, on execute la commande :
 
-`$ docker build --tag b300110500:`:1.0 .`
+`$ docker build --tag b300110500:1.0 .`
 ![image](b1.PNG)
 
 `$ docker run --tty --env INPUT_MON_NOM="Draman" b`:id:`:1.0`
