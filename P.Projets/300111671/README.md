@@ -1,19 +1,16 @@
 
-  # DEVELOPING CHAT APPLICATION IN :snake: WITH SOURCE CODE :star: :star: :star: :pray: :pray: :pray:
+  # Sending and Receiving Python Objects with sockets with source code :star: :star: :star: :pray: :pray: :pray:
   
   
-Nous avons appris à envoyer et à recevoir des données de chaîne via des sockets, et maintenant je veux parler 
+Nous allons apprendre  à envoyer et à recevoir des données de chaîne via des sockets, et maintenant je veux parler 
 des cornichons. Pas la nourriture, mais la technique de sérialisation en Python.
 
 En Python, tout est un objet, et tous vos objets peuvent être sérialisés avec Pickle. La sérialisation est la 
-conversion de votre objet en octets.
+conversion de votre objet en octets et nous envoyons des octets avec des sockets.
 
-... et nous envoyons des octets avec des sockets. Cela signifie que vous pouvez communiquer entre vos programmes 
-python localement ou à distance, via des sockets, en utilisant pickle. Alors maintenant, littéralement n'importe 
-quoi ... des fonctions, un dictionnaire géant, des tableaux, un modèle TensorFlow ... etc peuvent être envoyés 
-dans les deux sens entre vos programmes!
+Cela signifie que vous pouvez communiquer entre vos programmes python localement ou à distance, via des sockets, en utilisant pickle. Alors maintenant, littéralement n'importe quoi comme des fonctions, un dictionnaire géant, des tableaux, un modèle TensorFlow etc. Cela peuvent être envoyés dans les deux sens entre vos programmes!
 
-Donc d'abord, rapidement, juste au cas où vous ne connaissez pas les cornichons, convertissons un cornichon en 
+Donc d'abord, rapidement, juste au cas où vous ne connaissez pas les cornichons, convertissons un cornichon(pickle) en 
 une chaîne d'octets: 
 ``` 
 (base) PS C:\Users\LENOVO\Developer\INF1089-200-20H-02\P.Projets\300111671> python
@@ -39,7 +36,8 @@ charges.
 
 
 
-D'accord, mettons-le ensemble et envoyons cela. Notre server.py aura le code suivant pour le message à envoyer:
+D'accord, mettons-le ensemble et envoyons cela. Notre server-chat.py aura le code suivant pour le message à envoyer:
+
 ```
 d = {1:"hi", 2: "there"}
     msg = pickle.dumps(d)
@@ -166,4 +164,4 @@ b'\x80\x03}q\x00(K\x01X\x02\x00\x00\x00hiq\x01K\x02X\x05\x00\x00\x00thereq\x02u.
 {1: 'hi', 2: 'there'}
 
 ```
-
+Merci d'avoir suivie mon tutorial 
