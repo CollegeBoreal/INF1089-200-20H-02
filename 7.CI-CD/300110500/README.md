@@ -97,6 +97,6 @@ https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
 ![image](p2.PNG)
 
 :four:  visualise les images avec docker run
- > docker run python-300110500
+ `> docker run python-300110500`
  
 ![image](p3.PNG)
