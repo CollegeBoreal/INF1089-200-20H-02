@@ -17,7 +17,8 @@ C'est une hypothèse courante, énoncée dans le cadre de ces puzzles, que les c
 
 ### DEROULEMENT 
 
-`Nous avons deux cuves de 9oz et de 4oz 
+`
+- Nous avons deux cuves de 9oz et de 4oz 
 
 -le probleme est de trouver une sequence d'action de coulée de tels sorte a mesurer une quantite d'eau de 6 oz
 
@@ -29,14 +30,3 @@ C'est une hypothèse courante, énoncée dans le cadre de ces puzzles, que les c
 ![image](images8.PNG)
 
 
-## Pour terminer 
-
-`Nous avons ajoute une fonction a la fin du code 
-
-def main():
-    if __name__== "__main__":
-          main()
-    return main
-
-main = Lets'go()
-`
