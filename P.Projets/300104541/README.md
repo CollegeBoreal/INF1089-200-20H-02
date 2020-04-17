@@ -26,7 +26,7 @@ C'est une hypothèse courante, énoncée dans le cadre de ces puzzles, que les c
 
 ## Resultat: 
 
-![image](images6.PNG)
+![image](images8.PNG)
 
 
 ## Pour terminer 
