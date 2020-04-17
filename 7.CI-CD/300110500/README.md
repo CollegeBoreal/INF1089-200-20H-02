@@ -89,11 +89,11 @@ https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
 
 
 :two: excecuter le docker avec la coomande ci-apres
-> docker build -t python-300110500 .
+`> docker build -t python-300110500 `
 ![image](p1.PNG)
 
 :three:  lister les images
- > docker images
+ `> docker images`
 ![image](p2.PNG)
 
 :four:  visualise les images avec docker run
