@@ -20,7 +20,7 @@ C'est une hypothèse courante, énoncée dans le cadre de ces puzzles, que les c
 `
 - Nous avons deux cuves de 9oz et de 4oz 
 
--le probleme est de trouver une sequence d'action de coulée de tels sorte a mesurer une quantite d'eau de 6 oz
+- le probleme est de trouver une sequence d'action de coulée de tels sorte a mesurer une quantite d'eau de 6 oz
 
 - Nous avons deux cuves que nous avons nommées JUG1(4oz) et JUG2(9oz)
 `
