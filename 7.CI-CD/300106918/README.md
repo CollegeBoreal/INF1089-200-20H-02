@@ -14,27 +14,27 @@
 ```
 docker build -t my-b300106918:1.0.1 .
 ```
-
+ ![](image/c1.png)
 #### check all docker images
 ```
 $ docker image history my-b300106918:1.0.1
 
 ```
 
-
+ ![](image/c9.png)
 
 #### Run your image
 ```
 $ docker run -d -p 8080:8080 b300106918:1.0.1
 ```
 
-
-You can use `sudo docker ps` to list all running containers. 
+ ![](image/c3.png)
+You can use `docker ps` to list all running containers. 
 ```
 $ docker ps
 
 ```
-
+ ![](image/c4.png)
 
 
 + display logs in running container
@@ -42,7 +42,7 @@ $ docker ps
 $ docker logs 7a5b59d52606  
 
 ```
-
+ ![](image/c5.png)
 
 
 #### Test your application
@@ -50,3 +50,5 @@ $ docker logs 7a5b59d52606
 $ curl http://localhost:8080
 Hello World
 ```
+
+ ![](image/c6.png)
