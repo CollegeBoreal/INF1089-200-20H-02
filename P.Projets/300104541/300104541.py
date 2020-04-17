@@ -21,3 +21,11 @@ def pour(jug1, jug2):
 
 print("JUG1\tJUG2")
 pour(0, 0)
+
+def main():
+    print("Bravoo")
+
+if __name__ == "__main__":
+    main()
+
+print("Vous avez reussi")
