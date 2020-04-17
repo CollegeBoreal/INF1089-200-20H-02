@@ -55,7 +55,7 @@ def handle_turn(player):
 
 ```
 
-## Verification s'il y a un gagant (pour qu'il y ait un gagnant 3 (X) ou 3 (0) doivent etre alignées 
+## Verification s'il y a un gagant (pour qu'il y ait un gagnant 3 (X) ou 3 (0) doivent etre aligner 
 donc je cree 3 autres fonctions qui verifieront  les : lignes, les colonnes , et les diagonales .
 
 ```
