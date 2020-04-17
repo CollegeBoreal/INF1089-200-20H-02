@@ -85,7 +85,7 @@ Tu auras besoin de:
 
 https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
 
-:one: Créer manuellement deux fichiers{docker fileet script}
+:one: Créer manuellement deux fichiers{docker file et script}
 
 
 :two: excecuter le docker avec la coomande ci-apres
