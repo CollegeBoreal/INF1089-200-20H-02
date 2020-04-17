@@ -6,7 +6,7 @@
 En windows CMD, plusieurs commandes permettent d'afficher les parametres du reseau, et 
 faire des pings pour tester la connectivite de son hote. 
 
-De meme en pyrhon des scripts peuvent etre utilises pour obtenir le memes resultat.
+De meme en pyrhon des scripts peuvent etre utilises pour obtenir le meme resultat.
 
 Pour mon cas j'ai realiser un script qui permet afficher le nom d'hote et l'addresse IP de son ordinateur 
 ainsi que les information de configuration  configuration de mon reseau .
