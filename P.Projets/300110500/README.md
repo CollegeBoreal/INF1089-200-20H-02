@@ -46,13 +46,17 @@ def get_Host_name_IP():
 ### :three: Appel de la foction  👇
 L'appel d'une fonction qui renvoie une valeur est une expression, et on peut dès lors l'utiliser partout 
 là où une expression est acceptée. 
-`
-        print("Hostname :  ",host_name) 
-        print("IP : ",host_ip) 
-     except: 
-        print("Unable to get Hostname and IP") 
- get_Host_name_IP() #Function call 
 
+        print("Hostname :  ",host_name) 
+        
+        print("IP : ",host_ip) 
+        
+     except: 
+     
+        print("Unable to get Hostname and IP") 
+        
+ get_Host_name_IP() #Function call 
+ 
 ### :four: Script d'affichage partiel  👇
 ````
 get_Host_name_IP() ]
