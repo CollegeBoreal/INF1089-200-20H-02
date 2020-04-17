@@ -85,14 +85,18 @@ Tu auras besoin de:
 
 https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
 
-:round_pushpin: Créer une demande d'extraction `pull request` par le biais de l'interface web de github: 
+:one: Créer manuellement deux fichiers{docker fileet script}
 
-https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request
 
-:round_pushpin: Creér Répertoire Imbriqué
+:two: excecuter le docker avec la coomande ci-apres
+> docker build -t python-300110500 .
+![image](p1.PNG)
 
-par exemple pour créer `.github/workflows` utilise la commande suivante avec le parametre `-p`:
+:three:  lister les images
+ > docker images
+![image](p2.PNG)
 
-```
-$ mkdir -p .github/workflows
-```
+:four:  visualise les images avec docker run
+ > docker run python-300110500
+ 
+![image](p3.PNG)
