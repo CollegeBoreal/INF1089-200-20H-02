@@ -11,6 +11,7 @@ ainsi que les information de configuration  configuration de mon reseau .
 Le processus de ce script suit plusieurs processus les etapes suivante.
 ```
 ### :one: Importation du socket library  👇
+```
 import socket
 What is socket?
 ```
@@ -25,17 +26,18 @@ En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'
  Elle rend le code plus lisible et clair en le fonctionnant en bloc logiques.
  D'ou la representation de la fonction de facon suivante:
  def nomDeLaFonction(liste de param�tres):
+ 
  ````
     ...
     bloc d'instructions
     ...
-   
+   ```
 Voici le nom de la fonction et les parametres de ip address et hostname
 def get_Host_name_IP(): 
     try: 
         host_name = socket.gethostname() 
         host_ip = socket.gethostbyname(host_name) 
- 
+ ````
 ### :three: Appel de la foction  👇
 
 ```
@@ -71,19 +73,19 @@ du matériel informatique (MAC, etc.).
 A la fonction principale nous pouvons inserer le second module 
 import uuid 
 print (hex(uuid.getnode())) 
-`````
+
+
  ### :six: importation  d'un dernier module supprocess 👇
 Le module subprocess vous permet de lancer de nouveaux processus, les connecter a des
 tubes d'entree/sortie/erreur, et d'obtenir leurs codes de retour. 
 Ce module a l'intention de remplacer plusieurs anciens modules et fonctions os.system.\
-```
 WARNING: Utiliser ipconfig ou ifconfig selon votre os
+
 import subprocess
 proc = subprocess.check_output("ipconfig" ).decode('utf-8')
 print (proc)
-````
 ### :seven: Output 👇
 
 ![image](py2.PNG)
-````
+
 
