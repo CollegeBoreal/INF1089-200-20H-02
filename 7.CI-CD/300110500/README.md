@@ -55,16 +55,16 @@ Le laboratoire vous garantit une note de :five::zero:`%`, ajouter du code en am�
 
 En rappel, pour éxécuter localement son fichier `Dockerfile`, on execute la commande :
 
-`$ docker build --tag b300110500:`:1.0 .`
+`$ docker build --tag b300110500:1.0 .`
 ![image](b1.PNG)
 
-`$ docker run --tty --env INPUT_MON_NOM="Draman" b`:id:`:1.0`
+`$ docker run --tty --env INPUT_MON_NOM="Draman" b300110500:1.0`
 
 `Bonjour tout le monde mon nom est Draman`
 
 Pour visualiser les couches images de l'image créée
 
-`% docker image history b`:id:`:1.0`
+`% docker image history b300110500:1.0`
 ```
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
 a555cf89a1b7        40 seconds ago      /bin/sh -c #(nop)  ENTRYPOINT ["/entrypoint.…   0B                  
@@ -85,14 +85,18 @@ Tu auras besoin de:
 
 https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
 
-:round_pushpin: Créer une demande d'extraction `pull request` par le biais de l'interface web de github: 
+:one: Créer manuellement deux fichiers{docker file et script}
 
-https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request
 
-:round_pushpin: Creér Répertoire Imbriqué
+:two: excecuter le docker avec la coomande ci-apres
+`> docker build -t python-300110500 `
+![image](p1.PNG)
 
-par exemple pour créer `.github/workflows` utilise la commande suivante avec le parametre `-p`:
+:three:  lister les images
+ `> docker images`
+![image](p2.PNG)
 
-```
-$ mkdir -p .github/workflows
-```
+:four:  visualise les images avec docker run
+ `> docker run python-300110500`
+ 
+![image](p3.PNG)

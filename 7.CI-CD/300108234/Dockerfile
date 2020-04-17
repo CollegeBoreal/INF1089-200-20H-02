@@ -1,9 +1,7 @@
-FROM django
+FROM python:3
 
-ADD . /my-django-app
+ADD script.py /
 
-WORKDIR /my-django-app
+RUN pip install pystrich
 
-RUN pip install -r requirements.txt
-
-CMD [ "python", "./manage.py runserver 0.0.0.0:8000" ]
+CMD [ "python", "./script.py" ]
