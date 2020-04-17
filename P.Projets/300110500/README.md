@@ -50,8 +50,9 @@ là où une expression est acceptée.
  get_Host_name_IP() #Function call 
 ````
 ### :four: Script d'affichage partiel  👇
+```
 get_Host_name_IP() ]
-  
+  ```
 import socket 
 def get_Host_name_IP(): 
     try: 
@@ -61,9 +62,9 @@ def get_Host_name_IP():
         print("IP : ",host_ip) 
     except: 
         print("Unable to get Hostname and IP") 
-  
+  ```
 get_Host_name_IP()
-
+````
 ### :five: Ajouter un UUID pour generer l'adreese MAC  👇
 ```
 - UUID, Universal Unique Identifier, est une bibliotheque python qui aide à generer des objets aeéatoires
