@@ -17,9 +17,10 @@ C'est une hypothèse courante, énoncée dans le cadre de ces puzzles, que les c
 
 ### DEROULEMENT 
 
-`Nous avons deux cuves de 9oz et de 4oz 
+`
+- Nous avons deux cuves de 9oz et de 4oz 
 
--le probleme est de trouver une sequence d'action de coulée de tels sorte a mesurer une quantite d'eau de 6 oz
+- le probleme est de trouver une sequence d'action de coulée de tels sorte a mesurer une quantite d'eau de 6 oz
 
 - Nous avons deux cuves que nous avons nommées JUG1(4oz) et JUG2(9oz)
 `
@@ -28,15 +29,21 @@ C'est une hypothèse courante, énoncée dans le cadre de ces puzzles, que les c
 
 ![image](images8.PNG)
 
-
 ## Pour terminer 
 
-`Nous avons ajoute une fonction a la fin du code 
-
+`Nous allons rajouter une fonction main 
+ 
 def main():
-    if __name__== "__main__":
-          main()
-    return main
+    print("Bravoo")
 
-main = Lets'go()
+if __name__ == "__main__":
+     main()
+
+print("Vous avez reussi")
 `
+
+## Resultat 
+
+![image](images9.PNG)
+
+
