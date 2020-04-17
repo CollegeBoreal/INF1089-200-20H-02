@@ -31,7 +31,7 @@ En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'
     ...
     bloc d'instructions
     ...
-   ```
+   
 Voici le nom de la fonction et les parametres de ip address et hostname
 def get_Host_name_IP(): 
     try: 
@@ -39,7 +39,6 @@ def get_Host_name_IP():
         host_ip = socket.gethostbyname(host_name) 
  ````
 ### :three: Appel de la foction  👇
-
 ```
 L'appel d'une fonction qui renvoie une valeur est une expression, et on peut dès lors l'utiliser partout 
 là où une expression est acceptée. 
@@ -70,7 +69,7 @@ get_Host_name_IP()
 - UUID, Universal Unique Identifier, est une bibliotheque python qui aide à generer des objets aeéatoires
 de 128 bits comme identifiants. Il fournit l'unicité car il genere des identifiants en fonction du temps,
 du matériel informatique (MAC, etc.).
-```
+````
 A la fonction principale nous pouvons inserer le second module 
 import uuid 
 print (hex(uuid.getnode())) 
