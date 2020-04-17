@@ -29,13 +29,16 @@ En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'
     ...
     bloc d'instructions
     ...
+   
 Voici le nom de la fonction et les parametres de ip address et hostname
 def get_Host_name_IP(): 
     try: 
         host_name = socket.gethostname() 
         host_ip = socket.gethostbyname(host_name) 
- `````
+ 
 ### :three: Appel de la foction  👇
+
+```
 L'appel d'une fonction qui renvoie une valeur est une expression, et on peut dès lors l'utiliser partout 
 là où une expression est acceptée. 
         print("Hostname :  ",host_name) 
@@ -43,9 +46,8 @@ là où une expression est acceptée.
      except: 
         print("Unable to get Hostname and IP") 
  get_Host_name_IP() #Function call 
- ````
+````
 ### :four: Script d'affichage partiel  👇
-```
 get_Host_name_IP() ]
   
 import socket 
@@ -59,20 +61,16 @@ def get_Host_name_IP():
         print("Unable to get Hostname and IP") 
   
 get_Host_name_IP()
-```
 ### :five: Ajouter un UUID pour generer l'adreese MAC  👇
-````
 UUID, Universal Unique Identifier, est une bibliotheque python qui aide à generer des objets aeéatoires
 de 128 bits comme identifiants. Il fournit l'unicité car il genere des identifiants en fonction du temps,
 du matériel informatique (MAC, etc.).
 ````
 A la fonction principale nous pouvons inserer le second module 
-````
 import uuid 
 print (hex(uuid.getnode())) 
-````
+`````
  ### :six: importation  d'un dernier module supprocess 👇
- ```
 Le module subprocess vous permet de lancer de nouveaux processus, les connecter a des
 tubes d'entree/sortie/erreur, et d'obtenir leurs codes de retour. 
 Ce module a l'intention de remplacer plusieurs anciens modules et fonctions os.system.\
