@@ -88,7 +88,7 @@ https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
 :one: Créer manuellement deux fichiers{docker file et script}
 
 
-:two: excecuter le docker avec la coomande ci-apres
+:two: excecuter  lescouches de l'image cree avec la coomande ci-apres
 `> docker build -t python-300110500 `
 ![image](p1.PNG)
 
@@ -96,7 +96,7 @@ https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
  `> docker images`
 ![image](p2.PNG)
 
-:four:  visualise les images avec docker run
+:four:  visualise l'image avec docker run
  `> docker run python-300110500`
  
 ![image](p3.PNG)
