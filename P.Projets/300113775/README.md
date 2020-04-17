@@ -162,6 +162,6 @@ J'utilise VS CODE pour tester . il marche aussi avec "python main.py"
 
 Ressources utilisées
 
-```
+
 https://www.youtube.com/watch?v=BHh654_7Cmw&t=476s
-```
+
