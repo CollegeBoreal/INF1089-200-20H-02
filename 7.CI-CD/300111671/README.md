@@ -123,7 +123,8 @@ Pour visualiser les couches images de l'image créée
 
 * $ 
 ```
-$ docker image history b300111671:1.0                                                                              
+$ docker image history b300111671:1.0
+```
  docker image history b300111671:1.0                                                 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
 500137778fbe        18 minutes ago      /bin/sh -c #(nop)  CMD ["python" "./script.p…   0B
 3f7188621dde        18 minutes ago      /bin/sh -c pip install pystrich                 23.8MB
@@ -136,7 +137,8 @@ b55669b4130e        7 hours ago         /bin/sh -c #(nop)  CMD ["python3"]      
 <missing>           7 hours ago         /bin/sh -c cd /usr/local/bin  && ln -s idle3…   32B
 <missing>           7 hours ago         /bin/sh -c set -ex   && wget -O python.tar.x…   106MB
 <missing>           7 hours ago         /bin/sh -c #(nop)  ENV PYTHON_VERSION=3.8.2     0B
-<missing>           7 hours ago         /bi
+
+```
 # :three: Amélioration
 
 ## ASCII QR code
