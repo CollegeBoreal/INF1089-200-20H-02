@@ -61,6 +61,7 @@ def get_Host_name_IP():
         print("Unable to get Hostname and IP") 
   
 get_Host_name_IP()
+
 ### :five: Ajouter un UUID pour generer l'adreese MAC  👇
 UUID, Universal Unique Identifier, est une bibliotheque python qui aide à generer des objets aeéatoires
 de 128 bits comme identifiants. Il fournit l'unicité car il genere des identifiants en fonction du temps,
@@ -79,7 +80,7 @@ WARNING: Utiliser ipconfig ou ifconfig selon votre os
 import subprocess
 proc = subprocess.check_output("ipconfig" ).decode('utf-8')
 print (proc)
-
+````
 ### :seven: Output 👇
 
 ![image](py2.PNG)
