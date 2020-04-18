@@ -9,17 +9,17 @@ Je suis sûr que vous avez utilisé une boule magique 8 à un moment de votre vi
  
  ### Vous devez:
  
-  Autoriser l'utilisateur à saisir sa question
+  - Autoriser l'utilisateur à saisir sa question
  
- Afficher un message en cours (c'est-à-dire "penser")
+- Afficher un message en cours (c'est-à-dire "penser")
  
- Créez 20 réponses et affichez une réponse aléatoire
+- Créez 20 réponses et affichez une réponse aléatoire
  
- Autoriser l'utilisateur à poser une autre question ou à quitter
+- Autoriser l'utilisateur à poser une autre question ou à quitter
  
- Bonus En utilisant le module que vous aimez, ajoutez un gui. Votre gui doit avoir:
+- Bonus En utilisant le module que vous aimez, ajoutez un gui. Votre gui doit avoir:
  
- Une boîte pour les utilisateurs d'entrer la question
+- Une boîte pour les utilisateurs d'entrer la question
  
- Au moins 4 boutons: demander, effacer (la zone de texte), rejouer et quitter (cela doit fermer la fenêtre)
+- Au moins 4 boutons: demander, effacer (la zone de texte), rejouer et quitter (cela doit fermer la fenêtre)
 
