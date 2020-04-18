@@ -84,6 +84,8 @@ Example d'améliorations :
 https://www.linkedin.com/learning/l-essentiel-de-windows-powershell-6/valider-les-parametres-d-une-fonction?u=56968449
  
 * La gestion des erreurs quand on fait un ‘look-up’ sur Active Directory
+
+![](image/amil.png)
  
 https://www.linkedin.com/learning/l-essentiel-de-windows-powershell-6/gerer-les-erreurs-d-une-fonction?u=56968449
  
