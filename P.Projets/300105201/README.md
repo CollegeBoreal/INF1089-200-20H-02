@@ -13,7 +13,7 @@ Je suis sûr que vous avez utilisé une boule magique 8 à un moment de votre vi
  
 - Afficher un message en cours (c'est-à-dire "penser")
  
-- Créez 20 réponses et affichez une réponse aléatoire
+- Créez des réponses et affichez une réponse aléatoire
  
 - Autoriser l'utilisateur à poser une autre question ou à quitter
  
