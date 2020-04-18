@@ -54,14 +54,13 @@ Pour ceci il faut rentrer d'abord dans le repertoire `action-a`
 
 * $ docker build --tag b300105201:1.0 .
 
-```
 <img src="doc.PNG"></img>
-```
+
 
 
 Pour visualiser les couches images de l'image créée
 
-* $ docker image history b300108234:1.0
-```
+* $ docker image history b300105201:1.0
+
 <img src="hist.PNG"></img>
-```
+
