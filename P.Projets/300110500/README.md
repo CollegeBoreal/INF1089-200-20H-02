@@ -9,9 +9,9 @@ faire des pings pour tester la connectivite de son hote.
 De meme en pyrhon des scripts peuvent etre utilises pour obtenir le meme resultat.
 
 Pour mon cas j'ai realiser un script qui permet afficher le nom d'hote et l'addresse IP de son ordinateur 
-ainsi que les information de configuration de mon reseau ]
+ainsi que les informations de configuration de mon reseau.
 
-Le processus de ce script suit plusieurs processus les etapes suivante.
+Les etapes ci-apres sont neccessaires pour realiser ce script.
 
 ### :one: Importation du socket library  👇
 
@@ -37,10 +37,15 @@ En un mot  importer le socket c'est faire communiquer deux noeuds a un reseau c'
     ...
     bloc d'instructions
     ...
+    
 Voici le nom de la fonction et les parametres de ip address et hostname
+
 def get_Host_name_IP(): 
+
     try: 
+    
         host_name = socket.gethostname() 
+        
         host_ip = socket.gethostbyname(host_name) 
         
 ### :three: Appel de la foction  👇
