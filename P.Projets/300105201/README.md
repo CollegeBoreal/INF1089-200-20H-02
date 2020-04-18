@@ -9,7 +9,7 @@ Je suis sûr que vous avez utilisé une boule magique 8 à un moment de votre vi
  
  ### Vous devez:
  
-  - Autoriser l'utilisateur à saisir sa question
+- Autoriser l'utilisateur à saisir sa question
  
 - Afficher un message en cours (c'est-à-dire "penser")
  
