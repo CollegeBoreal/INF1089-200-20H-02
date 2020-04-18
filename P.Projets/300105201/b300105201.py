@@ -1,21 +1,17 @@
 import random
-import time
 
-eight_ball = [ "It is certain", "It is decidedly so", "Without a doubt", "Yes, definitely",
-               "You may rely on it", "As I see it, yes", "Most Likely", "Outlook Good",
-               "Yes", "Signs point to yes", "Reply hazy, try again", "Ask again later",
-               "Better not tell you now", "Cannot predict now", "Concentrate and ask again",
-               "Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very Doubtful"]
+fortunes = ['Definitely!', 'Very Likely', 'Maybe', 'It seems so', 'Doubtful', 'No way!', "Don't count on it",
+            'Answer hazy, try again']
 
-def question():
-    question = raw_input("You may ask your yes or no question of the Magic 8 Ball!\n")
-    print("Thinking...")
-    time.sleep(random.randrange(0,5))
-    print(random.choice(eight_ball))
-
-while True:
-    question()
-    repeat = raw_input("Would you like to ask another question? (Y or N)")
-    if not (repeat == "y" or repeat == "Y"):
-        print "Come back if you have more questions!"
-        break
+repeat = True
+while repeat == True:
+    print('The Magic 8 Ball is said to have the mystical power of fortune telling. It can peer through the mists and divine'
+      ' the answer to any yes or no question. What would you ask of the Magic 8 Ball?')
+    input()
+    print("The mist clears, revealing the Magic 8 Ball's answer:")
+    print(fortunes[random.randint(0, 8)])
+    print("Would you like to ask another question? Type Y for yes or press enter to end your session.")
+    another_question = input()
+    if another_question in ['Y', 'y', 'Yes', 'yes']:
+        continue
+    else: break
