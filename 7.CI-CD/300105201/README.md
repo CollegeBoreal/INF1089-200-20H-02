@@ -55,7 +55,7 @@ Pour ceci il faut rentrer d'abord dans le repertoire `action-a`
 * $ docker build --tag b300105201:1.0 .
 
 ```
-![Image](image/doc.PNG)
+<img src="doc.PNG"></img>
 ```
 
 
@@ -63,5 +63,5 @@ Pour visualiser les couches images de l'image créée
 
 * $ docker image history b300108234:1.0
 ```
-![Image](image/hist.PNG)
+<img src="hist.PNG"></img>
 ```
