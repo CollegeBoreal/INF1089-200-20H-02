@@ -46,8 +46,9 @@ En un mot, récupérer le travail que vous avez fait à travers [Github Leaning 
 :three: Amélioration
 
 * Le laboratoire vous garantit une note de :five::zero:`%`, ajouter du code en améliorant les scripts embellira la note.
-* Pour l'amelioration je vais lancer un container docker Couchbase server en fonction d'un [Dockerfile](Dockerfile)
-* [Couchbase Server](https://www.couchbase.com/products/server)est une base de données de documents NoSQL avec une architecture distribuée pour les performances, l'évolutivité et la disponibilité. Il permet aux développeurs de créer des applications plus facilement et plus rapidement en tirant parti de la puissance de SQL avec la flexibilité de JSON.
+## Ce que je vais faire:
+* Pour l'amelioration je vais lancer un container docker Couchbase server en fonction de mon [Dockerfile](Dockerfile)
+* [Couchbase Server](https://www.couchbase.com/products/server) est une base de données de documents NoSQL avec une architecture distribuée pour les performances, l'évolutivité et la disponibilité. Il permet aux développeurs de créer des applications plus facilement et plus rapidement en tirant parti de la puissance de SQL avec la flexibilité de JSON.
 
 
 - [x] En rappel, pour éxécuter localement son fichier `Dockerfile`, on execute la commande :
@@ -200,18 +201,26 @@ Digest: sha256:3aeadfedfca245d9c17ab114087fd9d24f01d47046add5d8e18638fffb6c3b63
 Status: Downloaded newer image for couchbase:latest
 41638ac27c059fb3a53671b5eaef2e79242462cbdd76ca101cdd9540a2875a39
 ```
-**Etape - 2 :** Visit `http://localhost:8091` sur la machine hôte pour voir la console Web et démarrer la configuration du serveur Couchbase.
+**Etape - 2 :** Visiter `http://localhost:8091` sur la machine hôte pour voir la console Web et démarrer la configuration du serveur Couchbase. :fire:
 
 ![Image](Images/localhost.PNG)
 
+
 * Parcourez l'assistant d'installation et choisissez «Terminer avec les valeurs par défaut».
+
+
 ![Image](Images/admin.PNG)
 ![Image](Images/default.PNG)
-* Si l'espace disponible est inferieure a celle configurer par defaut cliquez sur **Configure disk and memory** faites defiler l'ecran pour configurer vous meme la capacite et la memoire selon vos besoin ensuite cliquez sur **Save and Continue**
-**Remarque:** vous devrez peut-être choisir «Configurer le disque, la mémoire et les services» et réduire la RAM allouée à divers services pour tenir compte des contraintes de ressources.
 
-**Etape - 3:** Activez le **beer-sample bucket** pour charger des echantillons de donnees.
+
+* **Remarque:** Si l'espace disponible est inferieure a celle configurer par defaut cliquez sur **Configure disk and memory** faites defiler l'ecran pour configurer vous meme la capacite et la memoire selon vos besoinet réduisez la RAM allouée à divers services pour tenir compte des contraintes de ressources, ensuite cliquez sur **Save and Continue**
+
+
+**Etape - 3:** Activez le **beer-sample bucket** pour charger des echantillons de donnees. :m:
+
 ![Image](Images/sample.PNG)
+
+
 **Remarque:** Pour des informations détaillées sur la configuration du serveur, visiter l'addresse [Initial Couchbase Server Setup](https://docs.couchbase.com/server/current/install/init-setup.html).
 
 
@@ -237,25 +246,6 @@ cbq> SELECT name FROM `beer-sample` WHERE brewery_id ="mishawaka_brewing";
 ```
 
 Pour plus d'experience, referez-vous a l'addresse Web [Running your first N1QL query](https://docs.couchbase.com/server/current/getting-started/try-a-query.html) guide.
-# :fire: Indices 
-
-Tu auras besoin de:
-
-:round_pushpin: créer et manipuler une branche avec `git`:
-
-https://github.com/CollegeBoreal/Tutoriels/tree/master/0.GIT/.branch
-
-:round_pushpin: Créer une demande d'extraction `pull request` par le biais de l'interface web de github: 
-
-https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request
-
-:round_pushpin: Creér Répertoire Imbriqué
-
-par exemple pour créer `.github/workflows` utilise la commande suivante avec le parametre `-p`:
-
-```
-$ mkdir -p .github/workflows
-```
 
 # REFERENCES
 -  (https://forums.couchbase.com/) or [Stack Overflow]-  (http://stackoverflow.com/questions/tagged/couchbase)
