@@ -48,7 +48,7 @@
 
 
 ''
-    :star: Les index
+ ##### :m: Les index
 
          le programme utilise Les index de liste de -x signifient le xth élément de la fin de la liste, donc n [-1] 
          signifie le dernier élément de la liste n.
@@ -124,7 +124,7 @@
 
         L'instruction elif est une compression de else if qui signifie sinon si. 
         Elle doit être utilisée après un if ou un autre elif. 
-     ''   
+      
         for a in accounts_numbers:
                     count=count+1
                     if a==c:
@@ -137,13 +137,18 @@
             accounts_balances[counter] = accounts_balances[counter] + money
         elif choice==4:
             print('your balance equal',accounts_balances[counter])
-     ''
      
-:star: si la condition if a==c:  est vraie 
-  l’instruction elif va parcourir et exécuter le code d’autre bloc et dans ce cas 
-  le client peut entrer  la somme " inter money amount"    d’argent et à la fin il peut 
-  voir "accounts_balances" de son compte 
+     
+:star: 
 
+    si la condition " if a==c: " est vraie 
+    
+    l’instruction elif va parcourir et exécuter le code d’autre bloc et dans ce cas 
+    
+    le client peut entrer  la somme " inter money amount"    d’argent et à la fin il peut 
+    voir "accounts_balances" de son compte 
+  
+     
         
         
 
