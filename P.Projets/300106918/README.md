@@ -119,7 +119,10 @@
 
 ##### :m:  elif 
       Le mot clé elif est un raccourci pour else if, mais permet de gagner un niveau d’indentation.
-
+ 
+ ![](image/elif.png )
+ 
+ 
  :star:Autrement 
 
         L'instruction elif est une compression de else if qui signifie sinon si. 
