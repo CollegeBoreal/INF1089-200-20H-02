@@ -48,7 +48,7 @@
 
 
 ''
-    :star: Les index
+ ##### :m: Les index
 
          le programme utilise Les index de liste de -x signifient le xth élément de la fin de la liste, donc n [-1] 
          signifie le dernier élément de la liste n.
