@@ -1,13 +1,13 @@
 function Stagiaire {
 <#
 .SYNOPSIS 
-#Vérifie l'existence d'un compte dans Active Directory.
+Verifier l'existence d'un compte dans Active Directory.
 .DESCRIPTION 
-#Vérifie l'existence d'un compte dans Active Directory. L'objectif est de créer le compte s'il n'existe pas. 
+Verifier l'existence d'un compte dans Active Directory. L'objectif est de créer le compte s'il n'existe pas. 
 .PARAMETER personneNom 
-#c'est l'identifiant de l'utilisateur. Généralement, il s'agit du prénom. Compte est un alias de personneNom. Ce paramètre est obligatoire. 
+c'est l'identifiant de l'utilisateur. Généralement, il s'agit du prénom. Compte est un alias de personneNom. Ce paramètre est obligatoire. 
 .EXAMPLE 
-#Stagiaire -Compte "Bob"
+Stagiaire -Compte "Bob"
 .LINK 
 https://coudr.com/blog 
 
