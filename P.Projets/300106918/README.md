@@ -105,7 +105,9 @@
 ![](image/ret.png )
 
 
+
 ##### :m:  l’instruction + break + 
+
 
              vous offre la possibilité de sortir d’une boucle lorsqu’une condition externe
              est déclenchée sert, non pas à interrompre le programme, mais à sortir de la boucle.
@@ -118,7 +120,9 @@
 
 
 
+
 ##### :m:  elif 
+
       Le mot clé elif est un raccourci pour else if, mais permet de gagner un niveau d’indentation.
  
  ![](image/elif.png )
