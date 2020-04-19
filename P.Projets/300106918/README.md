@@ -124,7 +124,7 @@
 
         L'instruction elif est une compression de else if qui signifie sinon si. 
         Elle doit être utilisée après un if ou un autre elif. 
-     ''   
+      
         for a in accounts_numbers:
                     count=count+1
                     if a==c:
@@ -137,7 +137,7 @@
             accounts_balances[counter] = accounts_balances[counter] + money
         elif choice==4:
             print('your balance equal',accounts_balances[counter])
-     ''
+     
      
 :star: 
 
@@ -148,7 +148,7 @@
     le client peut entrer  la somme " inter money amount"    d’argent et à la fin il peut 
     voir "accounts_balances" de son compte 
   
-     ''
+     
         
         
 
