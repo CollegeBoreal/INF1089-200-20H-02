@@ -60,7 +60,7 @@
                            print('account number does not exists')
               
 
-##### :m: Les boucle
+##### :m: La boucle for 
   ''
          :star: Les boucles permettent d'exécuter plusieurs fois les mêmes ordres
 
@@ -75,19 +75,16 @@
                                        print(list1)
 
                
-            
-            
-   
+  
+ :star: Dans le programe , nous avons choisi le nom   « a »   pour la variable d'itération. indique en général 
+  qu'il s'agit d'un entier (le nom « a » vient sans doute du mot indice ou index en anglais).  vous itérez sur 
+  les indices vous pouvez appeler la variable d'itération  « a »   par exemple dans «   for  i in range »
+  
+ Si, par contre, vous itérez sur une liste comportant des chaînes de caractères, mettez un nom explicite pour 
+ la variable d'itération. Par exemple :
 
- 
+            for prenom in ['Joe', 'Bill', 'John']:
 
-''
-      :star: while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
-         tant qu’une condition donnée est vraie. 
-
-              while nom_variable = valeur:
-                    instructions
-                    modification de variable
 
 ##### :m: Instruction Conditionnelle
 ''        
