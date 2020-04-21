@@ -1,7 +1,14 @@
-FROM python:3
+FROM ubuntu:16.04
 
-ADD script.py /
+MAINTAINER Halima Fadde
 
-RUN pip install pystrich
+RUN apt-get update \
+    && apt-get install -y nginx \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+    && echo "daemon off;" >> /etc/nginx/nginx.conf
 
-CMD [ "python", "./script.py" ]
+ADD script /etc/nginx/sites-available/default
+
+EXPOSE 80
+CMD ["nginx"]
