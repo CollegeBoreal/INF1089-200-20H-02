@@ -8,7 +8,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
     && echo "daemon off;" >> /etc/nginx/nginx.conf
 
-ADD script /etc/nginx/sites-available/script
+ADD default /etc/nginx/sites-available/default
 
 EXPOSE 80
 CMD ["nginx"]
