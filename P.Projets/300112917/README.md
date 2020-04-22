@@ -121,3 +121,67 @@ l'utilisateur gagnera le jeu si l'échec est 0 et "You Win" sera donné en sorti
 
 ```
 si l'utilisateur a entré le mauvais alphabet, il lui demandera d'entrer un autre alphabet. Chaque caractère saisi sera stocké "in guesses". Vérifiez l'entrée avec le caractère dans le mot. Si le caractère ne correspond pas au mot, «Wrong» sera donné en sortie. Cela imprimera le nombre de tours restants pour l'utilisateur
+
+##  Resultat Final
+
+```
+import random 
+
+name = input("Quel est ton nom? ") 
+
+print("Bonne Chance ! ", name) 
+
+words = ['rainbow', 'ordinateur', 'science', 'programmation', 
+		'python', 'mathematiques', 'joueur', 'condition', 
+		'reverse', 'eau', 'planche', 'geeks'] 
+
+word = random.choice(words) 
+
+
+print("Devinez les lettres") 
+
+guesses = '' 
+
+turns = 12
+
+
+while turns > 0: 
+	
+	failed = 0
+	
+	for char in word: 
+		
+		if char in guesses: 
+			print(char) 
+			
+		else: 
+			print("_") 
+			
+			failed += 1
+			
+
+	if failed == 0: 
+		print("Tu gagnes") 
+		
+		print("Le mot est: ", word) 
+		break
+	
+	guess = input("Devinez un lettre:") 
+	
+	guesses += guess 
+	
+	if guess not in word: 
+		
+		turns -= 1
+		
+		print("Faux") 
+		
+
+		print("Tu as", + turns, 'more guesses') 
+		
+		
+		if turns == 0: 
+			print("Perdant") 
+
+```
+si l'utilisateur a entré le mauvais alphabet, il lui demandera d'entrer un autre alphabet. Chaque caractère saisi sera stocké "in guesses". Vérifiez l'entrée avec le caractère dans le mot. Si le caractère ne correspond pas au mot, «Wrong» sera donné en sortie. Cela imprimera le nombre de tours restants pour l'utilisateur
