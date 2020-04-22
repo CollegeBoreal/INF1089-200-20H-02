@@ -1,7 +1,9 @@
 
-FROM debian:rc-buggy
-
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+FROM python:3.7.5-slim
+WORKDIR /usr/src/app
+RUN python -m pip install \
+        parse \
+        realpython-reader
+COPY headlines.py .
+CMD ["python", "headlines.py"]
 

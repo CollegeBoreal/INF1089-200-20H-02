@@ -1,17 +1,7 @@
+FROM python:3
 
+ADD script.py /
 
-FROM debian:9.5-slim
-COPY . /app 
-RUN apt-get update
-RUN apt-get upgrade -y 
-RUN apt-get install -y python python-pip
+RUN pip install pystrich
 
-CMD python app.py 
-CMD ["entry.py"]
-EXPOSE 5000 
-WORKDIR /app 
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
-
-
+CMD [ "python", "./script.py" ]

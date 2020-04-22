@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-#Nginx
-#
-#VERSION
+FROM python:3
 
-FROM Ubuntu
-=======
-FROM debian:9.5-slim
->>>>>>> 3dbf4fe1eee91d7d99c1383859cfc2eec12b34ff
+ADD my_script.py /
 
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+RUN pip install pystrich
+
+CMD [ "python", "./my_script.py" ]

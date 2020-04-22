@@ -27,7 +27,7 @@
 ## :o: 
  
    
-##### :m: input
+##### :m: La fonction input()
           La fonction input() demande un argument (qui peut être vide) qui est de type chaîne de caractère. 
           Elle attend que l'utilisateur frappe quelque chose au clavier. Elle renvoie une valeur de type
           correspondant à ce qui a été frappé au clavier         
@@ -48,7 +48,7 @@
 
 
 ''
-    :star: Les index
+ ##### :m: Les index
 
          le programme utilise Les index de liste de -x signifient le xth élément de la fin de la liste, donc n [-1] 
          signifie le dernier élément de la liste n.
@@ -60,7 +60,7 @@
                            print('account number does not exists')
               
 
-##### :m: Les boucle
+##### :m: La boucle for 
   ''
          :star: Les boucles permettent d'exécuter plusieurs fois les mêmes ordres
 
@@ -75,19 +75,16 @@
                                        print(list1)
 
                
-            
-            
-   
+  
+ :star: Dans le programe , nous avons choisi le nom   « a »   pour la variable d'itération. indique en général 
+  qu'il s'agit d'un entier (le nom « a » vient sans doute du mot indice ou index en anglais).  vous itérez sur 
+  les indices vous pouvez appeler la variable d'itération  « a »   par exemple dans «   for  i in range »
+  
+ Si, par contre, vous itérez sur une liste comportant des chaînes de caractères, mettez un nom explicite pour 
+ la variable d'itération. Par exemple :
 
- 
+            for prenom in ['Joe', 'Bill', 'John']:
 
-''
-      :star: while  Le principe de la boucle while, c’est d’exécuter un bloc d’instructions
-         tant qu’une condition donnée est vraie. 
-
-              while nom_variable = valeur:
-                    instructions
-                    modification de variable
 
 ##### :m: Instruction Conditionnelle
 ''        
@@ -107,7 +104,11 @@
    
 ![](image/ret.png )
 
+
+
 ##### :m:  l’instruction + break + 
+
+
              vous offre la possibilité de sortir d’une boucle lorsqu’une condition externe
              est déclenchée sert, non pas à interrompre le programme, mais à sortir de la boucle.
              
@@ -117,14 +118,21 @@
 
 ![](image/brek.png)
 
-##### :m:  elif 
-      Le mot clé elif est un raccourci pour else if, mais permet de gagner un niveau d’indentation.
 
+
+
+##### :m:  elif 
+
+      Le mot clé elif est un raccourci pour else if, mais permet de gagner un niveau d’indentation.
+ 
+ ![](image/elif.png )
+ 
+ 
  :star:Autrement 
 
         L'instruction elif est une compression de else if qui signifie sinon si. 
         Elle doit être utilisée après un if ou un autre elif. 
-     ''   
+      
         for a in accounts_numbers:
                     count=count+1
                     if a==c:
@@ -137,18 +145,22 @@
             accounts_balances[counter] = accounts_balances[counter] + money
         elif choice==4:
             print('your balance equal',accounts_balances[counter])
-     ''
      
-:star: si la condition if a==c:  est vraie 
-  l’instruction elif va parcourir et exécuter le code d’autre bloc et dans ce cas 
-  le client peut entrer  la somme " inter money amount"    d’argent et à la fin il peut 
-  voir "accounts_balances" de son compte 
+     
+:star: 
 
+    si la condition " if a==c: " est vraie 
+    
+    l’instruction elif va parcourir et exécuter le code d’autre bloc et dans ce cas 
+    
+    le client peut entrer  la somme " inter money amount"    d’argent et à la fin il peut 
+    voir "accounts_balances" de son compte 
+  
+     
         
         
 
 
 
 
-##### :m: Stats
 
