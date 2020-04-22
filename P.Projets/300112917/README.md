@@ -1,62 +1,123 @@
 
-# Projet Python - Simple fonction
+# Projet Python - le jeu: deviner le mot
 :snake:
 
-## Qu'est-ce que PYTHON MAIN FUNCTION?
+## Le But du JEU?
 
-Comme Python est un langage interprété, il suit une approche descendante. 
-Juste parce que python est interprété, il n'y a pas de point d'entrée statique vers le programme et le code source est exécuté séquentiellement et il n'appelle aucune méthode à moins que vous ne l'appeliez manuellement.
+Dans ce jeu, il y a une liste de mots présents, parmi lesquels notre interprète choisira 1 mot au hasard. L'utilisateur doit d'abord saisir son nom, puis il lui sera demandé de deviner n'importe quel alphabet. Si le mot aléatoire contient cet alphabet, il sera affiché comme sortie (avec un placement correct) sinon le programme vous demandera de deviner un autre alphabet. L'utilisateur aura 12 tours (peut être modifié en conséquence) pour deviner le mot complet.
 
 ## Tic Tac Toe - À propos du projet Python
 
 ```
-print(“Good Morning”)
- 
-def main():
-          print(“Hello Python”)
- 
-print(“Good Evening”)
-Output:
-
-Good Morning
-Good Evening
+import random
 ```
-Si nous observons le programme ci-dessus, il n'a imprimé que 'Good Morning' et 'Good Evening' et il n'a pas imprimé le terme 'Hello Python' parce que nous ne l'avons pas appelé manuellement ou nous n'avons pas utilisé le principal de python fonctionner ici.
-Pygame est une excellente bibliothèque qui nous permettra de créer la fenêtre et de dessiner des images et des formes sur la fenêtre. 
+Bibliothèque que nous utilisons pour choisir des mots aléatoires à partir d'une liste de mots. 
 
-## Ajoutons la fonction MAIN
-Voyons maintenant le programme avec l'appel de fonction si __name__ == "__main__".
+## Ajoutons
 
 ```
-print(“Good Morning”)
- 
-def main():
-          print(“Hello Python”)
- 
-print(“Good Evening”)
- 
-if __name__ == “__main__”:
-         main()
+name = input("Quel est ton nom? ")
 ```
+Ici, l'utilisateur est invité à saisir le nom en premier.
 
-## Resultat
+## Apres nous ajoutons la liste
 
 ```
-print(“Good Morning”)
- 
-def main():
-          print(“Hello Python”)
- 
-print(“Good Evening”)
- 
-if __name__ == “__main__”:
-         main()
-Output:
+print("Bonne Chance ! ", name) 
 
-Good Morning
-Good Evening
-Hello Python
+words = ['rainbow', 'ordinateur', 'science', 'programmation', 
+		'python', 'mathematiques', 'joueur', 'condition', 
+		'reverse', 'eau', 'planche', 'geeks']
+```
+La fonction choisira un mot au hasard dans cette liste de mots
+
+## Ajoutons la fonction
 
 ```
-Si vous observez le programme ci-dessus, vous pouvez avoir une question - pourquoi Bonjour Python est imprimé? 
-C'est parce que nous appelons la fonction principale à la fin du code, donc elle affiche «Good Morning» en premier, «Good Evening» ensuite et «Hello Python» à la fin.
+word = random.choice(words) 
+```
+La fonction choisira un mot au hasard dans cette liste de mots
+
+## Ajoutons le nombre des tours
+
+```
+print("Devinez les lettres") 
+
+guesses = '' 
+
+turns = 12
+```
+N'importe quel nombre de tours peut être utilisé ici, mais nous choisissons 12
+
+## Le nombre d'echec
+
+```
+while turns > 0: 
+       
+    failed = 0
+```
+compte le nombre de fois où un utilisateur échoue
+
+## Ajoutons
+
+```
+    for char in word:  
+          
+       if char in guesses:  
+            print(char) 
+```
+Tous les caractères du mot d'entrée en prenant un à la fois.comparer ce personnage avec le personnage dans "in guesses"
+
+## Ajoutons
+
+```
+else:  
+            print("_") 
+              
+            failed += 1
+```
+Pour chaque échec 1 sera incrémenté en échec
+
+## Ajoutons
+
+```
+else:  
+            print("_") 
+              
+            failed += 1
+```
+Pour chaque échec 1 sera incrémenté en échec
+
+## Si le joueur echoue ou gagne
+
+```
+if failed == 0: 
+		  print("Tu gagnes") 
+		
+		  print("Le mot est: ", word) 
+		  break
+```
+l'utilisateur gagnera le jeu si l'échec est 0 et "You Win" sera donné en sortie
+
+##  Final
+
+```
+	guess = input("Devinez un lettre:") 
+	
+	guesses += guess 
+	
+	if guess not in word: 
+		
+		   turns -= 1
+		
+		   print("Faux") 
+		
+
+		   print("Tu as", + turns, 'more guesses') 
+		
+		
+		   if turns == 0: 
+			      print("Perdant") 
+
+```
+si l'utilisateur a entré le mauvais alphabet, il lui demandera d'entrer un autre alphabet. Chaque caractère saisi sera stocké "in guesses". Vérifiez l'entrée avec le caractère dans le mot. Si le caractère ne correspond pas au mot, «Wrong» sera donné en sortie. Cela imprimera le nombre de tours restants pour l'utilisateur
