@@ -78,16 +78,6 @@ else:
 ```
 Pour chaque échec 1 sera incrémenté en échec
 
-## Ajoutons
-
-```
-else:  
-            print("_") 
-              
-            failed += 1
-```
-Pour chaque échec 1 sera incrémenté en échec
-
 ## Si le joueur echoue ou gagne
 
 ```
@@ -184,4 +174,3 @@ while turns > 0:
 			print("Perdant") 
 
 ```
-si l'utilisateur a entré le mauvais alphabet, il lui demandera d'entrer un autre alphabet. Chaque caractère saisi sera stocké "in guesses". Vérifiez l'entrée avec le caractère dans le mot. Si le caractère ne correspond pas au mot, «Wrong» sera donné en sortie. Cela imprimera le nombre de tours restants pour l'utilisateur
