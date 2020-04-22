@@ -6,7 +6,7 @@
 
 Dans ce jeu, il y a une liste de mots présents, parmi lesquels notre interprète choisira 1 mot au hasard. L'utilisateur doit d'abord saisir son nom, puis il lui sera demandé de deviner n'importe quel alphabet. Si le mot aléatoire contient cet alphabet, il sera affiché comme sortie (avec un placement correct) sinon le programme vous demandera de deviner un autre alphabet. L'utilisateur aura 12 tours (peut être modifié en conséquence) pour deviner le mot complet.
 
-## Tic Tac Toe - À propos du projet Python
+## Choisissons la Bibliotheque d'import
 
 ```
 import random
@@ -68,7 +68,7 @@ compte le nombre de fois où un utilisateur échoue
 ```
 Tous les caractères du mot d'entrée en prenant un à la fois.comparer ce personnage avec le personnage dans "in guesses"
 
-## Ajoutons
+## Ajoutons aussi
 
 ```
 else:  
