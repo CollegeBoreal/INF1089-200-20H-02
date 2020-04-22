@@ -87,9 +87,9 @@ if failed == 0:
 		  print("Le mot est: ", word) 
 		  break
 ```
-l'utilisateur gagnera le jeu si l'échec est 0 et "You Win" sera donné en sortie
+l'utilisateur gagnera le jeu si l'échec est 0 et "Tu gagnes" sera donné en sortie
 
-##  Final
+## Ajout Final
 
 ```
 	guess = input("Devinez un lettre:") 
